@@ -3,8 +3,19 @@ body{
 	background-color: lightgrey;
 }
 
+#contactForm form{
+	diplay: block;
+}
 
-#contactForm{
+#contactForm .formElements{
+	margin: 1em;
+}
+
+#contactForm input{
+	color: red;
+	width: window.innerHtml;
+	
+
 	
 }
 
