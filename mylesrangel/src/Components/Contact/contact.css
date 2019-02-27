@@ -4,21 +4,30 @@ body{
 }
 
 #contactForm form{
-	diplay: block;
+
 }
 
 #contactForm .formElements{
 	margin: 1em;
 }
 
+#contactForm label{
+	display: inline-block;
+	width: 27%;
+
+
+}
+
 #contactForm input{
-	color: red;
-	width: window.innerHtml;
-	
 
 	
 }
 
+#contactForm textarea{
+
+	width: 75%;
+	height: 200px;
+}
 
 p{
 	

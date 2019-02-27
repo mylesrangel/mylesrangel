@@ -22,14 +22,19 @@ const Contact = () => {
 					</p>
 					<p className="formElements">
 						<label> Email: </label>
-						<input id="email" placeholder="What is your email?" />
+						<input id="email" />
 					</p>
+					<p className="formElements">
+						<label> Email Subject: </label>
+						<input id="subject" placeholder="Subject" />
+					</p>
+
 					<p className="formElements">
 						<label> Message </label>
 						<br />
-						<textarea id="message" placeholder="What would you like to tell me?"> </textarea>
+						<textarea name="Message" > </textarea>
 					</p>
-						<input type="submit" value="submit" />  
+						<input type="submit" value="Submit" />  
 				</form>
 			</div>
 		)
