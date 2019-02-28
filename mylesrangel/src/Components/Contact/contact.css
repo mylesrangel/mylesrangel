@@ -3,6 +3,17 @@ body{
 	background-color: lightgrey;
 }
 
+#contactForm{
+	position: absolute;
+	background-color: lightgrey;
+	margin: 0;
+	padding: 25px;
+	left: 0;
+	top: 0;
+
+
+}
+
 #contactForm form{
 
 }

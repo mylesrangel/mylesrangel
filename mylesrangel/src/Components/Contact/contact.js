@@ -34,7 +34,7 @@ const Contact = () => {
 						<br />
 						<textarea name="Message" > </textarea>
 					</p>
-						<input type="submit" value="Submit" />  
+						<input type="submit" value="Send" />  
 				</form>
 			</div>
 		)
