@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import MediaQuery from 'react-responsive';
 import Myles from "../../Media/Myles.jpg";
+import Contact from "../Contact/contact.js";
 
 import "./homePage.css"
 
@@ -8,6 +9,9 @@ import "./homePage.css"
 
 
 class Homepage extends Component{	
+
+
+
 	state = {
 		// TypeWriter Variables
 		i: 0,
@@ -18,9 +22,18 @@ class Homepage extends Component{
 			width: window.innerWidth,
 			height: 'auto',
 			margin: '3,0,0,0'
+		},
 
+		contactForm: false,
 
-		}
+	}
+
+	//Using this format for this function allows me to not have to 'bind' the function to this.
+	//if this.showContactForm = this.showContactForm(this)
+
+	showContactForm = () => {
+		console.log("You clicked that button!!! " + this.state.contactForm);
+		this.setState({contactForm: true});
 	}
 
 	//Type out the text and show the button afterwards
@@ -44,6 +57,7 @@ class Homepage extends Component{
 
 	componentDidMount(){
 		this.typeWriter();
+		this.setState({contactForm: false});
 	}
 
 	render(){
@@ -51,12 +65,11 @@ class Homepage extends Component{
 			<div id="homepageContainer">
 
 				<p id="statement">  </p>
-				<button id='contactButton'> Contact </button>
-
+				<button id='contactButton' onClick={this.showContactForm}> Contact </button>
+				{this.state.contactForm && <Contact />}
 				<img 
 				src={Myles} 
 				style={this.state.imgStyle}
-				alt="Myles Rangel"
 				/>
 			</div>
 		);

@@ -1,18 +1,41 @@
 
-body{
-	background-color: lightgrey;
-}
 
 #contactForm{
 	position: absolute;
-	background-color: lightgrey;
+	display: block;
+	background-color: #36454F;
 	margin: 0;
 	padding: 25px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 430px;
+	height: auto;
 	left: 0;
-	top: 0;
+	bottom: 0;
+	z-index: 1;
+
 
 
 }
+
+
+.bars {
+    width: 25px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+
+}
+
+/*Transforming bars*/
+	.togglebar1{
+		transform: rotate(-45deg) translate(-2px, 3px);
+	}
+	.togglebar3{
+		transform: rotate(45deg) translate(-3px, -6px);
+	}
 
 #contactForm form{
 
