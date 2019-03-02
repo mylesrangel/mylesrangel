@@ -1,23 +1,21 @@
 import React, {Component} from "react";
 
-
 import "./contact.css";
 
 
 
 class Contact extends Component{
 
-
-
-	closeContactForm = () => {
-	document.getElementById("contactForm").style.display = 'none';
+	constructor(props){
+		super(props);
 	}
+
 
 	render(){
 		return(
 				<div>
 					<form id="contactForm" >
-						<div id = 'hamburgerButtonContact' onClick={this.closeContactForm}>
+						<div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
 							<div className="bars togglebar1"></div>
 							<div className="bars togglebar3"></div>
 						</div>

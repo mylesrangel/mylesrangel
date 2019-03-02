@@ -10,7 +10,10 @@ import "./homePage.css"
 
 class Homepage extends Component{	
 
-
+	constructor(props){
+		super(props);
+	
+	}
 
 	state = {
 		// TypeWriter Variables
@@ -27,13 +30,13 @@ class Homepage extends Component{
 		contactForm: false,
 
 	}
+	
 
-	//Using this format for this function allows me to not have to 'bind' the function to this.
-	//if this.showContactForm = this.showContactForm(this)
-
-	showContactForm = () => {
-		console.log("You clicked that button!!! " + this.state.contactForm);
-		this.setState({contactForm: true});
+	toggleContactForm = () =>{
+		console.log("you clicked Contact button " + this.state.contactForm +" " + !this.state.contactForm);
+		this.setState({
+			contactForm: !this.state.contactForm
+		});
 	}
 
 	//Type out the text and show the button afterwards
@@ -57,7 +60,6 @@ class Homepage extends Component{
 
 	componentDidMount(){
 		this.typeWriter();
-		this.setState({contactForm: false});
 	}
 
 	render(){
@@ -65,8 +67,8 @@ class Homepage extends Component{
 			<div id="homepageContainer">
 
 				<p id="statement">  </p>
-				<button id='contactButton' onClick={this.showContactForm}> Contact </button>
-				{this.state.contactForm && <Contact />}
+				<button id='contactButton' onClick={this.toggleContactForm}> Contact </button>
+				{this.state.contactForm && <Contact contactForm={this.toggleContactForm} />}
 				<img 
 				src={Myles} 
 				style={this.state.imgStyle}
