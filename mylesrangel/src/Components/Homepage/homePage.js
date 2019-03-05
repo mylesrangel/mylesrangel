@@ -16,6 +16,7 @@ class Homepage extends Component{
 	}
 
 	state = {
+
 		// TypeWriter Variables
 		i: 0,
 		statement: 'Let\'s Create! The sky\'s the limit!',
@@ -33,7 +34,6 @@ class Homepage extends Component{
 	
 
 	toggleContactForm = () =>{
-		console.log("you clicked Contact button " + this.state.contactForm +" " + !this.state.contactForm);
 		this.setState({
 			contactForm: !this.state.contactForm
 		});
@@ -59,7 +59,18 @@ class Homepage extends Component{
 
 
 	componentDidMount(){
+
+
 		this.typeWriter();
+
+		this.setState({
+			windowWidth: window.innerWidth,
+			windowHeight: window.innerHeight
+		});
+
+		console.log("window height: " + this.state.windowHeight + " Window Width: " + this.state.windowWidth);
+
+
 	}
 
 	render(){
@@ -68,7 +79,7 @@ class Homepage extends Component{
 
 				<p id="statement">  </p>
 				<button id='contactButton' onClick={this.toggleContactForm}> Contact </button>
-				{this.state.contactForm && <Contact contactForm={this.toggleContactForm} />}
+				{this.state.contactForm && <Contact contactForm={this.toggleContactForm}/>}
 				<img 
 				src={Myles} 
 				style={this.state.imgStyle}

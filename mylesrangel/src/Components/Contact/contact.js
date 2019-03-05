@@ -8,28 +8,42 @@ class Contact extends Component{
 
 	constructor(props){
 		super(props);
+
 	}
 
+
+	state = {
+
+		formStyle: {
+			width: window.innerWidth,
+			height: window.innerHeight
+		}
+	}
+
+
+	componentDidMount(){
+
+	}
 
 	render(){
 		return(
 				<div>
-					<form id="contactForm" >
+					<form id="contactForm" style={this.state.formStyle} >
 						<div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
 							<div className="bars togglebar1"></div>
 							<div className="bars togglebar3"></div>
 						</div>
 						<p className="formElements">
 							<label> First Name: </label>
-							<input id="firstName" placeholder="Your first name" />
+							<input required id="firstName" placeholder="Your first name" />
 						</p>
 						<p className="formElements">
 							<label> Last Name: </label>
-							<input id="lastName" placeholder="Your last name" />
+							<input required id="lastName" placeholder="Your last name" />
 						</p>
 						<p className="formElements">
 							<label> Email: </label>
-							<input id="email" />
+							<input required id="email" placeholder="yourName@gmail.com"/>
 						</p>
 						<p className="formElements">
 							<label> Email Subject: </label>
@@ -39,7 +53,7 @@ class Contact extends Component{
 						<p className="formElements">
 							<label> Message </label>
 							<br />
-							<textarea name="Message" > </textarea>
+							<textarea required name="Message" > </textarea>
 						</p>
 							<input type="submit" value="Send" />  
 					</form>

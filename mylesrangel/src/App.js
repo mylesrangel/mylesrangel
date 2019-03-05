@@ -5,6 +5,12 @@ import Contact from "./Components/Contact/contact.js";
 import './App.css';
 
 class App extends Component {
+
+	componentDidMount(){
+		console.log("component did mount App.js");
+	}
+
+
   render() {
     return (
       <div className="App">
