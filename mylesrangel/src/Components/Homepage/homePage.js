@@ -24,8 +24,7 @@ class Homepage extends Component{
 
 		imgStyle: {
 			width: window.innerWidth,
-			height: 'auto',
-			margin: '3,0,0,0'
+			height: 'auto'
 		},
 
 		contactForm: false,
@@ -58,6 +57,19 @@ class Homepage extends Component{
 	}
 
 
+	updateDimensions = () =>{
+		console.log("update dimensions...in Homepage.js");
+
+		this.setState({
+			imgStyle: {
+				width: window.innerWidth,
+				height: 'auto',
+			}
+		});
+
+
+	}
+
 	componentDidMount(){
 
 
@@ -70,7 +82,7 @@ class Homepage extends Component{
 
 		console.log("window height: " + this.state.windowHeight + " Window Width: " + this.state.windowWidth);
 
-
+		window.addEventListener("resize", this.updateDimensions);
 	}
 
 	render(){
@@ -87,6 +99,11 @@ class Homepage extends Component{
 			</div>
 		);
 	}
+
+	componentWillUnmount() {
+		console.log("unmounting...");
+	    window.removeEventListener("resize", this.updateDimensions);
+    }
 }
 
 export default Homepage;

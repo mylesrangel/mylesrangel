@@ -20,6 +20,11 @@ class Contact extends Component{
 		}
 	}
 
+	handleSubmit(event){
+		event.preventDefault();
+		console.log("form has been Submitted");
+	}
+
 
 	componentDidMount(){
 
@@ -28,7 +33,7 @@ class Contact extends Component{
 	render(){
 		return(
 				<div>
-					<form id="contactForm" style={this.state.formStyle} >
+					<form onSubmit={this.handleSubmit}id="contactForm" style={this.state.formStyle} >
 						<div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
 							<div className="bars togglebar1"></div>
 							<div className="bars togglebar3"></div>
@@ -60,6 +65,11 @@ class Contact extends Component{
 				</div>
 			)
 	}
+
+	componentWillUnmount() {
+		console.log("unmounting...");
+	    window.removeEventListener("resize", this.updateDimensions);
+  }
 	
 }
 
