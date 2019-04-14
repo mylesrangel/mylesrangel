@@ -1,21 +1,27 @@
 
 const express = require("express");
-//require('dotenv').config();
+const cors = require('cors');
+const bodyParser = require('body-parser');
 
 const app = express();
 
 const port = process.env.PORT || 4000;
 
+app.use(cors());
+app.use(express.json());
 
-//CORS related
-app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
+app.get('/', (req, res) =>{
+    res.json({
+        message: "in /"
+    });
 });
 
-app.use((req,res,next) => {
-    res.send("Did it work?");
+app.post('/sendemail', (req, res) =>{
+    console.log(req.body);
+    console.log(req.body.firstName);
+    console.log("test post");
+    res.end();
+    
 });
 
 app.listen(port, () => {

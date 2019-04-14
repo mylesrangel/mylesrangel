@@ -6,7 +6,7 @@ router.get('/', (req,res, next) =>{
 
 });
 
-router.get('/users', (req,res, next) =>{
+router.get('/', (req,res, next) =>{
 
 });
 
