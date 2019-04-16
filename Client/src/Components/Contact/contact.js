@@ -21,14 +21,9 @@ class Contact extends Component{
 		
 		API_URL: "http://localhost:4000/sendemail",
 
-		firstName: '',
-		lastName: '',
-		email: '',
-		subject: '',
-		message: '',
 
 		emailInfo: {
-			firstName: 'noneya',
+			firstName: '',
 			lastName: '',
 			email: '',
 			subject: '',
@@ -42,17 +37,18 @@ class Contact extends Component{
 		event.preventDefault();
 		console.log("form has been Submitted with firstName: " + this.state.firstName);
 
+		//grabs the form data for this component
 		const body = new FormData(this.form);
-		var firstName = body.get('firstName');
-
-
-		console.log("Body value: " + body.get('firstName'));
 
 		//grab the data from form and put it in variables
 		this.setState({
 			emailInfo:{
-				//TODO: VALUE IS NULL *************
-				firstname: body.get('firstName')
+
+				firstname: body.get('firstName'),
+				lastName: body.get('lastName'),
+				email: body.get('email'),
+				subject: body.get('subject'),
+				message: body.get('message')
 			}
 		});
 
@@ -65,14 +61,13 @@ class Contact extends Component{
 		});
 	}
 
-	//Handles change in the form
+	//Handles change in the form (typing in input)
 	handleChange = (event) =>{
-		console.log("event value: " + event.target.value);
-		console.log("target value: " + this.state.emailInfo.firstName);
+
 		this.setState({
 				emailInfo:{
 					...this.state.emailInfo,
-					firstName: event.target.value
+					[event.target.name]: event.target.value
 				},
 			});
 		console.log("First Name after: " + this.state.firstName);
@@ -96,21 +91,21 @@ class Contact extends Component{
 						</p>
 						<p className="formElements">
 							<label> Last Name: </label>
-							<input required id="lastName" placeholder="Your last name" />
+							<input required name="lastName" value={this.state.emailInfo.lastName} onChange={this.handleChange} id="lastName" placeholder="Your last name" />
 						</p>
 						<p className="formElements">
 							<label> Email: </label>
-							<input required id="email" placeholder="yourName@gmail.com"/>
+							<input required name="email" value={this.state.emailInfo.email} onChange={this.handleChange} id="email" placeholder="yourName@gmail.com"/>
 						</p>
 						<p className="formElements">
 							<label> Email Subject: </label>
-							<input id="subject" placeholder="Subject" />
+							<input name="subject" value={this.state.emailInfo.subject} onChange={this.handleChange} id="subject" placeholder="Subject" />
 						</p>
 
 						<p className="formElements">
 							<label> Message </label>
 							<br />
-							<textarea required name="Message" > </textarea>
+							<textarea required name="message" value={this.state.emailInfo.message} onChange={this.handleChange} > </textarea>
 						</p>
 							<input type="submit" value="Send" />  
 					</form>
@@ -124,6 +119,5 @@ class Contact extends Component{
   }
 	
 }
-
 
 export default Contact;

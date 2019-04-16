@@ -18,8 +18,12 @@ app.get('/', (req, res) =>{
 
 app.post('/sendemail', (req, res) =>{
     console.log(req.body);
-    console.log(req.body.firstName);
-    console.log("test post");
+    // console.log(req.body.firstName);
+    // console.log(req.body.lastName);
+    // console.log(req.body.email);
+    // console.log(req.body.subject);
+    // console.log(req.body.message);
+    // console.log("test post");
     res.end();
     
 });
