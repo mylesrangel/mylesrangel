@@ -36,11 +36,12 @@ app.post('/sendemail', (req, res) =>{
     const mailOptions = {
         from: 'websitecontact@mylesrangel.com',
         to: 'myles@mylesrangel.com',
-        firstName: `${req.body.firstName}`,
-        lastName: `${req.body.lastName}`,
-        subject: `${req.body.subject}`,
-        message: `${req.body.message}`,
-        replyto: `${req.body.email}`
+        html: "<div>" 
+                   +"<p>First Name: " + `${req.body.firstName}` + "</p>"
+                   +"<p>Last Name: " + `${req.body.lastName}` + "</p>"
+                   +"<p>Email: " + `${req.body.email}` + "</p>"
+                   +"<p>Message: " + `${req.body.message}`+ "</p>" +
+                "</div>"
     };
 
     // transporter.verify(function(error,success){
