@@ -36,30 +36,35 @@ class Contact extends Component{
 	handleSubmit = (event) => {
 		event.preventDefault();
 
-		this.props.contactForm();
+		//confirm send before sending email
+		if(window.confirm('Click ok to send this email')){
 
-		//grabs the form data for this component
-		const body = new FormData(this.form);
+			//close contact form after send
+			this.props.contactForm();
 
-		//grab the data from form and put it in variables
-		this.setState({
-			emailInfo:{
+			//grabs the form data for this component
+			const body = new FormData(this.form);
 
-				firstname: body.get('firstName'),
-				lastName: body.get('lastName'),
-				email: body.get('email'),
-				subject: body.get('subject'),
-				message: body.get('message')
-			}
-		});
+			//grab the data from form and put it in variables
+			this.setState({
+				emailInfo:{
 
-		fetch(this.state.API_URL, {
-			method: 'POST',
-			body: JSON.stringify(this.state.emailInfo),
-			headers: {
-				'Content-Type': 'application/json'
-			}
-		});
+					firstname: body.get('firstName'),
+					lastName: body.get('lastName'),
+					email: body.get('email'),
+					subject: body.get('subject'),
+					message: body.get('message')
+				}
+			});
+
+			fetch(this.state.API_URL, {
+				method: 'POST',
+				body: JSON.stringify(this.state.emailInfo),
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			});
+		}
 	}
 
 	//Handles change in the form (typing in input)
