@@ -35,7 +35,8 @@ class Contact extends Component{
 	//old submit button event handler
 	handleSubmit = (event) => {
 		event.preventDefault();
-		console.log("form has been Submitted with firstName: " + this.state.firstName);
+
+		this.props.contactForm();
 
 		//grabs the form data for this component
 		const body = new FormData(this.form);
