@@ -27,13 +27,18 @@
 
 }
 
+#hamburgerButtonContact{
+	/* size of "X" in contact form */
+	width: 7%
+}
+
 /*Transforming bars*/
-	.togglebar1{
-		transform: rotate(-45deg) translate(-2px, 3px);
-	}
-	.togglebar3{
-		transform: rotate(45deg) translate(-3px, -6px);
-	}
+.togglebar1{
+	transform: rotate(-45deg) translate(-2px, 3px);
+}
+.togglebar3{
+	transform: rotate(45deg) translate(-3px, -6px);
+}
 
 #contactForm form{
 
