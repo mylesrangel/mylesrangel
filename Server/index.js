@@ -21,7 +21,6 @@ app.post('/sendemail', (req, res) =>{
     console.log(req.body);
 
     const transporter = nodemailer.createTransport({
-        //service: 'smtp.stackmail.com',
         host: 'smtp.stackmail.com',
         secure: true,
         port: '465',
@@ -43,14 +42,6 @@ app.post('/sendemail', (req, res) =>{
                    +"<p>Message: " + `${req.body.message}`+ "</p>" +
                 "</div>"
     };
-
-    // transporter.verify(function(error,success){
-    //     if(error){
-    //         console.log(error);
-    //     }else{
-    //         console.log("Server is ready for greatness...");
-    //     }
-    // });
 
     transporter.sendMail(mailOptions, function (err, res){
         if(err){

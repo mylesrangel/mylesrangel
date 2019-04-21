@@ -9,7 +9,6 @@ class Contact extends Component{
 	constructor(props){
 		super(props);
 
-			//this.handleChange = this.handleChange.bind(this);
 	}
 
 	state = {
@@ -36,6 +35,7 @@ class Contact extends Component{
 	handleSubmit = (event) => {
 		event.preventDefault();
 
+		//hides contact form
 		this.props.contactForm();
 
 		//grabs the form data for this component
