@@ -51,7 +51,7 @@ class Contact extends Component{
 					firstname: body.get('firstName'),
 					lastName: body.get('lastName'),
 					email: body.get('email'),
-					subject: body.get('subject'),
+ 					subject: body.get('subject'),
 					message: body.get('message')
 				}
 			});
@@ -62,7 +62,10 @@ class Contact extends Component{
 				headers: {
 					'Content-Type': 'application/json'
 				}
-			});
+			}).then(response => response.json())
+				.then(emailInfo => {
+					console.log("emailInfo: " + emailInfo);
+				});
 		}
 	}
 
@@ -75,11 +78,6 @@ class Contact extends Component{
 					[event.target.name]: event.target.value
 				},
 			});
-		console.log("First Name after: " + this.state.firstName);
-	}
-
-	componentDidMount(){
-
 	}
 
 	render(){

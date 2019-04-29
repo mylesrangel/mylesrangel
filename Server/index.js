@@ -47,7 +47,14 @@ app.post('/sendemail', (req, res) =>{
         if(err){
             console.error('there was an error: ', err);
         }else{
+            //email response is <p> in Homepage.js
+            var emailResponse = document.getElementById("emailResponse");
+
             console.log('here is the res: ', res);
+            const p = document.createElement('p');
+            p.textContent = "Your Email has Successfully sent!";
+
+            emailResponse.appendChild(p);
         }
     });
     // console.log(req.body.firstName);
@@ -56,7 +63,7 @@ app.post('/sendemail', (req, res) =>{
     // console.log(req.body.subject);
     // console.log(req.body.message);
     // console.log("test post");
-    res.end();
+
     
 });
 
