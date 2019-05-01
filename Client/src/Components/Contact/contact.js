@@ -47,7 +47,6 @@ class Contact extends Component{
 			//grab the data from form and put it in variables
 			this.setState({
 				emailInfo:{
-
 					firstname: body.get('firstName'),
 					lastName: body.get('lastName'),
 					email: body.get('email'),
@@ -60,13 +59,21 @@ class Contact extends Component{
 				method: 'POST',
 				body: JSON.stringify(this.state.emailInfo),
 				headers: {
-					'Content-Type': 'application/json'
-				}
-			}).then(response => response.json())
-				.then(emailInfo => {
-					console.log("emailInfo: " + emailInfo);
-				});
+					'content-type': 'application/json'
+				}			
+			}).then((res) => {
+				  alert("End of fetch should be in then");
+					res.json();					
+			})
+				.then(response => 
+					console.log('Success: ' + response)
+				)
+				.catch(err => {
+					console.log("Error: " + err);
+			});
 		}
+
+
 	}
 
 	//Handles change in the form (typing in input)
