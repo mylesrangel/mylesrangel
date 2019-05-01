@@ -35,6 +35,7 @@ app.post('/sendemail', (req, res) =>{
     const mailOptions = {
         from: 'websitecontact@mylesrangel.com',
         to: 'myles@mylesrangel.com',
+        subject: `${req.body.subject}`,
         html: "<div>" 
                    +"<p>First Name: " + `${req.body.firstName}` + "</p>"
                    +"<p>Last Name: " + `${req.body.lastName}` + "</p>"
