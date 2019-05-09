@@ -1,0 +1,25 @@
+
+
+#myWorkTitle{
+    color: white;
+}
+#cardDescription{
+    font-size: 18px;
+}
+div .card{
+    z-index: 0;
+}
+
+.card .card-title{
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.card p a{
+    font-size: 20px;
+}
+
+.card .card-content{
+    color: white;
+    background-color: black;
+}
