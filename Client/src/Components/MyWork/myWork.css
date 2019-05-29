@@ -31,7 +31,7 @@ p{
 
 /* Carousel and slider-wrapper allow duv to takes up the whole screen instead of 400px */
 .carousel{
-    height: 50em;
+    height: auto;
 }
 .slider-wrapper{
     height: 50em !important;
