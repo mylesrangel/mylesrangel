@@ -2,6 +2,8 @@
 
 #myWorkTitle{
     color: white;
+    font-size: 18px;
+    margin: 0;
 }
 #cardDescription{
     font-size: 18px;
@@ -22,4 +24,12 @@ div .card{
 .card .card-content{
     color: white;
     background-color: black;
+}
+
+/* Carousel and slider-wrapper allow duv to takes up the whole screen instead of 400px */
+.carousel{
+    height: 50em;
+}
+.slider-wrapper{
+    height: 50em !important;
 }
