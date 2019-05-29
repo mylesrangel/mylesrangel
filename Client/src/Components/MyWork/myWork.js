@@ -59,7 +59,8 @@ class MyWork extends Component{
                             <p>CSS</p>
                             <p>JavaScript</p>
                             <p>React</p>
-                            <p>Materialize-CSS</p>
+                            <p><a href="https://materializecss.com/cards.html">Materialize-CSS</a>(Card Reveal)</p>
+                            <p><a href="https://www.npmjs.com/package/react-responsive-carousel"> React-responsive-carousel</a></p>
                             <p>Express</p>
                         </div>
                     </div>
