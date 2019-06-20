@@ -1,10 +1,19 @@
 import React, { Component } from "react";
+
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+
 import MediaQuery from 'react-responsive';
 
 import "./header.css";
 
+import Homepage from "../Homepage/homePage.js";
+//import About from "./Components/About/about.js";
+import MyWork from "../MyWork/myWork.js";
 
-class Homepage extends Component{
+//TODO: this was Homepage extends
+
+class Header extends Component{
 
 	state = {
         menuActive: false
@@ -36,27 +45,43 @@ class Homepage extends Component{
 	 //onClick have header height 100% (absolute?)
 	 //lower opacity
 
+
+	 //DELETE after about js is added TESTING ONLY
+	 About = () => {
+		return (
+		  <div>
+			<h2>About</h2>
+		  </div>
+		);
+	  }
+
 	render(){
 		return(
-			<div>
-				<div id= "headerContainer">
-					<MediaQuery query = "(max-width: 500px)">
-						<div id= 'hamburgerSection'>
-							<div id = 'hamburgerButtonContainer' onClick={this.toggleMenu}>
-								<div id="hamburgerBar1" className="bars"></div>
-								<div id="hamburgerBar2" className="bars"></div>
-								<div id="hamburgerBar3" className="bars"></div>
+			<Router >
+				<div>
+					<div id= "headerContainer">
+						<MediaQuery query = "(max-width: 500px)">
+							<div id= 'hamburgerSection'>
+								<div id = 'hamburgerButtonContainer' onClick={this.toggleMenu}>
+									<div id="hamburgerBar1" className="bars"></div>
+									<div id="hamburgerBar2" className="bars"></div>
+									<div id="hamburgerBar3" className="bars"></div>
+								</div>
+								
+									<div id="mobileNav">
+										<Link to="/homepage" className = 'nav-links-mobile' onClick={this.toggleMenu}> Homepage </Link>
+										<Link to="/myWork" className = 'nav-links-mobile' onClick={this.toggleMenu}> My Work </Link>
+									
+										<Route path="/homepage" component={Homepage} />
+										<Route path="/myWork" component={MyWork} />
+									</div>
 							</div>
-							<div id="mobileNav">
-								<p className = 'nav-links-mobile'> About </p>
-								<p className = 'nav-links-mobile'> My Work </p>
-							</div>
-						</div>
-					</MediaQuery>
+						</MediaQuery>
+					</div>
 				</div>
-			</div>
+			</Router>
 		);
 	}
 }
 
-export default Homepage;
+export default Header;
