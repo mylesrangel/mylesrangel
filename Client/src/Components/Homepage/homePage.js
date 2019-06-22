@@ -5,9 +5,6 @@ import Contact from "../Contact/contact.js";
 
 import "./homePage.css"
 
-
-
-
 class Homepage extends Component{	
 
 	constructor(props){
@@ -88,7 +85,6 @@ class Homepage extends Component{
 	render(){
 		return(
 			<div id="homepageContainer">
-
 				<p id="statement">  </p>
 				<button id='contactButton' onClick={this.toggleContactForm}> Contact </button>
 				{this.state.contactForm && <Contact contactForm={this.toggleContactForm}/>}
