@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import MediaQuery from 'react-responsive';
 
+import Link from "react-router-dom/Link";
+
 import "./header.css";
 
 
@@ -48,8 +50,9 @@ class Homepage extends Component{
 								<div id="hamburgerBar3" className="bars"></div>
 							</div>
 							<div id="mobileNav">
-								<p className = 'nav-links-mobile'> About </p>
-								<p className = 'nav-links-mobile'> My Work </p>
+								<p className = 'nav-links-mobile' onClick={this.toggleMenu}><Link to="/" > Home </Link></p>
+								<p className = 'nav-links-mobile' onClick={this.toggleMenu}><Link to="/about" > About </Link></p>
+								<p className = 'nav-links-mobile' onClick={this.toggleMenu}><Link to="/mywork">My Work</Link></p>
 							</div>
 						</div>
 					</MediaQuery>

@@ -7,16 +7,17 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 //Materialize import
 import 'materialize-css/dist/css/materialize.min.css';
 
+import Header from "../Header/header.js";
 import Myles from "../../Media/Myles.jpg";
 
-import "./myWork.css";
+import "./about.css";
 
-class MyWork extends Component{
+class About extends Component{
 
     render(){
-        return(
-            <div>           
-                <p id = "myWorkTitle">My Projects</p>
+        return( 
+            <div>
+                <p id = "aboutTitle">About Me</p>
                 <Carousel showThumbs = {false} showStatus={false}>
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
@@ -55,4 +56,4 @@ class MyWork extends Component{
     }  
 }
 
-export default MyWork;
+export default About;
