@@ -16,7 +16,6 @@ class MyWork extends Component{
     render(){
         return(
             <div>           
-                <p id = "myWorkTitle">My Projects</p>
                 <Carousel showThumbs = {false} showStatus={false}>
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">

@@ -5,14 +5,22 @@
     font-size: 18px;
     margin: 0;
 }
+#aboutMe{
+    background-color: black;
+    color: white;
+    /* Used as a Margin-top. Margin-top adds white color */
+    border-top: 7em solid black;
+}
+#aboutMe p{
+    text-align: center;
+    margin: 0;
+}
+
 #cardDescription{
     font-size: 18px;
 }
 div .card{
     z-index: 0;
-}
-p{
-    font-size: 20px;
 }
 
 .card .card-title{
