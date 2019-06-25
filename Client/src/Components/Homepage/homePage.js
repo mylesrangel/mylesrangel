@@ -5,9 +5,6 @@ import Contact from "../Contact/contact.js";
 
 import "./homePage.css"
 
-
-
-
 class Homepage extends Component{	
 
 	constructor(props){
@@ -39,21 +36,26 @@ class Homepage extends Component{
 	}
 
 	//Type out the text and show the button afterwards
-	typeWriter(){
+	typeWriter(){		
 		setTimeout(() =>{
-		  if (this.state.i < this.state.statement.length) {
-		    document.getElementById("statement").innerHTML += this.state.statement.charAt(this.state.i);
-		    this.setState({
-		    	i: this.state.i+1
-		    });
-		    this.typeWriter();
-		    
-		  }else{
-		  	//After done typing show the Contact button
-		 	document.getElementById("contactButton").style.display = 'inline';
-		 	document.getElementById("contactButton").style.backgroundColor = 'grey';
+		if (this.state.i < this.state.statement.length) {
+			try{
+				document.getElementById("statement").innerHTML += this.state.statement.charAt(this.state.i);
+				this.setState({
+					i: this.state.i+1
+				});
+			}catch(err){
+				//prevents crashing if user changes views during typewriter
+			}
+			this.typeWriter();
+			
+		}else{
+			//After done typing show the Contact button
+			document.getElementById("contactButton").style.display = 'inline';
+			document.getElementById("contactButton").style.backgroundColor = 'grey';
 		}
 		}, this.state.typewriterSpeed);
+		
 	}
 
 
@@ -74,7 +76,7 @@ class Homepage extends Component{
 
 
 		this.typeWriter();
-
+		
 		this.setState({
 			windowWidth: window.innerWidth,
 			windowHeight: window.innerHeight
@@ -88,7 +90,6 @@ class Homepage extends Component{
 	render(){
 		return(
 			<div id="homepageContainer">
-
 				<p id="statement">  </p>
 				<button id='contactButton' onClick={this.toggleContactForm}> Contact </button>
 				{this.state.contactForm && <Contact contactForm={this.toggleContactForm}/>}
