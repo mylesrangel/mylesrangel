@@ -9,11 +9,15 @@
 #cardDescription{
     font-size: 18px;
 }
+li.slide.selected{
+    padding-top: 2em;
+}
 
 div .card{
     z-index: 0;
     color: white;
     background-color: black;
+    height: 60vh;
     padding: 2em;
 }
 p{
@@ -22,7 +26,10 @@ p{
 .card .card-image{
     border-bottom: red solid .1em;
 }
-
+img{
+    padding: 1.5em;
+    height: 60vh;
+}
 .card .card-title{
     font-size: 24px;
     padding-left: 20px;

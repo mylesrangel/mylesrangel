@@ -46,7 +46,7 @@ class MyWork extends Component{
                     </div>
                     <div>
                         <div class="card-image waves-effect waves-block waves-light">
-                            {/* <img id="clockSpecialty"class="activator" src={ClockSpecialty} />  */}
+                            <img id="clockSpecialty"class="activator" src={ClockSpecialty} /> 
                         </div>
                         <div class="card-content">
                             <span class="card-title activator white-text text-light-">https://clockspecialty.now.sh/<i class="material-icons right"> arrow_upward </i></span>
