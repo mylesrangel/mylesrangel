@@ -1,6 +1,7 @@
 
 
-#myWorkTitle{
+#websiteUrl{
+    background-color: black;
     color: white;
     font-size: 18px;
     margin: 0;
@@ -8,11 +9,18 @@
 #cardDescription{
     font-size: 18px;
 }
+
 div .card{
     z-index: 0;
+    color: white;
+    background-color: black;
+    padding: 2em;
 }
 p{
     font-size: 20px;
+}
+.card .card-image{
+    border-bottom: red solid .1em;
 }
 
 .card .card-title{
