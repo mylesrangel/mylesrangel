@@ -1,13 +1,16 @@
 
-
 #websiteUrl{
     background-color: black;
     color: white;
-    font-size: 18px;
+    font-size: 24px;
     margin: 0;
 }
 #cardDescription{
     font-size: 18px;
+    color: white;
+}
+#clockSpecialty{
+    width: 30vh;
 }
 li.slide.selected{
     padding-top: 2em;
@@ -17,19 +20,21 @@ div .card{
     z-index: 0;
     color: white;
     background-color: black;
-    height: 60vh;
     padding: 2em;
+}
+
+.waves-block{
+    height: 51vh;
+    margin-bottom: 2em;
 }
 p{
     font-size: 20px;
 }
 .card .card-image{
     border-bottom: red solid .1em;
+    text-align: -webkit-center;
 }
-img{
-    padding: 1.5em;
-    height: 60vh;
-}
+
 .card .card-title{
     font-size: 24px;
     padding-left: 20px;
@@ -42,6 +47,11 @@ img{
 .card .card-content{
     color: white;
     background-color: black;
+    padding-top: 1em;
+}
+.card-content span{
+    font-size: 20px;
+    padding-left: 2em;
 }
 
 /* Carousel and slider-wrapper allow duv to takes up the whole screen instead of 400px */
@@ -49,5 +59,5 @@ img{
     height: auto;
 }
 .slider-wrapper{
-    height: 50em !important;
+    height: 90vh !important;
 }

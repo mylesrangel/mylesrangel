@@ -44,7 +44,7 @@ class MyWork extends Component{
                             <p>Express</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img id="clockSpecialty"class="activator" src={ClockSpecialty} /> 
                         </div>
