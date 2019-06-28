@@ -17,17 +17,14 @@ class About extends Component{
     render(){
         return( 
             <div>
-                <p id = "aboutTitle">About Me</p>
                 <Carousel showThumbs = {false} showStatus={false}>
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src={Myles} /> 
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator white-text text-light-">mylesrangel.com<i class="material-icons right"> arrow_upward </i></span>
-                            <p id="cardDescription"> My Personal Website</p>
-                            <p><a href="https://github.com/mylesrangel/mylesrangel">Github</a></p>
-                            <p><a href="https://trello.com/b/9IhFQaFZ/personal-webpage">Trello</a></p>
+                            <div id="aboutMe">
+                                <p>Hello, I'm Myles Rangel. I am full-stack web developer. Please take a look around. </p>
+                                <p>When I am not developing, you can find me outdoors. I enjoy riding my motorcycle, hiking trails and even going off the grid in the Sierra National Forest.</p>
+                                <p>Swipe right to learn a little more about my outdoors life.</p>
+                            </div>
                         </div>
             
                         <div class="card-reveal">
