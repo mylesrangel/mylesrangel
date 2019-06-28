@@ -26,7 +26,7 @@ class MyWork extends Component{
                             <p>I use github for version control and trello to stay organized!</p>
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator white-text text-light-">mylesrangel.com<i class="material-icons right"> arrow_upward </i></span>
+                            <span class="card-title activator white-text text-light-">https://www.mylesrangel.com<i class="material-icons right"> arrow_upward </i></span>
                             <p id="cardDescription"> My Personal Website</p>
                             <p><a href="https://github.com/mylesrangel/mylesrangel">Github</a></p>
                             <p><a href="https://trello.com/b/9IhFQaFZ/personal-webpage">Trello</a></p>
