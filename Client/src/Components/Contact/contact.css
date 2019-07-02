@@ -1,12 +1,15 @@
 
 
+
 #contactForm{
-	position: absolute;
+
 	display: block;
 	background-color: #36454F;
 	margin: 0;
 	padding: 25px;
-	max-width: 100%;
+	min-width: 50vw;
+	min-height: 100vh;
+	margin-top: 1.5em;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
@@ -53,9 +56,21 @@
 	font-size: 20px;
 
 }
+#submitButton{
+	width: inherit;
+	max-width: 18vw;
+	height: auto;
+	color: black !important;
+	border-radius: 15px;
+}
+#submitbutton:hover{
+	width: 20vw;
+	background-color: darkslategrey;
+}
 
 #contactForm input{
 	color: white;
+
 	
 }
 

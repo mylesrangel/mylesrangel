@@ -112,7 +112,7 @@ class Contact extends Component{
 							<br />
 							<textarea required name="message" value={this.state.emailInfo.message} onChange={this.handleChange} > </textarea>
 						</p>
-							<input type="submit" value="Send" />  
+							<input id='submitButton' type="submit" value="Send" />  
 					</form>
 				</div>
 			)
