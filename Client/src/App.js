@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Header from "./Components/Header/header.js";
 import Homepage from "./Components/Homepage/homePage.js";
+import Page404 from "./Components/Page404/page404.js";
 import Contact from "./Components/Contact/contact.js";
 import About from "./Components/About/about.js";
 import MyWork from "./Components/MyWork/myWork.js";
@@ -21,11 +22,13 @@ class App extends Component {
         <Router>
           <div className="App">
             <Header />
-
-            <Route exact path="/" component={Contact} />
-            <Route path="/about" component={About} />
-            <Route path="/mywork" component={MyWork} />
-           </div>
+            <Switch>
+              <Route exact path="/" component={About} />
+              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/mywork" component={MyWork} />
+              <Route path='*' exact={true} component={Page404} />
+            </Switch>
+           </div> 
         </Router>
      
     );

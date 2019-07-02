@@ -10,7 +10,6 @@
     color: white;
     /* Used as a Margin-top. Margin-top adds white color */
     border-top: 1em solid black;
-    text-align: center;
 }
 #aboutMe p{
     text-align: center;
