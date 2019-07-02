@@ -72,8 +72,8 @@
 		transform: rotate(45deg) translate(-3px, -6px);
 	}
 
-	#hamburgerButton:hover{
-		
+	.bars:hover{
+		background-color: darkgreen;
 	}
 
 	/*Mobile is under 500px width*/
@@ -96,11 +96,5 @@
 		text-align: center;
 
 	}
-	a{
-		
-	}
-	a:hover{
-		background-color: blue !important;
 
-	}
 }

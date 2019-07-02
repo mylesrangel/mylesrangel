@@ -9,7 +9,7 @@
     background-color: black;
     color: white;
     /* Used as a Margin-top. Margin-top adds white color */
-    border-top: 7em solid black;
+    border-top: 1em solid black;
 }
 #aboutMe p{
     text-align: center;
@@ -27,7 +27,15 @@ div .card{
     font-size: 24px;
     padding-left: 20px;
 }
-
+div .workExperience {
+    color: white;
+}
+div .workDescription{
+    font-size: 16px;
+    padding: .3em;
+    margin-left: .2em;
+    margin-right: .2em;
+}
 .card p a{
     font-size: 20px;
 }

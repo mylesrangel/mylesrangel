@@ -26,31 +26,13 @@ app.post('/sendemail', (req, res) =>{
         port: '465',
         auth:{
             user: 'websitecontact@mylesrangel.com',
-            pass: 'Ce2e79a9b'
+            pass: 'CE32WWTR4'
         },
         tls:{
             rejectUnauthorized: false
         }
     });
-    const mailOptions = {
-        from: 'websitecontact@mylesrangel.com',
-        to: 'myles@mylesrangel.com',
-        subject: `${req.body.subject}`,
-        html: "<div>" 
-                   +"<p>First Name: " + `${req.body.firstName}` + "</p>"
-                   +"<p>Last Name: " + `${req.body.lastName}` + "</p>"
-                   +"<p>Email: " + `${req.body.email}` + "</p>"
-                   +"<p>Message: " + `${req.body.message}`+ "</p>" +
-                "</div>"
-    };
-
-    transporter.sendMail(mailOptions, function (err, res){
-        if(err){
-            console.error('there was an error: ', err);
-        }else{
-            console.log('here is the res: ', res);
-        }
-    });
+     
     // console.log(req.body.firstName);
     // console.log(req.body.lastName);
     // console.log(req.body.email);
