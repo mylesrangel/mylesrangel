@@ -96,5 +96,8 @@
 		text-align: center;
 
 	}
+	.nav-links-mobile:hover{
+		font-size: 30.5px;
+	}
 
 }

@@ -86,10 +86,10 @@ class Contact extends Component{
 		return(
 				<div>
 					<form onSubmit={this.handleSubmit} id="contactForm" style={this.state.formStyle} >
-						<div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
+						{/* <div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
 							<div className="bars togglebar1"></div>
 							<div className="bars togglebar3"></div>
-						</div>
+						</div> */}
 						<p className="formElements">
 							<label> First Name: </label>
 							<input required name="firstName" value={this.state.emailInfo.firstName} onChange={this.handleChange} id="firstName" placeholder="Your first name" />

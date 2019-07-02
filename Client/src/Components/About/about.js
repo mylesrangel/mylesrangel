@@ -20,7 +20,7 @@ class About extends Component{
         return( 
             <div>
                 <Carousel showThumbs = {false} showStatus={false}>
-                    <div class="card">
+                    <div class="workExperience">
                         <div class="card-image waves-effect waves-block waves-light">
                             <div id="aboutMe">
                                 <p>Hello, I'm Myles. I am full-stack web developer. </p>
