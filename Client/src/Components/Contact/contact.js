@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 
+import Emailsent from "../Emailsent/emailSent.js";
+
 import "./contact.css";
 
 
@@ -12,6 +14,8 @@ class Contact extends Component{
 	}
 
 	state = {
+
+		emailSent: false,
 
 		formStyle: {
 			width: window.innerWidth,
@@ -39,7 +43,7 @@ class Contact extends Component{
 		if(window.confirm('Click ok to send this email')){
 
 			//close contact form after send
-			this.props.contactForm();
+			//this.props.contactForm();
 
 			//grabs the form data for this component
 			const body = new FormData(this.form);
@@ -47,11 +51,10 @@ class Contact extends Component{
 			//grab the data from form and put it in variables
 			this.setState({
 				emailInfo:{
-
 					firstname: body.get('firstName'),
 					lastName: body.get('lastName'),
 					email: body.get('email'),
-					subject: body.get('subject'),
+ 					subject: body.get('subject'),
 					message: body.get('message')
 				}
 			});
@@ -60,10 +63,21 @@ class Contact extends Component{
 				method: 'POST',
 				body: JSON.stringify(this.state.emailInfo),
 				headers: {
-					'Content-Type': 'application/json'
+					'content-type': 'application/json'
+				}			
+			}).then(res => {
+				console.log(res.status);
+				if(res.status == 200){
+					console.log("Email has been sent!");
+					this.setState({emailSent: true});
+				}else{
+					console.log("An error occured!!");
 				}
-			});
+			}).catch(err => console.error(err));
+
 		}
+
+
 	}
 
 	//Handles change in the form (typing in input)
@@ -75,17 +89,12 @@ class Contact extends Component{
 					[event.target.name]: event.target.value
 				},
 			});
-		console.log("First Name after: " + this.state.firstName);
-	}
-
-	componentDidMount(){
-
 	}
 
 	render(){
 		return(
 				<div>
-					<form onSubmit={this.handleSubmit} id="contactForm" style={this.state.formStyle} >
+					{!this.state.emailSent && <form onSubmit={this.handleSubmit} id="contactForm" style={this.state.formStyle} >
 						<div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
 							<div className="bars togglebar1"></div>
 							<div className="bars togglebar3"></div>
@@ -113,7 +122,11 @@ class Contact extends Component{
 							<textarea required name="message" value={this.state.emailInfo.message} onChange={this.handleChange} > </textarea>
 						</p>
 							<input type="submit" value="Send" />  
-					</form>
+					</form>}
+					<div>
+						{this.state.emailSent && <Emailsent />}
+					</div>
+					
 				</div>
 			)
 	}
