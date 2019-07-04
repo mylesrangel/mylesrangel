@@ -42,6 +42,10 @@ app.post('/sendemail', (req, res) =>{
             rejectUnauthorized: false
         }
     });
+     
+
+    res.end();
+    
     const mailOptions = {
         from: 'websitecontact@mylesrangel.com',
         to: 'myles@mylesrangel.com',

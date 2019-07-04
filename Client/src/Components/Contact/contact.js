@@ -94,11 +94,15 @@ class Contact extends Component{
 	render(){
 		return(
 				<div>
+					<form onSubmit={this.handleSubmit} id="contactForm" style={this.state.formStyle} >
+						{/* <div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
+
 					{!this.state.emailSent && <form onSubmit={this.handleSubmit} id="contactForm" style={this.state.formStyle} >
 						<div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
+
 							<div className="bars togglebar1"></div>
 							<div className="bars togglebar3"></div>
-						</div>
+						</div> */}
 						<p className="formElements">
 							<label> First Name: </label>
 							<input required name="firstName" value={this.state.emailInfo.firstName} onChange={this.handleChange} id="firstName" placeholder="Your first name" />
@@ -121,12 +125,17 @@ class Contact extends Component{
 							<br />
 							<textarea required name="message" value={this.state.emailInfo.message} onChange={this.handleChange} > </textarea>
 						</p>
+
+							<input id='submitButton' type="submit" value="Send" />  
+					</form>
+
 							<input type="submit" value="Send" />  
 					</form>}
 					<div>
 						{this.state.emailSent && <Emailsent />}
 					</div>
 					
+
 				</div>
 			)
 	}

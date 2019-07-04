@@ -50,8 +50,8 @@ class Homepage extends Component{
 								<div id="hamburgerBar3" className="bars"></div>
 							</div>
 							<div id="mobileNav">
-								<p className = 'nav-links-mobile' onClick={this.toggleMenu}><Link to="/" > Home </Link></p>
-								<p className = 'nav-links-mobile' onClick={this.toggleMenu}><Link to="/about" > About </Link></p>
+								<p className = 'nav-links-mobile' onClick={this.toggleMenu}><Link to="/" > About </Link></p>
+								<p className = 'nav-links-mobile' onClick={this.toggleMenu}><Link to="/contact" > Contact </Link></p>
 								<p className = 'nav-links-mobile' onClick={this.toggleMenu}><Link to="/mywork">My Work</Link></p>
 							</div>
 						</div>
