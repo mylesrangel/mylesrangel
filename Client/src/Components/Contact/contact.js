@@ -94,7 +94,7 @@ class Contact extends Component{
 	render(){
 		return(
 				<div>
-					<form onSubmit={this.handleSubmit} id="contactForm" style={this.state.formStyle} >
+					<form onSubmit={this.handleSubmit} id="contactForm"  >
 						{/* <div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
 
 					{!this.state.emailSent && <form onSubmit={this.handleSubmit} id="contactForm" style={this.state.formStyle} >
@@ -128,9 +128,9 @@ class Contact extends Component{
 
 							<input id='submitButton' type="submit" value="Send" />  
 					</form>
-
+{/* 
 							<input type="submit" value="Send" />  
-					</form>}
+					</form>} */}
 					<div>
 						{this.state.emailSent && <Emailsent />}
 					</div>
