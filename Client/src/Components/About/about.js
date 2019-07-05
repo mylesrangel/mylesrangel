@@ -9,8 +9,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 //Materialize import
 import 'materialize-css/dist/css/materialize.min.css';
 
-import Header from "../Header/header.js";
-import Myles from "../../Media/Myles.jpg";
 
 import "./about.css";
 

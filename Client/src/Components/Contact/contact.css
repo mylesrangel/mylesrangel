@@ -1,23 +1,11 @@
 
-
-
 #contactForm{
 
-	display: block;
-	background-color: #36454F;
-	margin: 0;
-	padding: 25px;
-	min-width: 50vw;
-	min-height: 100vh;
-	margin-top: 1.5em;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	bottom: 0;
-	/* z-index: 100; */
-	box-sizing: border-box;
-
-
+	/* background-color: #36454F; */
+	padding: 3px;
+	margin-top: 18px;
+	color: white;
+	border-color: darkgreen !important;
 
 }
 
@@ -43,10 +31,6 @@
 	transform: rotate(45deg) translate(-3px, -6px);
 }
 
-#contactForm form{
-
-}
-
 #contactForm .formElements{
 	margin: 1em;
 }
@@ -59,9 +43,9 @@
 #submitButton{
 	width: inherit;
 	max-width: 18vw;
-	height: auto;
 	color: black !important;
 	border-radius: 15px;
+	margin-bottom: 10px
 }
 #submitbutton:hover{
 	width: 20vw;
@@ -70,12 +54,21 @@
 
 #contactForm input{
 	color: white;
-
 	
+}
+/* input form bottom border color */
+#contactForm input:focus{
+	outline: none !important;
+	border-bottom: 1px solid darkgreen;
+}
+#contactForm textarea:focus{
+	outline: none !important;
+	border: 1px solid darkgreen;
 }
 
 #contactForm textarea{
 	color: white;
 	width: 100%;
 	height: 200px;
+	font-size: 18px;
 }
