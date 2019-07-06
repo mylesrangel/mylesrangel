@@ -1,67 +1,77 @@
+@media only screen and (min-width: 501px){
+	#contactContainer{
+		width: 100%;
+		height: 100%
+	}
+	#contactForm{
 
-
-#contactContainer{
-	width: 100% !important;
-	height: auto !important;
-}
-
-
-#contactForm{
-
-	/* background-color: #36454F; */
-	padding: 3px;
-	margin-top: 18px;
-	color: white;
-	border-color: darkgreen !important;
-}
-
-.formElements input{
-	height: 3vh !important;
-	font-size: .8em !important;
-}
-
-#contactForm .formElements{
-	margin: 1em;
-	height: 9vh;
-}
-
-#contactForm label{
-	font-size:2.3vh;
+	}
 
 }
-#submitButton{
-	width: 18vw;
-	height: 3vh;
-	color: black !important;
-	border-radius: 15px;
-	margin-top: 18vh;
-}
-#submitbutton:hover{
-	width: 20vw;
-	background-color: darkslategrey;
-}
-
-/* placeholder font-size */
-#contactForm input{
-	color: white;
-	font-size: 1.8vh !important;
-}
+@media only screen and (max-width: 500px){
+	#contactContainerMobile{
+		width: 100% !important;
+		height: auto !important;
+	}
 
 
-/* input form bottom border color */
-#contactForm input:focus{
-	outline: none !important;
-	border-bottom: 1px solid darkgreen;
-}
-#contactForm textarea:focus{
-	outline: none !important;
-	border: 1px solid darkgreen;
-}
+	#contactFormMobile{
 
-#contactForm textarea{
-	color: white;
-	width: 100%;
-	height: 22vh;
-	font-size: 2.7vh;
-	resize: none;
+		/* background-color: #36454F; */
+		padding: 3px;
+		margin-top: 18px;
+		color: white;
+		border-color: darkgreen !important;
+	}
+
+	.formElements input{
+		height: 3vh !important;
+		font-size: .8em !important;
+	}
+
+	#contactFormMobile .formElements{
+		margin: 1em;
+		height: 9vh;
+	}
+
+	#contactFormMobile label{
+		font-size:2.3vh;
+
+	}
+	#submitButton{
+		width: 18vw;
+		height: 3vh;
+		color: black !important;
+		border-radius: 15px;
+		margin-top: 18vh;
+	}
+	#submitbutton:hover{
+		width: 20vw;
+		background-color: darkslategrey;
+	}
+
+	/* placeholder font-size */
+	#contactFormMobile input{
+		color: white;
+		font-size: 1.8vh !important;
+	}
+
+
+	/* input form bottom border color */
+	#contactFormMobile input:focus{
+		outline: none !important;
+		border-bottom: 1px solid darkgreen;
+	}
+	#contactFormMobile textarea:focus{
+		outline: none !important;
+		border: 1px solid darkgreen;
+	}
+
+	#contactFormMobile textarea{
+		color: white;
+		width: 100%;
+		height: 22vh;
+		font-size: 2.7vh;
+		resize: none;
+	}
 }

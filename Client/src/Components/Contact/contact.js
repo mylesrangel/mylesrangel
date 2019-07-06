@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import MediaQuery from 'react-responsive';
 
 import Emailsent from "../Emailsent/emailSent.js";
 
@@ -93,47 +94,86 @@ class Contact extends Component{
 
 	render(){
 		return(
-				<div id = "contactContainer">
-					<form onSubmit={this.handleSubmit} id="contactForm"  >
-						{/* <div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
+				<div>
+					<MediaQuery query = "(min-width: 501px)">
+						<div id = "contactContainer">
+							<form onSubmit={this.handleSubmit} id="contactForm"  >
+								<p className="formElements">
+									<label> First Name: </label>
+									<input required name="firstName" value={this.state.emailInfo.firstName} onChange={this.handleChange} id="firstName" placeholder="Your first name" />
+								</p>
+								<p className="formElements">
+									<label> Last Name: </label>
+									<input required name="lastName" value={this.state.emailInfo.lastName} onChange={this.handleChange} id="lastName" placeholder="Your last name" />
+								</p>
+								<p className="formElements">
+									<label> Email: </label>
+									<input required name="email" value={this.state.emailInfo.email} onChange={this.handleChange} id="email" placeholder="yourName@gmail.com"/>
+								</p>
+								<p className="formElements">
+									<label> Email Subject: </label>
+									<input name="subject" value={this.state.emailInfo.subject} onChange={this.handleChange} id="subject" placeholder="Subject" />
+								</p>
 
-					{!this.state.emailSent && <form onSubmit={this.handleSubmit} id="contactForm" style={this.state.formStyle} >
-						<div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
+								<p className="formElements">
+									<label> Message </label>
+									<br />
+									<textarea required name="message" value={this.state.emailInfo.message} onChange={this.handleChange} > </textarea>
+								</p>
 
-							<div className="bars togglebar1"></div>
-							<div className="bars togglebar3"></div>
-						</div> */}
-						<p className="formElements">
-							<label> First Name: </label>
-							<input required name="firstName" value={this.state.emailInfo.firstName} onChange={this.handleChange} id="firstName" placeholder="Your first name" />
-						</p>
-						<p className="formElements">
-							<label> Last Name: </label>
-							<input required name="lastName" value={this.state.emailInfo.lastName} onChange={this.handleChange} id="lastName" placeholder="Your last name" />
-						</p>
-						<p className="formElements">
-							<label> Email: </label>
-							<input required name="email" value={this.state.emailInfo.email} onChange={this.handleChange} id="email" placeholder="yourName@gmail.com"/>
-						</p>
-						<p className="formElements">
-							<label> Email Subject: </label>
-							<input name="subject" value={this.state.emailInfo.subject} onChange={this.handleChange} id="subject" placeholder="Subject" />
-						</p>
+									<input id='submitButton' type="submit" value="Send" />  
+							</form>
 
-						<p className="formElements">
-							<label> Message </label>
-							<br />
-							<textarea required name="message" value={this.state.emailInfo.message} onChange={this.handleChange} > </textarea>
-						</p>
+							<div id= "emailSentContainer">
+								{this.state.emailSent && <Emailsent />}
+							</div>
+							
+						</div>
+					</MediaQuery>
+					<MediaQuery query = "(max-width: 500px)">
+						<div id = "contactContainerMobile">
+							<form onSubmit={this.handleSubmit} id="contactFormMobile"  >
+								{/* <div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
 
-							<input id='submitButton' type="submit" value="Send" />  
-					</form>
+							{!this.state.emailSent && <form onSubmit={this.handleSubmit} id="contactForm" style={this.state.formStyle} >
+								<div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
 
-					<div id= "emailSentContainer">
-						{this.state.emailSent && <Emailsent />}
-					</div>
-					
+									<div className="bars togglebar1"></div>
+									<div className="bars togglebar3"></div>
+								</div> */}
+								<p className="formElements">
+									<label> First Name: </label>
+									<input required name="firstName" value={this.state.emailInfo.firstName} onChange={this.handleChange} id="firstName" placeholder="Your first name" />
+								</p>
+								<p className="formElements">
+									<label> Last Name: </label>
+									<input required name="lastName" value={this.state.emailInfo.lastName} onChange={this.handleChange} id="lastName" placeholder="Your last name" />
+								</p>
+								<p className="formElements">
+									<label> Email: </label>
+									<input required name="email" value={this.state.emailInfo.email} onChange={this.handleChange} id="email" placeholder="yourName@gmail.com"/>
+								</p>
+								<p className="formElements">
+									<label> Email Subject: </label>
+									<input name="subject" value={this.state.emailInfo.subject} onChange={this.handleChange} id="subject" placeholder="Subject" />
+								</p>
 
+								<p className="formElements">
+									<label> Message </label>
+									<br />
+									<textarea required name="message" value={this.state.emailInfo.message} onChange={this.handleChange} > </textarea>
+								</p>
+
+									<input id='submitButton' type="submit" value="Send" />  
+							</form>
+
+							<div id= "emailSentContainer">
+								{this.state.emailSent && <Emailsent />}
+							</div>
+							
+
+						</div>
+					</MediaQuery>
 				</div>
 			)
 	}

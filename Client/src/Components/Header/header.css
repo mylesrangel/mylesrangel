@@ -1,18 +1,19 @@
-
-#headerContainer{
-	display: flex;
-	width: 100%;
-	height: auto;
-	color: white;
-}
-#headerContainer p{
-	width: 33vw;
-}
-#headerContainer p:hover{
-	font-size: 4vw;
-}
-.nav-links{
-	width: 33vw;
+@media only screen and (min-width: 501px){
+	#headerContainer{
+		display: flex;
+		width: 100%;
+		height: auto;
+		color: white;
+	}
+	#headerContainer p{
+		width: 33vw;
+	}
+	#headerContainer p:hover{
+		font-size: 3.5vw;
+	}
+	.nav-links{
+		width: 33vw;
+	}
 }
 
 
