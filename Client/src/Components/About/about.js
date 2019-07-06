@@ -17,7 +17,7 @@ class About extends Component{
     render(){
         return( 
             <div>
-                <MediaQuery query = "(min-width: 500px)">
+                <MediaQuery query = "(min-width: 501px)">
                     <div class= "workExperienceMobile">
                         <div id="aboutMe">
                             <p>Hello, I'm Myles. I am full-stack web developer. </p>

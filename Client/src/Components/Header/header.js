@@ -41,7 +41,7 @@ class Homepage extends Component{
 	render(){
 		return(
 			<div>
-				<MediaQuery query = "(min-width: 500px)">
+				<MediaQuery query = "(min-width: 501px)">
 					<div id= "headerContainer">
 						<p className = "nav-links"><Link to="/" > About </Link></p>
 						<p className = "nav-links"><Link to="/contact" > Contact </Link></p>
