@@ -41,8 +41,15 @@ class Homepage extends Component{
 	render(){
 		return(
 			<div>
-				<div id= "headerContainer">
-					<MediaQuery query = "(max-width: 500px)">
+				<MediaQuery query = "(min-width: 500px)">
+					<div id= "headerContainer">
+						<p className = "nav-links"><Link to="/" > About </Link></p>
+						<p className = "nav-links"><Link to="/contact" > Contact </Link></p>
+						<p className = "nav-links"><Link to="/mywork">My Work</Link></p>
+					</div>
+				</MediaQuery>
+				<MediaQuery query = "(max-width: 500px)">
+					<div id= "headerContainerMobile">
 						<div id= 'hamburgerSection'>
 							<div id = 'hamburgerButtonContainer' onClick={this.toggleMenu}>
 								<div id="hamburgerBar1" className="bars"></div>
@@ -55,8 +62,8 @@ class Homepage extends Component{
 								<p className = 'nav-links-mobile' onClick={this.toggleMenu}><Link to="/mywork">My Work</Link></p>
 							</div>
 						</div>
-					</MediaQuery>
-				</div>
+					</div>
+				</MediaQuery>
 			</div>
 		);
 	}

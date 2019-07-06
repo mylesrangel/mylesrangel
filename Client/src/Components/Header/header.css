@@ -1,6 +1,23 @@
 
+#headerContainer{
+	display: flex;
+	width: 100%;
+	height: auto;
+	color: white;
+}
+#headerContainer p{
+	width: 33vw;
+}
+#headerContainer p:hover{
+	font-size: 25vw;
+}
+.nav-links{
+	width: 33vw;
+}
+
+
 @media only screen and (max-width: 500px){
-	#headerContainer{
+	#headerContainerMobile{
 		position: relative;
 		margin: 0;
 		top: 0;
