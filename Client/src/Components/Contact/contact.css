@@ -1,4 +1,11 @@
 
+
+#contactContainer{
+	width: 100% !important;
+	height: auto !important;
+}
+
+
 #contactForm{
 
 	/* background-color: #36454F; */
@@ -6,56 +13,41 @@
 	margin-top: 18px;
 	color: white;
 	border-color: darkgreen !important;
-
 }
 
-.bars {
-    width: 25px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
-
-}
-
-#hamburgerButtonContact{
-	/* size of "X" in contact form */
-	width: 7%
-}
-
-/*Transforming bars*/
-.togglebar1{
-	transform: rotate(-45deg) translate(-2px, 3px);
-}
-.togglebar3{
-	transform: rotate(45deg) translate(-3px, -6px);
+.formElements input{
+	height: 3vh !important;
+	font-size: .8em !important;
 }
 
 #contactForm .formElements{
 	margin: 1em;
+	height: 9vh;
 }
 
 #contactForm label{
-	display: block;
-	font-size: 20px;
+	font-size:2.3vh;
 
 }
 #submitButton{
-	width: inherit;
-	max-width: 18vw;
+	width: 18vw;
+	height: 3vh;
 	color: black !important;
 	border-radius: 15px;
-	margin-bottom: 10px
+	margin-top: 18vh;
 }
 #submitbutton:hover{
 	width: 20vw;
 	background-color: darkslategrey;
 }
 
+/* placeholder font-size */
 #contactForm input{
 	color: white;
-	
+	font-size: 1.8vh !important;
 }
+
+
 /* input form bottom border color */
 #contactForm input:focus{
 	outline: none !important;
@@ -69,6 +61,7 @@
 #contactForm textarea{
 	color: white;
 	width: 100%;
-	height: 200px;
-	font-size: 18px;
+	height: 22vh;
+	font-size: 2.7vh;
+	resize: none;
 }

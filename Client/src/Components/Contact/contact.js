@@ -93,7 +93,7 @@ class Contact extends Component{
 
 	render(){
 		return(
-				<div>
+				<div id = "contactContainer">
 					<form onSubmit={this.handleSubmit} id="contactForm"  >
 						{/* <div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
 
@@ -128,10 +128,8 @@ class Contact extends Component{
 
 							<input id='submitButton' type="submit" value="Send" />  
 					</form>
-{/* 
-							<input type="submit" value="Send" />  
-					</form>} */}
-					<div>
+
+					<div id= "emailSentContainer">
 						{this.state.emailSent && <Emailsent />}
 					</div>
 					
