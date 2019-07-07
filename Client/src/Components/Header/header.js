@@ -34,19 +34,18 @@ class Homepage extends Component{
 		
 	 }
 
-	 //Create Overlay for nav-link mobile values.
-	 //onClick have header height 100% (absolute?)
-	 //lower opacity
-
 	render(){
 		return(
 			<div>
 				<MediaQuery query = "(min-width: 501px)">
 					<div id= "headerContainer">
+						
 						<p className = "nav-links"><Link to="/" > About </Link></p>
 						<p className = "nav-links"><Link to="/contact" > Contact </Link></p>
-						<p className = "nav-links"><Link to="/mywork">My Work</Link></p>
+						<p className = "nav-links"><Link to="/myprojects">Projects</Link></p>
+						<hr className="seperationLine"></hr>
 					</div>
+					<hr className="seperationLine"></hr>
 				</MediaQuery>
 				<MediaQuery query = "(max-width: 500px)">
 					<div id= "headerContainerMobile">
@@ -59,7 +58,7 @@ class Homepage extends Component{
 							<div id="mobileNav">
 								<p className = 'nav-links-mobile' onClick={this.toggleMenu}><Link to="/" > About </Link></p>
 								<p className = 'nav-links-mobile' onClick={this.toggleMenu}><Link to="/contact" > Contact </Link></p>
-								<p className = 'nav-links-mobile' onClick={this.toggleMenu}><Link to="/mywork">My Work</Link></p>
+								<p className = 'nav-links-mobile' onClick={this.toggleMenu}><Link to="/myprojects">Projects</Link></p>
 							</div>
 						</div>
 					</div>

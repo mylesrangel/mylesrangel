@@ -10,7 +10,7 @@ import Emailsent from "./Components/Emailsent/emailSent.js";
 
 import Contact from "./Components/Contact/contact.js";
 import About from "./Components/About/about.js";
-import MyWork from "./Components/MyWork/myWork.js";
+import MyProjects from "./Components/MyProjects/myProjects.js";
 import './App.css';
 
 class App extends Component {
@@ -28,7 +28,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={About} />
               <Route exact path="/contact" component={Contact} />
-              <Route exact path="/mywork" component={MyWork} />
+              <Route exact path="/myprojects" component={MyProjects} />
               <Route path='*' exact={true} component={Page404} />
             </Switch>
            </div> 
