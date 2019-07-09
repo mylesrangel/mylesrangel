@@ -19,8 +19,7 @@ class Contact extends Component{
 		emailSent: false,
 
 		formStyle: {
-			width: window.innerWidth,
-			height: window.innerHeight
+			
 		},
 		
 		API_URL: "http://localhost:4000/sendemail",
@@ -39,6 +38,14 @@ class Contact extends Component{
 	//old submit button event handler
 	handleSubmit = (event) => {
 		event.preventDefault();
+
+		//hide Form
+		this.setState({
+			formStyle:{
+				display: 'none',
+			}
+		})
+		
 
 		//confirm send before sending email
 		if(window.confirm('Click ok to send this email')){
@@ -97,7 +104,8 @@ class Contact extends Component{
 				<div>
 					<MediaQuery query = "(min-width: 501px)">
 						<div id = "contactContainer">
-							<form onSubmit={this.handleSubmit} id="contactForm"  >
+
+							<form onSubmit={this.handleSubmit} id="contactForm" style = {this.state.formStyle }>
 								<p className="formElements">
 									<label> First Name: </label>
 									<input required name="firstName" value={this.state.emailInfo.firstName} onChange={this.handleChange} id="firstName" placeholder="Your first name" />
@@ -132,7 +140,7 @@ class Contact extends Component{
 					</MediaQuery>
 					<MediaQuery query = "(max-width: 500px)">
 						<div id = "contactContainerMobile">
-							<form onSubmit={this.handleSubmit} id="contactFormMobile"  >
+							<form onSubmit={this.handleSubmit} id="contactFormMobile" style = {this.state.formStyle }>
 								{/* <div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
 
 							{!this.state.emailSent && <form onSubmit={this.handleSubmit} id="contactForm" style={this.state.formStyle} >

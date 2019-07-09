@@ -11,9 +11,7 @@
 	#headerContainer p{
 		width: 33vw;
 	}
-	#headerContainer p:hover{
-		font-size: 1.2em;
-	}
+
 	.nav-links{
 		width: 33vw;
 	}

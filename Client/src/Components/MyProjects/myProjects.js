@@ -12,7 +12,8 @@ import 'materialize-css/dist/css/materialize.min.css';
 
 import Myles from "../../Media/Myles.jpg";
 import Mylesrangelcom500 from "../../Media/mylesrangel500.JPG";
-import ClockSpecialty from "../../Media/clockspecialty500.jpg";
+import ClockSpecialty from "../../Media/clockspecialtyHomepage.jpg";
+import ClockSpecialtyMobile from "../../Media/clockspecialty500.jpg";
 
 import "./myProjects.css";
 import Github from "../../Media/GitHub-Mark-Light-32px.png";
@@ -40,9 +41,8 @@ class MyWork extends Component{
                                     <a id="trelloImage" href="https://trello.com/b/9IhFQaFZ/personal-webpage"><img src={Trello} /></a>
                                 </span>
                             </div>
-                
                             <div class="card-reveal">
-                                <span class="card-title black-text text-light-4">mylesrangel.com<i class="material-icons right"> arrow_downward </i></span>
+                                <span id="card-reveal-title"class="card-title black-text text-light-4">mylesrangel.com<i class="material-icons right"> arrow_downward </i></span>
                                 <p>My personal website (where you are now)</p>
                                 <p>This website is using:</p>
                                 <p>HTML</p>
@@ -56,6 +56,35 @@ class MyWork extends Component{
                         </div>
                     </div>
                     <hr className="seperationLine"></hr>
+                    <div id = "myProjectContainer">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img id="clockSpecialty"class="activator" src={ClockSpecialty} />
+                            </div>
+                            <div class="card-content card-title activator white-text text-light">
+                                <span>
+                                    <a class="customButton" href="https://clockspecialty.now.sh">Live Demo</a>
+                                    <i class="material-icons right"> arrow_upward </i>
+                                </span>
+                                <span id = "clickableLinks">
+                                <p><a id="githubImage" href="https://github.com/mylesrangel/ClockSpecialty"><img src={Github} /></a></p>
+                                </span>
+                            </div>
+                
+                            <div class="card-reveal">
+                                <span class="card-title black-text text-light-4"><a href="https://clockspecialty.now.sh">https://clockspecialty.now.sh/</a><i class="material-icons right"> arrow_downward </i></span>
+                                <p>This website is using:</p>
+                                <p>This is a 90's themed clock shop</p>
+                                <p>NOTE: 'Find your perfect clock today!' does work correctly. The backend is hosted on Now as well, it is just a little slow. However there is a cache(an object array).</p>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>JavaScript</p>
+                                <p>Bootstrap</p>
+                                <p>NodeJS</p>
+                                <p>Express</p>
+                            </div>
+                        </div>
+                    </div>
                 </MediaQuery>
                 <MediaQuery query = "(max-width: 500px)">         
                     <Carousel showThumbs = {false} showStatus={false}>
@@ -87,13 +116,12 @@ class MyWork extends Component{
                         </div>
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img id="clockSpecialty"class="activator" src={ClockSpecialty} /> 
+                                <img id="clockSpecialty"class="activator" src={ClockSpecialtyMobile} /> 
                             </div>
                             <div class="card-content card-title activator white-text text-light-4">
                                 <a class="customButton" href="https://clockspecialty.now.sh">Live Demo</a><i class="material-icons right"> arrow_upward </i>
                                 <p><a href="https://github.com/mylesrangel/ClockSpecialty"><img src={Github} /></a></p>
                             </div>
-                
                             <div class="card-reveal">
                                 <span class="card-title black-text text-light-4"><a href="https://clockspecialty.now.sh">https://clockspecialty.now.sh/</a><i class="material-icons right"> arrow_downward </i></span>
                                 <p>This website is using:</p>
