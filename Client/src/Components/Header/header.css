@@ -1,6 +1,25 @@
+@media only screen and (min-width: 501px){
+	#headerContainer{
+		display: flex;
+		width: 100%;
+		height: auto;
+		color: white;
+	}
+	hr.seperationLine{
+		margin: 0 !important;
+	}
+	#headerContainer p{
+		width: 33vw;
+	}
+
+	.nav-links{
+		width: 33vw;
+	}
+}
+
 
 @media only screen and (max-width: 500px){
-	#headerContainer{
+	#headerContainerMobile{
 		position: relative;
 		margin: 0;
 		top: 0;
