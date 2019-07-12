@@ -10,8 +10,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 //Materialize import
 import 'materialize-css/dist/css/materialize.min.css';
 
-import Myles from "../../Media/Myles.jpg";
-import Mylesrangelcom500 from "../../Media/mylesrangel500.JPG";
 import ClockSpecialty from "../../Media/clockspecialtyHomepage.jpg";
 import ClockSpecialtyMobile from "../../Media/clockspecialty500.jpg";
 
@@ -37,8 +35,8 @@ class MyWork extends Component{
                                     <i class="material-icons right"> arrow_upward </i>
                                 </span>
                                 <span id = "clickableLinks">
-                                    <p><a id="githubImage"href="https://github.com/mylesrangel/mylesrangel"><img src={Github} /></a></p>
-                                    <a id="trelloImage" href="https://trello.com/b/9IhFQaFZ/personal-webpage"><img src={Trello} /></a>
+                                    <p><a id="githubImage"href="https://github.com/mylesrangel/mylesrangel"><img src={Github} alt="Github Icon"/></a></p>
+                                    <a id="trelloImage" href="https://trello.com/b/9IhFQaFZ/personal-webpage"><img src={Trello} alt="Trello Icon"/></a>
                                 </span>
                             </div>
                             <div class="card-reveal">
@@ -59,7 +57,7 @@ class MyWork extends Component{
                     <div id = "myProjectContainer">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img id="clockSpecialty"class="activator" src={ClockSpecialty} />
+                                <img id="clockSpecialty"class="activator" src={ClockSpecialty} alt="ClockSpecialty Website"/>
                             </div>
                             <div class="card-content card-title activator white-text text-light">
                                 <span>
@@ -67,7 +65,7 @@ class MyWork extends Component{
                                     <i class="material-icons right"> arrow_upward </i>
                                 </span>
                                 <span id = "clickableLinks">
-                                <p><a id="githubImage" href="https://github.com/mylesrangel/ClockSpecialty"><img src={Github} /></a></p>
+                                <p><a id="githubImage" href="https://github.com/mylesrangel/ClockSpecialty"><img src={Github} alt="Github Icon"/></a></p>
                                 </span>
                             </div>
                 
@@ -97,8 +95,8 @@ class MyWork extends Component{
                             <div class="card-content card-title activator white-text text-light">
                                     <a class = "customButton" href = "https://www.mylesrangel.com">Live Demo </a>
                                     <i class="material-icons right"> arrow_upward </i>
-                                <p><a href="https://github.com/mylesrangel/mylesrangel"><img src={Github} /></a></p>
-                                <a id="trelloImage" href="https://trello.com/b/9IhFQaFZ/personal-webpage"><img src={Trello} /></a>
+                                <p><a href="https://github.com/mylesrangel/mylesrangel"><img src={Github} alt="Github Icon"/></a></p>
+                                <a id="trelloImage" href="https://trello.com/b/9IhFQaFZ/personal-webpage"><img src={Trello} alt="Trello Icon"/></a>
                             </div>
                 
                             <div class="card-reveal">
@@ -116,11 +114,11 @@ class MyWork extends Component{
                         </div>
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img id="clockSpecialty"class="activator" src={ClockSpecialtyMobile} /> 
+                                <img id="clockSpecialty"class="activator" src={ClockSpecialtyMobile} alt="Clock Specialty website"/> 
                             </div>
                             <div class="card-content card-title activator white-text text-light-4">
                                 <a class="customButton" href="https://clockspecialty.now.sh">Live Demo</a><i class="material-icons right"> arrow_upward </i>
-                                <p><a href="https://github.com/mylesrangel/ClockSpecialty"><img src={Github} /></a></p>
+                                <p><a href="https://github.com/mylesrangel/ClockSpecialty"><img src={Github} alt="Github Icon"/></a></p>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title black-text text-light-4"><a href="https://clockspecialty.now.sh">https://clockspecialty.now.sh/</a><i class="material-icons right"> arrow_downward </i></span>

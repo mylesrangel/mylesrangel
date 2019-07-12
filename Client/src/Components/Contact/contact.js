@@ -9,10 +9,6 @@ import "./contact.css";
 
 class Contact extends Component{
 
-	constructor(props){
-		super(props);
-
-	}
 
 	//API_URL: process.env.REACT_APP_API_URL;
 
@@ -77,7 +73,7 @@ class Contact extends Component{
 				}			
 			}).then(res => {
 				console.log(res.status);
-				if(res.status == 200){
+				if(res.status === 200){
 					console.log("Email has been sent!");
 					this.setState({emailSent: true});
 				}else{
