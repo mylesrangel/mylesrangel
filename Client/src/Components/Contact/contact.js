@@ -14,6 +14,8 @@ class Contact extends Component{
 
 	}
 
+	//API_URL: process.env.REACT_APP_API_URL;
+
 	state = {
 
 		emailSent: false,
@@ -67,7 +69,7 @@ class Contact extends Component{
 				}
 			});
 
-			fetch(this.state.API_URL, {
+			fetch(process.env.REACT_APP_API_URL, {
 				method: 'POST',
 				body: JSON.stringify(this.state.emailInfo),
 				headers: {
