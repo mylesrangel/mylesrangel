@@ -20,7 +20,7 @@ class Contact extends Component{
 			
 		},
 		
-		API_URL: "http://localhost:4000/sendemail",
+		//API_URL: "http://localhost:4000/sendemail",
 
 
 		emailInfo: {
@@ -80,7 +80,6 @@ class Contact extends Component{
 					console.log("An error occured!!");
 				}
 			}).catch(err => console.error(err));
-
 		}
 
 
