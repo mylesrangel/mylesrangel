@@ -37,8 +37,8 @@ app.post('/sendemail', (req, res) =>{
         secure: true,
         port: '465',
         auth:{
-            user: 'websitecontact@mylesrangel.com',
-            pass: '$Jqo*#)$JK92'
+            user: config.webEmail,
+            pass: config.webPw
         },
         tls:{
             rejectUnauthorized: false
