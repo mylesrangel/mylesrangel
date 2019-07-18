@@ -38,14 +38,13 @@ app.post('/sendemail', (req, res) =>{
         port: '465',
         auth:{
             user: 'websitecontact@mylesrangel.com',
-            pass: 'KU3$j2a!W'
+            pass: '$Jqo*#)$JK92'
         },
         tls:{
             rejectUnauthorized: false
         }
     });
      
-    
     const mailOptions = {
         from: 'websitecontact@mylesrangel.com',
         to: 'myles@mylesrangel.com',
@@ -59,10 +58,13 @@ app.post('/sendemail', (req, res) =>{
                 "</div>"
     };
 
+    
+
    if(transporter.sendMail(mailOptions)){
         //sends the 200 status code
         res.json();
    }
+
    res.end();
 });
 

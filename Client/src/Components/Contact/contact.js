@@ -9,6 +9,11 @@ import "./contact.css";
 
 class Contact extends Component{
 
+<<<<<<< HEAD
+=======
+
+	//API_URL: process.env.REACT_APP_API_URL;
+>>>>>>> 139d47f8f251505278644bb6d8a3d218f3b07521
 
 	state = {
 
@@ -18,6 +23,11 @@ class Contact extends Component{
 			
 		},
 		
+<<<<<<< HEAD
+=======
+		//API_URL: "http://localhost:4000/sendemail",
+
+>>>>>>> 139d47f8f251505278644bb6d8a3d218f3b07521
 
 		emailInfo: {
 			firstName: '',
