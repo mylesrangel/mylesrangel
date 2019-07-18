@@ -17,8 +17,6 @@ class Contact extends Component{
 			
 		},
 
-		//API_URL: "http://localhost:4000/sendemail",
-
 		emailInfo: {
 			firstName: '',
 			lastName: '',

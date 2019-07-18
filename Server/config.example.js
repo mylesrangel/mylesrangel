@@ -8,8 +8,8 @@
             ***************************************************
 var config = {};
 
-config.webEmail = {};
-config.webPw = {};
+config.webEmail = ;
+config.webPw = ;
 
 
 module.exports = config;
