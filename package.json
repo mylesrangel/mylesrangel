@@ -1,21 +1,30 @@
 {
   "name": "mylesrangel",
-  "version": "1.0.0",
-  "description": "My Personal Website",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "materialize-css": "^1.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-responsive": "^6.1.2",
+    "react-responsive-carousel": "^3.1.49",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^2.1.8"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mylesrangel/mylesrangel.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mylesrangel/mylesrangel/issues"
-  },
-  "homepage": "https://github.com/mylesrangel/mylesrangel#readme"
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "proxy": "http://localhost:4000"
 }
