@@ -4,6 +4,8 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
+const config = require('./config.js');
+
 const app = express();
 
 const port = process.env.PORT || 4000;
@@ -36,15 +38,13 @@ app.post('/sendemail', (req, res) =>{
         port: '465',
         auth:{
             user: 'websitecontact@mylesrangel.com',
-            pass: 'CE32WWTR4'
+            pass: 'KU3$j2a!W'
         },
         tls:{
             rejectUnauthorized: false
         }
     });
      
-
-    res.end();
     
     const mailOptions = {
         from: 'websitecontact@mylesrangel.com',
@@ -63,6 +63,7 @@ app.post('/sendemail', (req, res) =>{
         //sends the 200 status code
         res.json();
    }
+   res.end();
 });
 
 app.listen(port, () => {

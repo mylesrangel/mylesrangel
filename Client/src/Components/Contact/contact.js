@@ -9,10 +9,6 @@ import "./contact.css";
 
 class Contact extends Component{
 
-	constructor(props){
-		super(props);
-
-	}
 
 	state = {
 
@@ -22,8 +18,6 @@ class Contact extends Component{
 			
 		},
 		
-		API_URL: "http://localhost:4000/sendemail",
-
 
 		emailInfo: {
 			firstName: '',
@@ -67,7 +61,7 @@ class Contact extends Component{
 				}
 			});
 
-			fetch(this.state.API_URL, {
+			fetch(process.env.REACT_APP_API_URL, {
 				method: 'POST',
 				body: JSON.stringify(this.state.emailInfo),
 				headers: {
@@ -75,14 +69,13 @@ class Contact extends Component{
 				}			
 			}).then(res => {
 				console.log(res.status);
-				if(res.status == 200){
+				if(res.status === 200){
 					console.log("Email has been sent!");
 					this.setState({emailSent: true});
 				}else{
 					console.log("An error occured!!");
 				}
 			}).catch(err => console.error(err));
-
 		}
 
 
