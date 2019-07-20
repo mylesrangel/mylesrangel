@@ -24,23 +24,23 @@ class MyWork extends Component{
             <div> 
                 <MediaQuery query = "(min-width: 501px">
                     <div id = "myProjectContainer">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
+                        <div className="card">
+                            <div className="card-image waves-effect waves-block waves-light">
                                 <p>I enjoy creating projects during some of my free time. It gives me opportunity to create and grow relationships.</p>
                                 <p> Use the up arrow to learn a little more about how it's built</p>
                             </div>
-                            <div class="card-content card-title activator white-text text-light">
+                            <div className="card-content card-title activator white-text text-light">
                                 <span>
-                                    <a class = "customButton" href = "https://www.mylesrangel.com">Live Demo </a>
-                                    <i class="material-icons right"> arrow_upward </i>
+                                    <a className = "customButton" href = "https://www.mylesrangel.com">Live Demo </a>
+                                    <i className="material-icons right"> arrow_upward </i>
                                 </span>
                                 <span id = "clickableLinks">
                                     <p><a id="githubImage"href="https://github.com/mylesrangel/mylesrangel"><img src={Github} alt="Github Icon"/></a></p>
                                     <a id="trelloImage" href="https://trello.com/b/9IhFQaFZ/personal-webpage"><img src={Trello} alt="Trello Icon"/></a>
                                 </span>
                             </div>
-                            <div class="card-reveal">
-                                <span id="card-reveal-title"class="card-title black-text text-light-4">mylesrangel.com<i class="material-icons right"> arrow_downward </i></span>
+                            <div className="card-reveal">
+                                <span id="card-reveal-title"className="card-title black-text text-light-4">mylesrangel.com<i className="material-icons right"> arrow_downward </i></span>
                                 <p>My personal website (where you are now)</p>
                                 <p>This website is using:</p>
                                 <p>HTML</p>
@@ -55,22 +55,22 @@ class MyWork extends Component{
                     </div>
                     <hr className="seperationLine"></hr>
                     <div id = "myProjectContainer">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img id="clockSpecialty"class="activator" src={ClockSpecialty} alt="ClockSpecialty Website"/>
+                        <div className="card">
+                            <div className="card-image waves-effect waves-block waves-light">
+                                <img id="clockSpecialty"className="activator" src={ClockSpecialty} alt="ClockSpecialty Website"/>
                             </div>
-                            <div class="card-content card-title activator white-text text-light">
+                            <div className="card-content card-title activator white-text text-light">
                                 <span>
-                                    <a class="customButton" href="https://clockspecialty.now.sh">Live Demo</a>
-                                    <i class="material-icons right"> arrow_upward </i>
+                                    <a className="customButton" href="https://clockspecialty.now.sh">Live Demo</a>
+                                    <i className="material-icons right"> arrow_upward </i>
                                 </span>
                                 <span id = "clickableLinks">
                                 <p><a id="githubImage" href="https://github.com/mylesrangel/ClockSpecialty"><img src={Github} alt="Github Icon"/></a></p>
                                 </span>
                             </div>
                 
-                            <div class="card-reveal">
-                                <span class="card-title black-text text-light-4"><a href="https://clockspecialty.now.sh">https://clockspecialty.now.sh/</a><i class="material-icons right"> arrow_downward </i></span>
+                            <div className="card-reveal">
+                                <span className="card-title black-text text-light-4"><a href="https://clockspecialty.now.sh">https://clockspecialty.now.sh/</a><i className="material-icons right"> arrow_downward </i></span>
                                 <p>This website is using:</p>
                                 <p>This is a 90's themed clock shop</p>
                                 <p>NOTE: 'Find your perfect clock today!' does work correctly. The backend is hosted on Now as well, it is just a little slow. However there is a cache(an object array).</p>
@@ -86,21 +86,21 @@ class MyWork extends Component{
                 </MediaQuery>
                 <MediaQuery query = "(max-width: 500px)">         
                     <Carousel showThumbs = {false} showStatus={false}>
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
+                        <div className="card">
+                            <div className="card-image waves-effect waves-block waves-light">
                                 <p>I enjoy creating projects during some of my free time. It gives me opportunity to create and grow relationships.</p>
                                 <p> Use the up arrow to learn a little more about how it's built</p>
                                 <p>Swipe to see more projects I have worked on. </p> 
                             </div>
-                            <div class="card-content card-title activator white-text text-light">
-                                    <a class = "customButton" href = "https://www.mylesrangel.com">Live Demo </a>
-                                    <i class="material-icons right"> arrow_upward </i>
+                            <div className="card-content card-title activator white-text text-light">
+                                    <a className = "customButton" href = "https://www.mylesrangel.com">Live Demo </a>
+                                    <i className="material-icons right"> arrow_upward </i>
                                 <p><a href="https://github.com/mylesrangel/mylesrangel"><img src={Github} alt="Github Icon"/></a></p>
                                 <a id="trelloImage" href="https://trello.com/b/9IhFQaFZ/personal-webpage"><img src={Trello} alt="Trello Icon"/></a>
                             </div>
                 
-                            <div class="card-reveal">
-                                <span class="card-title black-text text-light-4">mylesrangel.com<i class="material-icons right"> arrow_downward </i></span>
+                            <div className="card-reveal">
+                                <span className="card-title black-text text-light-4">mylesrangel.com<i className="material-icons right"> arrow_downward </i></span>
                                 <p>My personal website (where you are now)</p>
                                 <p>This website is using:</p>
                                 <p>HTML</p>
@@ -112,16 +112,16 @@ class MyWork extends Component{
                                 <p>Express</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img id="clockSpecialty"class="activator" src={ClockSpecialtyMobile} alt="Clock Specialty website"/> 
+                        <div className="card">
+                            <div className="card-image waves-effect waves-block waves-light">
+                                <img id="clockSpecialty"className="activator" src={ClockSpecialtyMobile} alt="Clock Specialty website"/> 
                             </div>
-                            <div class="card-content card-title activator white-text text-light-4">
-                                <a class="customButton" href="https://clockspecialty.now.sh">Live Demo</a><i class="material-icons right"> arrow_upward </i>
+                            <div className="card-content card-title activator white-text text-light-4">
+                                <a className="customButton" href="https://clockspecialty.now.sh">Live Demo</a><i className="material-icons right"> arrow_upward </i>
                                 <p><a href="https://github.com/mylesrangel/ClockSpecialty"><img src={Github} alt="Github Icon"/></a></p>
                             </div>
-                            <div class="card-reveal">
-                                <span class="card-title black-text text-light-4"><a href="https://clockspecialty.now.sh">https://clockspecialty.now.sh/</a><i class="material-icons right"> arrow_downward </i></span>
+                            <div className="card-reveal">
+                                <span className="card-title black-text text-light-4"><a href="https://clockspecialty.now.sh">https://clockspecialty.now.sh/</a><i className="material-icons right"> arrow_downward </i></span>
                                 <p>This website is using:</p>
                                 <p>This is a 90's themed clock shop</p>
                                 <p>NOTE: 'Find your perfect clock today!' does work correctly. The backend is hosted on Now as well, it is just a little slow. However there is a cache(an object array).</p>
