@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import MediaQuery from 'react-responsive';
 
-import Link from "react-router-dom/Link";
+import {Link} from "react-router-dom";
 
 import "./header.css";
 
