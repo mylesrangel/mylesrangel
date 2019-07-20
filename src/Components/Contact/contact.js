@@ -59,7 +59,7 @@ class Contact extends Component{
 				}
 			});
 
-			fetch(process.env.REACT_APP_API_URL, {
+			fetch(, {
 				method: 'POST',
 				body: JSON.stringify(this.state.emailInfo),
 				headers: {
