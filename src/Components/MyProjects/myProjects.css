@@ -107,6 +107,9 @@
     i.material-icons.right:hover{
         color: darkgreen;
     }
+    .card .card-reveal{
+        background-color: slategray;
+    }
 
     li.slide.selected{
         padding-top: 2em;
