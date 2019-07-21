@@ -11,8 +11,13 @@
         margin-top: 2vw;
         margin-right: 2vw;
     }
+    /* Mylesrangel.com title (no link) */
     #card-reveal-title{
         font-size: 4vh !important;
+    }
+    /* Clock Speciality title (has link) */
+    #card-reveal-title a{
+        font-size: 3.4vh !important;
     }
     .card-reveal p{
         font-size: 2vh !important;
@@ -107,6 +112,9 @@
     i.material-icons.right:hover{
         color: darkgreen;
     }
+    .card .card-reveal{
+        background-color: slategray;
+    }
 
     li.slide.selected{
         padding-top: 2em;
@@ -157,7 +165,7 @@
     }
 
     .card-reveal p{
-        color: black;
+        color: white;
     }
     .card .card-image{
         border-bottom: darkgreen solid .1em;
@@ -167,6 +175,7 @@
     .card .card-title{
         font-size: 22px;
         padding-left: 20px;
+        color: white !important;
     }
     .card .card-title.activator{
         text-align: -webkit-center;

@@ -40,7 +40,7 @@ class MyWork extends Component{
                                 </span>
                             </div>
                             <div className="card-reveal">
-                                <span id="card-reveal-title"className="card-title black-text text-light-4">mylesrangel.com<i className="material-icons right"> arrow_downward </i></span>
+                                <span id="card-reveal-title" className="card-title black-text text-light-4">mylesrangel.com<i className="material-icons right"> arrow_downward </i></span>
                                 <p>My personal website (where you are now)</p>
                                 <p>This website is using:</p>
                                 <p>HTML</p>
@@ -70,7 +70,7 @@ class MyWork extends Component{
                             </div>
                 
                             <div className="card-reveal">
-                                <span className="card-title black-text text-light-4"><a href="https://clockspecialty.now.sh">https://clockspecialty.now.sh/</a><i className="material-icons right"> arrow_downward </i></span>
+                                <span id="card-reveal-title" className="card-title black-text text-light-4"><a href="https://clockspecialty.now.sh">https://clockspecialty.now.sh/</a><i className="material-icons right"> arrow_downward </i></span>
                                 <p>This website is using:</p>
                                 <p>This is a 90's themed clock shop</p>
                                 <p>NOTE: 'Find your perfect clock today!' does work correctly. The backend is hosted on Now as well, it is just a little slow. However there is a cache(an object array).</p>
