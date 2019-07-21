@@ -1,0 +1,44 @@
+w
+
+#homepageContainer{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+
+
+@media only screen and (max-width: 500px){
+
+	#homepageContainer{
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: white;
+		font-size: 28px;
+		overflow-x: none;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+	}
+
+	#statement{
+		margin-top: 6em;
+		vertical-align: middle;
+	}
+
+	#contactButton{
+
+		display: none;
+		font-size: 26px;
+
+	}
+
+	#homepageContainer img{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+
+
+}
