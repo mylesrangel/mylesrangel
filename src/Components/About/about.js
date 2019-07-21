@@ -52,14 +52,14 @@ class About extends Component{
                                 </div>
                             </div>
                         </div>
-                        <div class="workExperienceMobile">
+                        <div className="workExperienceMobile">
                             <h5> Freelance Web Developer</h5>
                             <h6> June-2018 - Present</h6>
                             <p className = "workDescription">Meet with prospective clients to review current website and discuss future design specifications. </p>
                             <p className = "workDescription">Created various mock ups using HTML, CSS and Javascript. Communicated with third-party developers on behalf of client to discuss UI/UX needs with back end development</p>
 
                         </div>
-                        <div class="workExperienceMobile">
+                        <div className="workExperienceMobile">
                             <h5> Clock Specialty - Web Developer</h5>
                             <h6> June-2017 - June-2018</h6>    
                             <p className = "workDescription"> Designed and maintained custom website with a check-in/checkout system.</p>
