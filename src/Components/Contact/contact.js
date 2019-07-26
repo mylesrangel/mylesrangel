@@ -59,7 +59,7 @@ class Contact extends Component{
 				}
 			});
 
-			fetch("https://server.mylesrangel.com", {
+			fetch("https://server.mylesrangel.com/sendemail", {
 				method: 'POST',
 				body: JSON.stringify(this.state.emailInfo),
 				headers: {
