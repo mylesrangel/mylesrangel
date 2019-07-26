@@ -59,7 +59,7 @@ class Contact extends Component{
 				}
 			});
 
-			fetch("http://ec2-54-185-239-212.us-west-2.compute.amazonaws.com:4000/sendemail", {
+			fetch("https://server.mylesrangel.com", {
 				method: 'POST',
 				body: JSON.stringify(this.state.emailInfo),
 				headers: {
