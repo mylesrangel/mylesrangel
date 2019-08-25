@@ -16,6 +16,7 @@ import ClockSpecialtyMobile from "../../Media/clockspecialty500.jpg";
 import "./myProjects.css";
 import Github from "../../Media/GitHub-Mark-Light-32px.png";
 import Trello from "../../Media/trello-logo-blue.png";
+import Laptop from "../../Media/laptop-image-full-1600.jpg";
 
 class MyWork extends Component{
 
@@ -25,6 +26,7 @@ class MyWork extends Component{
                 <MediaQuery query = "(min-width: 501px">
                     <div id = "myProjectContainer">
                         <div className="card">
+                            <img className = "backgroundImage" src = {Laptop} alt = "Laptop"></img>
                             <div className="card-image waves-effect waves-block waves-light">
                                 <p>I enjoy creating projects during some of my free time. It gives me opportunity to create and grow relationships.</p>
                                 <p> Use the up arrow to learn a little more about how it's built</p>

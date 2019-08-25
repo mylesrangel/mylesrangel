@@ -35,6 +35,9 @@
     .card-title a{
         font-size: 3vw;
     }
+    .backgroundImage{
+        z-index: 100;
+    }
     /* clockSpecialty image adjustments */
     img#clockSpecialty{
         width: 87vw;
