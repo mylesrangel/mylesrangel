@@ -85,8 +85,16 @@
 		top: 50%;
 		left: 35%;
 		width: 33%;
-		height: 17%;
+		height: 15%;
 		background-color: white;
+	}
+	#submitButton{
+		position: absolute;
+		top: 66%;
+		left: 45.5%;
+		width: 11%;
+		height: 2%;
+		padding: .2%;
 	}
 
 }

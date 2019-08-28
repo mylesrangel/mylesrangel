@@ -86,9 +86,8 @@ class Contact extends Component{
 
 	}
 
-	//Handles change in the form (typing in input)
+	//Handles change in the form (input won't accept typing without this function)
 	handleChange = (event) =>{
-
 		this.setState({
 				emailInfo:{
 					...this.state.emailInfo,
@@ -99,27 +98,35 @@ class Contact extends Component{
 
 	render(){
 		return(
-			<div id="homepageContainer">
-				<img id= "backgroundImage" src = {BackgroundImage} alt = "laptop" />
-				<Link to="/">
-                    <Button circular id='homeIcon' icon= "home" size='big' />
-				</Link>
-				<div id="firstnameContact">
-					<p className = "contactExpected">First Name:</p>
-					<input />
+			<div>
+				<form onSubmit={this.handleSubmit} id="contactForm" style = {this.state.formStyle }>
+					<div id="homepageContainer">
+						<img id= "backgroundImage" src = {BackgroundImage} alt = "laptop" />
+						<Link to="/">
+							<Button circular id='homeIcon' icon= "home" size='big' />
+						</Link>
+						<div id="firstnameContact">
+							<p className = "contactExpected">First Name:</p>
+							<input required name="firstName" value={this.state.emailInfo.firstName || ''} onChange={this.handleChange} id="firstName" placeholder="Your first name"/>
+						</div>
+						<div id="lastnameContact">
+							<p required name="lastName" value={this.state.emailInfo.lastName || ''} onChange={this.handleChange} id="lastName" placeholder="Your last name" className = "contactExpected">Last Name:</p>
+							<input />
+						</div>
+						<div id="emailContact">
+							<p required name="email" value={this.state.emailInfo.email || ''} onChange={this.handleChange} id="email" placeholder="yourName@gmail.com" className = "contactExpected">Email:</p>
+							<input />
+						</div>
+						<div id="messageContact">
+							<p className = "contactExpected"> Message </p>
+						</div>
+						<textarea  required name="message" value={this.state.emailInfo.message || ''} onChange={this.handleChange} id="textareaContact" />
+						<Button id="submitButton" type="submit" value="Send" positive>Submit</Button>
+					</div>
+				</form>
+				<div id= "emailSentContainer">
+					{this.state.emailSent && <Emailsent />}
 				</div>
-				<div id="lastnameContact">
-					<p className = "contactExpected">Last Name:</p>
-					<input />
-				</div>
-				<div id="emailContact">
-					<p className = "contactExpected">Email:</p>
-					<input />
-				</div>
-				<div id="messageContact">
-					<p className = "contactExpected"> Message </p>
-				</div>
-				<textarea id="textareaContact" />
 			</div>
 		);
 	}
