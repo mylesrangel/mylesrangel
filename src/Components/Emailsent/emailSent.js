@@ -18,7 +18,7 @@ class Emailsent extends Component{
                     <Button circular id='homeIcon' icon= "home" size='big' />
 				</Link>
                 <div id="replyMessage">
-                    <p>Message Sent!</p>
+                    <h4>Message Sent!</h4>
                     <p>Thank you for reaching out!</p>
                     <p>I will reply as soon as I can</p>
                 </div>

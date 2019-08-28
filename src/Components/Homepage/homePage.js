@@ -121,14 +121,18 @@ hideclockSpecialtyTechStack = () => {
 						<hr id="rightHorizontal"/>
 					</div>
 					<div id = "projectLinks">
-						<div onMouseEnter = {this.showMylesrangelTechStack}  onMouseLeave = {this.hideMylesrangelTechStack} ref = 'mylesrangel' className = "computerScreenIcon" >
-							<Button circular basic color="green"id='addressCard' icon = "file code"  size='massive' />
-							<p>mylesrangel.com</p>
-						</div>
-						<div onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack} className = "computerScreenIcon" >
-							<Button circular basic color="teal" id='addressCard' icon = "file code"  size='massive' />
-							<p>Clock Specialty</p>
-						</div>						
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/mylesrangel">
+							<div onMouseEnter = {this.showMylesrangelTechStack}  onMouseLeave = {this.hideMylesrangelTechStack} ref = 'mylesrangel' className = "computerScreenIcon" >
+								<Button circular basic color="green"id='addressCard' icon = "file code"  size='massive' />
+								<p>mylesrangel.com</p>
+							</div>
+						</a>
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/ClockSpecialty">
+							<div onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack} className = "computerScreenIcon" >
+								<Button circular basic color="teal" id='addressCard' icon = "file code"  size='massive' />
+								<p>Clock Specialty</p>
+							</div>
+						</a>					
 					</div>
 				</div>
 			</div>
