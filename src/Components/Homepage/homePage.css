@@ -78,7 +78,91 @@
 	}
 }
 
- @media only screen and (max-width: 800px){
+ @media only screen and (min-width: 501px) and (max-width: 800px){
+
+	#homepageContainerTablet{
+		width: 100%;
+		height: 100%;
+	}
+
+	#backgroundImageTablet{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: -100;
+	}
+	#logoImageTablet{
+		position: absolute;
+		width: 10%;
+		height: 5%;
+		top: 1%;
+		left: 46%;
+	}
+	#homeIconTablet{
+		position: absolute;
+		top: 76%;
+		left: 45.9%;
+	}
+	#techIconsTablet{
+		position: absolute;
+		top: 6%;
+		left: 19%;
+		max-width: 63%;
+
+	}
+	#techIconsTablet button{
+		margin: .3em;
+	}
+	#computerScreenContainerTopTablet{
+		position: absolute;
+		justify-content: space-evenly;
+		top: 31%;
+		left: 34%;
+		min-width: 32%;
+		max-height: 28%;
+		display: inline-flex;
+	}
+
+	#computerScreenContainerTopTablet p{
+		margin-right: .5%;
+		color: white;
+		font-size: 2vw;
+	}
+
+	#projectSeperatingTablet{
+		position: absolute;
+		top: 45%;
+		left: 29%;
+		width: 42%;
+		color: white;
+		display: inline-flex;
+	}
+	#leftHorizontalTablet{
+		width: 27%;
+	}
+	#rightHorizontalTablet{
+		width: 31%;
+	}
+	#projectLinksTablet{
+		position: absolute;
+		top: 50%;
+		left: 33%;
+		min-width: 33%;
+		justify-content: space-evenly;
+		display: inline-flex;
+	}
+	#projectLinksTablet p{
+		color: white;
+		font-size: 2vw;
+		margin-left: .7vw;
+		 margin-right: .7vw; 
+	}
+
+}
+/* ----------------------------MOBILE 500px -------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 500px){
 
 	#homepageContainerMobile{
 		width: 100%;
@@ -102,14 +186,14 @@
 	}
 	#homeIconMobile{
 		position: absolute;
-		top: 76%;
-		left: 45.9%;
+		top: 88.5%;
+		left: 43.1%;
 	}
 	#techIconsMobile{
 		position: absolute;
-		top: 38%;
-		left: 5%;
-		max-width: 20%;
+		top: 6%;
+		left: 12%;
+		max-width: 75%;
 
 	}
 	#techIconsMobile button{
@@ -118,9 +202,9 @@
 	#computerScreenContainerTopMobile{
 		position: absolute;
 		justify-content: space-evenly;
-		top: 31%;
-		left: 34%;
-		min-width: 32%;
+		top: 35%;
+		left: 25%;
+		min-width: 54%;
 		max-height: 28%;
 		display: inline-flex;
 	}
@@ -128,14 +212,14 @@
 	#computerScreenContainerTopMobile p{
 		margin-right: .5%;
 		color: white;
-		font-size: 2vw;
+		font-size: 3vw;
 	}
 
 	#projectSeperatingMobile{
 		position: absolute;
-		top: 45%;
-		left: 29%;
-		width: 42%;
+		top: 52%;
+		left: 25%;
+		width: 51%;
 		color: white;
 		display: inline-flex;
 	}
@@ -147,17 +231,17 @@
 	}
 	#projectLinksMobile{
 		position: absolute;
-		top: 50%;
-		left: 33%;
-		min-width: 41%;
+		top: 62%;
+		left: 28%;
+		min-height: 25%;
 		color: white;
 		display: inline-flex;
 	}
 	#projectLinksMobile p{
 		color: white;
-		font-size: 2vw;
-		margin-left: .7vw;
-		margin-right: .7vw;
+		font-size: 3vw;
+		margin-left: .9vw;
+		margin-right: .9vw;
 	}
 
 }
