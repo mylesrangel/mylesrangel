@@ -79,61 +79,46 @@ hideclockSpecialtyTechStack = () => {
 			<div>
 				<MediaQuery minWidth = {800} maxWidth = {2800} >
 					<div id="homepageContainer">
-						<img id = "backgroundImage" src = {BackgroundImage} alt = "laptop" />
-						<img id = "logoImage" src = {Logo} alt = "logo" />
-						<Button circular id='homeIcon' icon= "home" size='big' />
-						<div id = "techIcons" >
-							{this.state.reactTech && <Button circular basic color='blue' id='react' icon = "react"  size='massive' /> }
-							{this.state.jsTech &&<Button circular basic color='green' id='js' icon = "js"  size='massive' />}
-							{this.state.awsTech &&<Button circular basic color='orange' id='aws' icon = "aws"  size='massive' />}
-							{this.state.html5Tech &&<Button circular basic color='orange' id='html5' icon = "html5"  size='massive' />}
-							{this.state.css3Tech &&<Button circular basic color='blue' id='css3' icon = "css3"  size='massive' />}
-							{this.state.phpTech &&<Button circular basic color='purple' id='php' icon = "php"  size='massive' />}
-							{this.state.npmTech &&<Button circular basic color='blue' id='npm' icon = "npm"  size='massive' />}
-							{this.state.githubTech &&<Button circular basic color='black' id='github' icon = "github"  size='massive' />}
-							{this.state.nodeTech &&<Button circular basic color='green' id='node' icon = "node"  size='massive' />}
-							{this.state.trelloTech &&<Button circular basic color='blue' id='trello' icon = "trello"  size='massive' />}
-							{this.state.androidTech &&<Button circular basic color='green' id='android' icon = "android"  size='massive' />}
+						<img id = "homepageBackgroundImage" src = {BackgroundImage} alt = "laptop" />
+						<img id = "homepageLogoImage" src = {Logo} alt = "logo" />
+						<Button circular id='homepageHomeIcon' icon= "home" size='big' />
+						<div id = "homepageTechIcons" >
+						{this.state.reactTech && <Button circular color = 'blue' id='react' icon = "react" size = "mini">React </Button> }
+							{this.state.jsTech &&<Button circular color='green' id='js' icon = "js" size = "mini" > JavaScript </Button>}
+							{this.state.awsTech &&<Button circular color='orange' id='aws' icon = "aws" size = "mini">AWS </Button>}
+							{this.state.html5Tech &&<Button circular color='orange' id='html5' icon = "html5" size = "mini">HTML5 </Button>}
+							{this.state.css3Tech &&<Button circular color='blue' id='css3' icon = "css3" size = "mini">CSS3 </Button>}
+							{this.state.phpTech &&<Button circular color='purple' id='php' icon = "php" size = "mini">PHP </Button>}
+							{this.state.npmTech &&<Button circular color='blue' id='npm' icon = "npm"  size = "mini">NPM </Button>}
+							{this.state.githubTech &&<Button circular color='black' id='github' icon = "github" size = "mini">Git </Button>}
+							{this.state.nodeTech &&<Button circular color='green' id='node' icon = "node" size = "mini">NodeJS </Button>}
+							{this.state.trelloTech &&<Button circular color='blue' id='trello' icon = "trello" size = "mini">Trello </Button>}
+							{this.state.androidTech &&<Button circular color='green' id='android' icon = "android" size = "mini">Android </Button>}
 						</div>
-						<div id = "computerScreenContainerTop">
-							<div className = "computerScreenIcon" >
-								<Link to="/about" >
-									<Button circular basic color="red"id='addressCard' icon = "address card"  size='massive' />
-									<p>About</p>
-								</Link>
-							</div>
-							
-								<div id = 'resume' className = "computerScreenIcon" >
-									<a href = {myResume} target="_blank" rel="noopener noreferrer">
-										<Button circular basic color="blue" id='file outline' icon = "file outline" size='massive' />
-										<p>Resume</p>
-									</a>
-								</div>
-							
-							<div className = "computerScreenIcon" >
-								<Link to="/contact" >
-									<Button circular basic color= "green" id='idCard' icon = "envelope"  size='massive' />
-									<p>Contact</p>
-								</Link>
-							</div>
-							
+						<div id = "homepageComputerScreenContainerTop">
+							<Link to="/about" >
+								<Button circular basic color="red"id='addressCard' icon = "address card"  size='small' >About</Button>
+							</Link>
+							<a href = {myResume} target="_blank" rel="noopener noreferrer">
+								<Button circular basic color="blue" id='file outline' icon = "file outline" size='small' >Resume(pdf)</Button>
+							</a>
+							<Link to="/contact" >
+								<Button circular basic color= "green" id='idCard' icon = "envelope"  size='small' >Contact</Button>
+							</Link>					
 						</div>
-						<div id = "projectSeperating">
-							<hr id="leftHorizontal" />
-							Projects
-							<hr id="rightHorizontal"/>
+						<div id = "homepageProjectSeperating">
+							<hr id="homepageLeftHorizontal" />
+							Experience
+							<hr id="homepageRightHorizontal"/>
 						</div>
-						<div id = "projectLinks">
+						<div id = "homepageProjectLinks">
 							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/mylesrangel">
 								<div onMouseEnter = {this.showMylesrangelTechStack}  onMouseLeave = {this.hideMylesrangelTechStack} ref = 'mylesrangel' className = "computerScreenIcon" >
-									<Button circular basic color="green"id='addressCard' icon = "file code"  size='massive' />
-									<p>mylesrangel.com</p>
-								</div>
+									<Button circular basic color="green"id='addressCard' icon = "file code"  size='small' >mylesrangel.com</Button>								</div>
 							</a>
 							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/ClockSpecialty">
 								<div onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack} className = "computerScreenIcon" >
-									<Button circular basic color="teal" id='addressCard' icon = "file code"  size='massive' />
-									<p>Clock Specialty</p>
+									<Button circular basic color="teal" id='addressCard' icon = "file code"  size='small'>Clock Specialty</Button>
 								</div>
 							</a>					
 						</div>
@@ -142,51 +127,46 @@ hideclockSpecialtyTechStack = () => {
 
 				{/* -----------------Under 800px--------------------------------------- -------------------------------------------------------------------------------------------------------------------------------*/}
 
-				<MediaQuery minWidth ={501} maxWidth = {799} >
+				<MediaQuery minWidth ={601} maxWidth = {799} >
 					<div id="homepageContainerTablet">
-						<img id = "backgroundImageTablet" src = {BackgroundImageTablet} alt = "laptop" />
-						<img id = "logoImageTablet" src = {Logo} alt = "logo" />
-						<Button circular id='homeIconTablet' icon= "home" size='large' />
-						<div id = "techIconsTablet" >
-							{this.state.reactTech && <Button circular basic color='blue' id='react' icon = "react" /> }
-							{this.state.jsTech &&<Button circular basic color='green' id='js' icon = "js" />}
-							{this.state.awsTech &&<Button circular basic color='orange' id='aws' icon = "aws" />}
-							{this.state.html5Tech &&<Button circular basic color='orange' id='html5' icon = "html5" />}
-							{this.state.css3Tech &&<Button circular basic color='blue' id='css3' icon = "css3" />}
-							{this.state.phpTech &&<Button circular basic color='purple' id='php' icon = "php"  />}
-							{this.state.npmTech &&<Button circular basic color='blue' id='npm' icon = "npm" />}
-							{this.state.githubTech &&<Button circular basic color='black' id='github' icon = "github" />}
-							{this.state.nodeTech &&<Button circular basic color='green' id='node' icon = "node" />}
-							{this.state.trelloTech &&<Button circular basic color='blue' id='trello' icon = "trello" />}
-							{this.state.androidTech &&<Button circular basic color='green' id='android' icon = "android" />}
+						<img id = "homepageBackgroundImageTablet" src = {BackgroundImageTablet} alt = "laptop" />
+						<img id = "homepageLogoImageTablet" src = {Logo} alt = "logo" />
+						<Button circular id='homepageHomeIconTablet' icon= "home" size='large' />
+						<div id = "homepageTechIconsTablet" >
+						{this.state.reactTech && <Button circular color = 'blue' id='react' icon = "react" size = "tiny">React </Button> }
+							{this.state.jsTech &&<Button circular color='green' id='js' icon = "js" size = "tiny"> JavaScript </Button>}
+							{this.state.awsTech &&<Button circular color='orange' id='aws' icon = "aws" size = "tiny">AWS </Button>}
+							{this.state.html5Tech &&<Button circular color='orange' id='html5' icon = "html5" size = "tiny">HTML5 </Button>}
+							{this.state.css3Tech &&<Button circular color='blue' id='css3' icon = "css3" size = "tiny">CSS3 </Button>}
+							{this.state.phpTech &&<Button circular color='purple' id='php' icon = "php" size = "tiny">PHP </Button>}
+							{this.state.npmTech &&<Button circular color='blue' id='npm' icon = "npm"  size = "tiny">NPM </Button>}
+							{this.state.githubTech &&<Button circular color='black' id='github' icon = "github" size = "tiny">Git </Button>}
+							{this.state.nodeTech &&<Button circular color='green' id='node' icon = "node" size = "tiny">NodeJS </Button>}
+							{this.state.trelloTech &&<Button circular color='blue' id='trello' icon = "trello" size = "tiny">Trello </Button>}
+							{this.state.androidTech &&<Button circular color='green' id='android' icon = "android" size = "tiny">Android </Button>}
 						</div>
-						<div id = "computerScreenContainerTopTablet">
+						<div id = "homepageComputerScreenContainerTopTablet">
 							<Link to="/about" >
-								<Button circular basic color="red" id='addressCard' icon = "address card"/>
-								<p>About</p>
+								<Button circular basic color="red" id='addressCard' icon = "address card"> About </Button>
 							</Link>					
 							<a href = {myResume} target="_blank" rel="noopener noreferrer">
-								<Button circular basic color="blue" id='file outline' icon = "file outline" />
-								<p>Resume</p>
+								<Button circular basic color="blue" id='file outline' icon = "file outline"> Resume(pdf) </Button>
 							</a>
 							<Link to="/contact" >
-								<Button circular basic color= "green" id='idCard' icon = "envelope" />
-								<p>Contact</p>
+								<Button circular basic color= "green" id='idCard' icon = "envelope">Contact </Button>
 							</Link>
 						</div>
-						<div id = "projectSeperatingTablet">
-							<hr id="leftHorizontalTablet" />
-							Projects
-							<hr id="rightHorizontalTablet"/>
+						<div id = "homepageProjectSeperatingTablet">
+							<hr id="homepageLeftHorizontalTablet" />
+							Experience
+							<hr id="homepageRightHorizontalTablet"/>
 						</div>
-						<div id = "projectLinksTablet">
+						<div id = "homepageProjectLinksTablet">
 							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/mylesrangel">
-									<Button onMouseEnter = {this.showMylesrangelTechStack}  onMouseLeave = {this.hideMylesrangelTechStack} circular basic color="green"id='addressCard' icon = "file code" />
-									<p>mylesrangel.com</p>
+									<Button onMouseEnter = {this.showMylesrangelTechStack}  onMouseLeave = {this.hideMylesrangelTechStack} circular basic color="green"id='addressCard' icon = "file code" size="tiny"> mylesrangel.com </Button>
 							</a>
 							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/ClockSpecialty">
-									<Button onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack}circular basic color="teal" id='addressCard' icon = "file code" />
-									<p>Clock Specialty</p>
+									<Button onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack}circular basic color="teal" id='addressCard' icon = "file code" size="tiny">Clock Specialty </Button>
 							</a>					
 						</div>
 					</div>
@@ -196,51 +176,46 @@ hideclockSpecialtyTechStack = () => {
 
 {/* ---------------------Mobile 500px -------------------------------------------------------------*/}
 
-				<MediaQuery maxWidth = {500} >
+				<MediaQuery maxWidth = {600} >
 					<div id="homepageContainerMobile">
-						<img id = "backgroundImageMobile" src = {BackgroundImagePhone} alt = "laptop" />
-						<img id = "logoImageMobile" src = {Logo} alt = "logo" />
-						<Button circular id='homeIconMobile' icon= "home" size='big' />
-						<div id = "techIconsMobile" >
-							{this.state.reactTech && <Button circular basic color='blue' id='react' icon = "react" /> }
-							{this.state.jsTech &&<Button circular basic color='green' id='js' icon = "js" />}
-							{this.state.awsTech &&<Button circular basic color='orange' id='aws' icon = "aws" />}
-							{this.state.html5Tech &&<Button circular basic color='orange' id='html5' icon = "html5" />}
-							{this.state.css3Tech &&<Button circular basic color='blue' id='css3' icon = "css3" />}
-							{this.state.phpTech &&<Button circular basic color='purple' id='php' icon = "php"  />}
-							{this.state.npmTech &&<Button circular basic color='blue' id='npm' icon = "npm" />}
-							{this.state.githubTech &&<Button circular basic color='black' id='github' icon = "github" />}
-							{this.state.nodeTech &&<Button circular basic color='green' id='node' icon = "node" />}
-							{this.state.trelloTech &&<Button circular basic color='blue' id='trello' icon = "trello" />}
-							{this.state.androidTech &&<Button circular basic color='green' id='android' icon = "android" />}
+						<img id = "homepageBackgroundImageMobile" src = {BackgroundImagePhone} alt = "laptop" />
+						<img id = "homepageLogoImageMobile" src = {Logo} alt = "logo" />
+						<Button circular id='homepageHomeIconMobile' icon= "home" size='big' />
+						<div id = "homepageTechIconsMobile" >
+							{this.state.reactTech && <Button circular color = 'blue' id='react' icon = "react" size = "mini">React </Button> }
+							{this.state.jsTech &&<Button circular color='green' id='js' icon = "js" size = "mini" > JavaScript </Button>}
+							{this.state.awsTech &&<Button circular color='orange' id='aws' icon = "aws" size = "mini">AWS </Button>}
+							{this.state.html5Tech &&<Button circular color='orange' id='html5' icon = "html5" size = "mini">HTML5 </Button>}
+							{this.state.css3Tech &&<Button circular color='blue' id='css3' icon = "css3" size = "mini">CSS3 </Button>}
+							{this.state.phpTech &&<Button circular color='purple' id='php' icon = "php" size = "mini">PHP </Button>}
+							{this.state.npmTech &&<Button circular color='blue' id='npm' icon = "npm"  size = "mini">NPM </Button>}
+							{this.state.githubTech &&<Button circular color='black' id='github' icon = "github" size = "mini">Git </Button>}
+							{this.state.nodeTech &&<Button circular color='green' id='node' icon = "node" size = "mini">NodeJS </Button>}
+							{this.state.trelloTech &&<Button circular color='blue' id='trello' icon = "trello" size = "mini">Trello </Button>}
+							{this.state.androidTech &&<Button circular color='green' id='android' icon = "android" size = "mini">Android </Button>}
 						</div>
-						<div id = "computerScreenContainerTopMobile">
+						<div id = "homepageComputerScreenContainerTopMobile">
 							<Link to="/about" >
-								<Button circular basic color="red" id='addressCard' icon = "address card" size = "huge"/>
-								<p>About</p>
+								<Button circular basic color="red" id='addressCard' icon = "address card" size = 'small'>About </Button>
 							</Link>					
 							<a href = {myResume} target="_blank" rel="noopener noreferrer">
-								<Button circular basic color="blue" id='file outline' icon = "file outline" size = "huge"/>
-								<p>Resume</p>
+								<Button circular basic color="blue" id='file outline' icon = "file outline" size = 'small'> Resume(pdf) </Button>
 							</a>
 							<Link to="/contact" >
-								<Button circular basic color= "green" id='idCard' icon = "envelope" size = "huge"/>
-								<p>Contact</p>
+								<Button circular basic color= "green" id='idCard' icon = "envelope" size = 'small'> Contact </Button>
 							</Link>
 						</div>
-						<div id = "projectSeperatingMobile">
-							<hr id="leftHorizontalMobile" />
-							Projects
-							<hr id="rightHorizontalMobile"/>
+						<div id = "homepageProjectSeperatingMobile">
+							<hr id="homepageLeftHorizontalMobile" />
+							Experience
+							<hr id="homepageRightHorizontalMobile"/>
 						</div>
-						<div id = "projectLinksMobile">
+						<div id = "homepageProjectLinksMobile">
 							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/mylesrangel">
-									<Button onMouseEnter = {this.showMylesrangelTechStack}  onMouseLeave = {this.hideMylesrangelTechStack} circular basic color="green"id='addressCard' icon = "file code"  size = "big"/>
-									<p>mylesrangel.com</p>
+									<Button onMouseEnter = {this.showMylesrangelTechStack}  onMouseLeave = {this.hideMylesrangelTechStack} circular basic color="green"id='addressCard' icon = "file code" size = 'small' > mylesrangel.com </Button>
 							</a>
 							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/ClockSpecialty">
-									<Button onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack}circular basic color="teal" id='addressCard' icon = "file code"  size = "big"/>
-									<p>Clock Specialty</p>
+									<Button onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack}circular basic color="teal" id='addressCard' icon = "file code" size = 'small'> Clock Specialty </Button>
 							</a>					
 						</div>
 					</div>

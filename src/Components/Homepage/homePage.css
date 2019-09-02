@@ -5,7 +5,7 @@
 		height: 100%;
 	}
 
-	#backgroundImage{
+	#homepageBackgroundImage{
 		width: 100%;
 		height: 100%;
 		position: absolute;
@@ -13,47 +13,39 @@
 		left: 0;
 		z-index: -100;
 	}
-	#logoImage{
+	#homepageLogoImage{
 		position: absolute;
 		width: 8%;
 		height: 8%;
 		top: 1%;
 		left: 47%;
 	}
-	#homeIcon{
+	#homepageHomeIcon{
 		position: absolute;
-		top: 70%;
+		top: 72%;
 		left: 48.9%;
 	}
-	#techIcons{
+	#homepageTechIcons{
 		position: absolute;
-		top: 38%;
-		left: 5%;
-		max-width: 20%;
+		top: 13%;
+		left: 26%;
+		max-width: 50%;
 
 	}
-	#techIcons button{
+	#homepageTechIcons button{
 		margin: .3em;
 	}
-	#computerScreenContainerTop{
+	#homepageComputerScreenContainerTop{
 		position: absolute;
-		justify-content: space-evenly;
 		top: 31%;
-		left: 30%;
-		min-width: 41%;
-		max-height: 28%;
-		display: inline-flex;
+		left: 44.5%;
+		display: grid;
+		min-height: 14%;
+		min-width: 13%;
+		justify-items: center;
+		justify-content: center;
 	}
-	.computerScreenIcon{
-		background-color: transparent;
-		margin-left: 2em;
-	}
-	.computerScreenIcon p{
-		margin-right: .5em;
-		color: white;
-	}
-
-	#projectSeperating{
+	#homepageProjectSeperating{
 		position: absolute;
 		top: 45%;
 		left: 30%;
@@ -61,31 +53,32 @@
 		color: white;
 		display: inline-flex;
 	}
-	#leftHorizontal{
+	#homepageLeftHorizontal{
 		width: 34%;
 	}
-	#rightHorizontal{
+	#homepageRightHorizontal{
 		width: 35%;
 	}
-	#projectLinks{
+	#homepageProjectLinks{
 		position: absolute;
-		justify-content: center;
 		top: 50%;
-		left: 30%;
-		min-width: 41%;
-		color: white;
-		display: inline-flex;
+		left: 44.5%;
+		display: grid;
+		min-height: 14%;
+		min-width: 13%;
+		justify-items: center;
+		justify-content: center;
 	}
 }
 
- @media only screen and (min-width: 501px) and (max-width: 800px){
+ @media only screen and (min-width: 601px) and (max-width: 800px){
 
 	#homepageContainerTablet{
 		width: 100%;
 		height: 100%;
 	}
 
-	#backgroundImageTablet{
+	#homepageBackgroundImageTablet{
 		width: 100%;
 		height: 100%;
 		position: absolute;
@@ -93,45 +86,36 @@
 		left: 0;
 		z-index: -100;
 	}
-	#logoImageTablet{
+	#homepageLogoImageTablet{
 		position: absolute;
 		width: 10%;
 		height: 5%;
 		top: 1%;
 		left: 46%;
 	}
-	#homeIconTablet{
+	#homepageHomeIconTablet{
 		position: absolute;
 		top: 76%;
-		left: 45.9%;
+		left: 46.4%;
 	}
-	#techIconsTablet{
+	#homepageTechIconsTablet{
 		position: absolute;
 		top: 6%;
 		left: 19%;
 		max-width: 63%;
 
 	}
-	#techIconsTablet button{
+	#homepageTechIconsTablet button{
 		margin: .3em;
 	}
-	#computerScreenContainerTopTablet{
+	#homepageComputerScreenContainerTopTablet{
 		position: absolute;
-		justify-content: space-evenly;
-		top: 31%;
-		left: 34%;
-		min-width: 32%;
-		max-height: 28%;
-		display: inline-flex;
+		top: 23%;
+		left: 41%;
+		display: grid;
 	}
 
-	#computerScreenContainerTopTablet p{
-		margin-right: .5%;
-		color: white;
-		font-size: 2vw;
-	}
-
-	#projectSeperatingTablet{
+	#homepageProjectSeperatingTablet{
 		position: absolute;
 		top: 45%;
 		left: 29%;
@@ -139,37 +123,32 @@
 		color: white;
 		display: inline-flex;
 	}
-	#leftHorizontalTablet{
+	#homepageLeftHorizontalTablet{
 		width: 27%;
 	}
-	#rightHorizontalTablet{
+	#homepageRightHorizontalTablet{
 		width: 31%;
 	}
-	#projectLinksTablet{
+	#homepageProjectLinksTablet{
 		position: absolute;
 		top: 50%;
 		left: 33%;
 		min-width: 33%;
-		justify-content: space-evenly;
-		display: inline-flex;
+		justify-items: center;
+		justify-content: center;
+		min-height: 12%;
+		display: grid;
 	}
-	#projectLinksTablet p{
-		color: white;
-		font-size: 2vw;
-		margin-left: .7vw;
-		 margin-right: .7vw; 
-	}
-
 }
 /* ----------------------------MOBILE 500px -------------------------------------------------------------------------------------- */
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
 
 	#homepageContainerMobile{
 		width: 100%;
 		height: 100%;
 	}
 
-	#backgroundImageMobile{
+	#homepageBackgroundImageMobile{
 		width: 100%;
 		height: 100%;
 		position: absolute;
@@ -177,71 +156,64 @@
 		left: 0;
 		z-index: -100;
 	}
-	#logoImageMobile{
+	#homepageLogoImageMobile{
 		position: absolute;
 		width: 10%;
 		height: 5%;
 		top: 1%;
 		left: 46%;
 	}
-	#homeIconMobile{
+	#homepageHomeIconMobile{
 		position: absolute;
-		top: 88.5%;
+		top: 88.7%;
 		left: 43.1%;
 	}
-	#techIconsMobile{
+	#homepageTechIconsMobile{
 		position: absolute;
 		top: 6%;
 		left: 12%;
 		max-width: 75%;
 
 	}
-	#techIconsMobile button{
+	#homepageTechIconsMobile button{
 		margin: .3em;
 	}
-	#computerScreenContainerTopMobile{
+	#homepageComputerScreenContainerTopMobile{
 		position: absolute;
-		justify-content: space-evenly;
-		top: 35%;
-		left: 25%;
-		min-width: 54%;
-		max-height: 28%;
-		display: inline-flex;
+		top: 28%;
+		left: 33%;
+		display: grid;
+		min-width: 33%;
+		justify-items: center;
+		justify-content: center;
+	}
+	#homepageComputerScreenContainerTopMobile a{
+		margin-top: 20%;
 	}
 
-	#computerScreenContainerTopMobile p{
-		margin-right: .5%;
-		color: white;
-		font-size: 3vw;
-	}
-
-	#projectSeperatingMobile{
+	#homepageProjectSeperatingMobile{
 		position: absolute;
 		top: 52%;
-		left: 25%;
+		left: 24%;
 		width: 51%;
 		color: white;
 		display: inline-flex;
 	}
-	#leftHorizontalMobile{
-		width: 27%;
+	#homepageLeftHorizontalMobile{
+		width: 24%;
 	}
-	#rightHorizontalMobile{
-		width: 31%;
+	#homepageRightHorizontalMobile{
+		width: 25%;
 	}
-	#projectLinksMobile{
+	#homepageProjectLinksMobile{
 		position: absolute;
-		top: 62%;
-		left: 28%;
-		min-height: 25%;
-		color: white;
-		display: inline-flex;
-	}
-	#projectLinksMobile p{
-		color: white;
-		font-size: 3vw;
-		margin-left: .9vw;
-		margin-right: .9vw;
+		top: 57%;
+		left: 32%;
+		min-width: 33%;
+		justify-items: center;
+		justify-content: center;
+		min-height: 12%;
+		display: grid;
 	}
 
 }
