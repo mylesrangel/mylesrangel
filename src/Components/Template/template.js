@@ -13,12 +13,12 @@ class Template extends Component{
 
 	render(){
 		return(
-			<div id="homepageContainer">
-				<img id= "backgroundImage" src = {BackgroundImage} alt = "laptop" />
+			<div id="templatepageContainer">
+				<img id= "templateBackgroundImage" src = {BackgroundImage} alt = "laptop" />
 				<Link to="/">
-                    <Button circular id='homeIcon' icon= "home" size='big' />
+                    <Button circular id='templateHomeIcon' icon= "home" size='big' />
 				</Link>
-				<div id = "techIcons" >
+				<div id = "templateTechIcons" >
 					
 				</div>
 			</div>

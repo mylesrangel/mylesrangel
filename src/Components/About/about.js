@@ -9,45 +9,48 @@ import Logo from '../../Media/logo.png';
 import BackgroundImage from '../../Media/laptop-image-full-1900.png';
 import BackgroundImageTablet from '../../Media/phone-image-full-edited.png';
 import BackgroundImagePhone from '../../Media/phone-image-full-edited-cropped.png';
-
 import "./about.css";
 
 class About extends Component{
 	render(){
 		return(
             <div>
-                <MediaQuery maxWidth = {2800}>
+                <MediaQuery minWidth = {801} maxWidth = {2800} >
                     <div id="aboutpageContainer">
-                        <img id = "logoImage" src = {Logo} alt = "laptop" />
-                        <img id= "backgroundImage" src = {BackgroundImage} alt = "laptop" />
-                        <p id = "myStatement">Hello, I'm Myles, I am a full Stack Developer! I have been developing full time since 2017. Feel free to have a look around. </p>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/">
-                            <Button circular basic inverted id='githubAbout' icon = "github" size='massive' />
-                        </a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mylesrangel/">
-                            <Button circular basic color="blue" id='linkedinAbout' icon = "linkedin" size='massive' />
-                        </a>
+                        <img id = "aboutLogoImage" src = {Logo} alt = "laptop" />
+                        <img id= "aboutBackgroundImage" src = {BackgroundImage} alt = "laptop" />
+                        <p id = "aboutMyStatement">Hello, I'm Myles, I am a Full Stack Developer! I have been developing full time since 2017. Feel free to have a look around. </p>
+                        <div id="aboutSocialMedia">
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/">
+                                <Button circular basic inverted id='githubAbout' icon = "github" size='small'>Github </Button>
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mylesrangel/">
+                                <Button circular basic color="blue" id='linkedinAbout' icon = "linkedin" size='small'> LinkedIn </Button>
+                            </a>
+                        </div>
                         <Link to="/">
-                            <Button circular id='homeIcon' icon= "home" size='big' />
+                            <Button circular id='aboutHomeIcon' icon= "home" size='big' />
                         </Link>
                     </div>
                 </MediaQuery>
                 
-                {/* ----------------------------Tablet 501 < 799 -------------------------------------------- */}
+        {/* ----------------------------Tablet 501 < 799 ----------------------------------------------------------------- */}
 
-                <MediaQuery minWidth ={501} maxWidth = {799} >
-                    <div id="aboutpageContainer">
-                        <img id = "logoImageTablet" src = {Logo} alt = "laptop" />
-                        <img id= "backgroundImageTablet" src = {BackgroundImageTablet} alt = "laptop" />
-                        <p id = "myStatementTablet">Hello, I'm Myles, I am a full Stack Developer! I have been developing full time since 2017. Feel free to have a look around. </p>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/">
-                            <Button circular basic inverted id='githubAbout' icon = "github" size='massive' />
-                        </a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mylesrangel/">
-                            <Button circular basic color="blue" id='linkedinAbout' icon = "linkedin" size='massive' />
-                        </a>
+                <MediaQuery minWidth ={601} maxWidth = {800} >
+                    <div id="aboutpageContainerTablet">
+                        <img id = "aboutLogoImageTablet" src = {Logo} alt = "laptop" />
+                        <img id= "aboutBackgroundImageTablet" src = {BackgroundImageTablet} alt = "laptop" />
+                        <p id = "aboutMyStatementTablet">Hello, I'm Myles, I am a Full Stack Developer! I have been developing full time since 2017. Feel free to have a look around. </p>
+                        <div id="aboutSocialMediaTablet">
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/">
+                                <Button circular basic inverted id='githubAbout' icon = "github" size='small'>Github </Button>
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mylesrangel/">
+                                <Button circular basic color="blue" id='linkedinAbout' icon = "linkedin" size='small'> LinkedIn </Button>
+                            </a>
+                        </div>
                         <Link to="/">
-                            <Button circular id='homeIcon' icon= "home" size='big' />
+                            <Button circular id='aboutHomeIconTablet' icon= "home" size='big' />
                         </Link>
                     </div>                
                 </MediaQuery>
@@ -56,19 +59,21 @@ class About extends Component{
 
     {/* ---------------------Mobile 500px -------------------------------------------------------------*/}
 
-                <MediaQuery maxWidth = {500} >
-                <div id="aboutpageContainer">
-                        <img id = "logoImagePhone" src = {Logo} alt = "laptop" />
-                        <img id= "backgroundImagePhone" src = {BackgroundImagePhone} alt = "laptop" />
-                        <p id = "myStatementPhone">Hello, I'm Myles, I am a full Stack Developer! I have been developing full time since 2017. Feel free to have a look around. </p>
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/">
-                            <Button circular basic inverted id='githubAbout' icon = "github" size='massive' />
-                        </a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mylesrangel/">
-                            <Button circular basic color="blue" id='linkedinAbout' icon = "linkedin" size='massive' />
-                        </a>
+                <MediaQuery maxWidth = {600} >
+                <div id="aboutpageContainerPhone">
+                        <img id = "aboutLogoImagePhone" src = {Logo} alt = "laptop" />
+                        <img id= "aboutBackgroundImagePhone" src = {BackgroundImagePhone} alt = "laptop" />
+                        <p id = "aboutMyStatementPhone">Hello, I'm Myles, I am a Full Stack Developer! I have been developing full time since 2017. Feel free to have a look around. </p>
+                        <div id="aboutSocialMediaMobile">
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/">
+                                <Button circular basic inverted id='githubAbout' icon = "github" size='small'>Github </Button>
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mylesrangel/">
+                                <Button circular basic color="blue" id='linkedinAbout' icon = "linkedin" size='small'> LinkedIn </Button>
+                            </a>
+                        </div>
                         <Link to="/">
-                            <Button circular id='homeIcon' icon= "home" size='big' />
+                            <Button circular id='aboutHomeIconPhone' icon= "home" size='big' />
                         </Link>
                     </div>
                 </MediaQuery>

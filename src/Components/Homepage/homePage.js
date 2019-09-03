@@ -171,10 +171,8 @@ hideclockSpecialtyTechStack = () => {
 						</div>
 					</div>
 				</MediaQuery>
-
-
-
-{/* ---------------------Mobile 500px -------------------------------------------------------------*/}
+			
+		{/* ---------------------Mobile 500px -------------------------------------------------------------*/}
 
 				<MediaQuery maxWidth = {600} >
 					<div id="homepageContainerMobile">
