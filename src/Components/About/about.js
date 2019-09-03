@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import MediaQuery from 'react-responsive';
 
-import { Icon , Button } from 'semantic-ui-react'
+import { Button } from 'semantic-ui-react'
 
 
 import Logo from '../../Media/logo.png';
@@ -60,7 +60,7 @@ class About extends Component{
     {/* ---------------------Mobile 500px -------------------------------------------------------------*/}
 
                 <MediaQuery maxWidth = {600} >
-                <div id="aboutpageContainerPhone">
+                <   div id="aboutpageContainerPhone">
                         <img id = "aboutLogoImagePhone" src = {Logo} alt = "laptop" />
                         <img id= "aboutBackgroundImagePhone" src = {BackgroundImagePhone} alt = "laptop" />
                         <p id = "aboutMyStatementPhone">Hello, I'm Myles, I am a Full Stack Developer! I have been developing full time since 2017. Feel free to have a look around. </p>

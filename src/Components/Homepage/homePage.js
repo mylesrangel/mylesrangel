@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import ReactDOM from 'react-dom';
 import MediaQuery from 'react-responsive';
-import { Icon , Button } from 'semantic-ui-react'
+import { Button } from 'semantic-ui-react'
 
 import Logo from '../../Media/logo.png';
 import BackgroundImage from '../../Media/laptop-image-full-1900.png';

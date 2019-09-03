@@ -3,12 +3,13 @@ import MediaQuery from 'react-responsive';
 
 import Emailsent from "../Emailsent/emailSent.js";
 
-import { Icon , Button } from 'semantic-ui-react'
+import { Button } from 'semantic-ui-react'
 
 import {Link} from "react-router-dom";
 
 import BackgroundImage from '../../Media/laptop-image-full-1900.png';
-
+import BackgroundImageTablet from '../../Media/phone-image-full-edited.png';
+import BackgroundImagePhone from '../../Media/phone-image-full-edited-cropped.png';
 
 import "./contact.css";
 
@@ -99,129 +100,106 @@ class Contact extends Component{
 	render(){
 		return(
 			<div>
-				<form onSubmit={this.handleSubmit} id="contactForm" style = {this.state.formStyle }>
-					<div id="homepageContainer">
-						<img id= "backgroundImage" src = {BackgroundImage} alt = "laptop" />
-						<Link to="/">
-							<Button circular id='homeIcon' icon= "home" size='big' />
-						</Link>
-						<div id="firstnameContact">
-							<p className = "contactExpected">First Name:</p>
-							<input required name="firstName" value={this.state.emailInfo.firstName || ''} onChange={this.handleChange} id="firstName" placeholder="Your first name"/>
+				<MediaQuery minWidth = {801} maxWidth = {2800} >
+					<form onSubmit={this.handleSubmit} id="contactForm" style = {this.state.formStyle }>
+						<div id="contactpageContainer">
+							<img id= "contactBackgroundImage" src = {BackgroundImage} alt = "laptop" />
+							<Link to="/">
+								<Button circular id='contactHomeIcon' icon= "home" size='big' />
+							</Link>
+							<div id="contactFirstname">
+								<p className = "contactExpected">First Name:</p>
+								<input required name="firstName" value={this.state.emailInfo.firstName || ''} onChange={this.handleChange} placeholder="Your first name"/>
+							</div>
+							<div id="contactLastname">
+								<p className = "contactExpected">Last Name:</p>
+								<input required name="lastName" value={this.state.emailInfo.lastName || ''} onChange={this.handleChange} placeholder="Your last name" />
+							</div>
+							<div id="contactEmail">
+								<p className = "contactExpected">Email:</p>
+								<input required name="email" value={this.state.emailInfo.email || ''} onChange={this.handleChange} placeholder="yourName@gmail.com" />
+							</div>
+							<div id="contactMessage">
+								<p className = "contactExpected"> Message </p>
+							</div>
+							<textarea  required id="contactTextarea" name="message" value={this.state.emailInfo.message || ''} onChange={this.handleChange} />
+							<Button id="contactSubmitButton" type="submit" value="Send" positive>Submit</Button>
 						</div>
-						<div id="lastnameContact">
-							<p required name="lastName" value={this.state.emailInfo.lastName || ''} onChange={this.handleChange} id="lastName" placeholder="Your last name" className = "contactExpected">Last Name:</p>
-							<input />
+					</form>
+						<div id= "contactEmailSentContainer">
+							{this.state.emailSent && <Emailsent />}
 						</div>
-						<div id="emailContact">
-							<p required name="email" value={this.state.emailInfo.email || ''} onChange={this.handleChange} id="email" placeholder="yourName@gmail.com" className = "contactExpected">Email:</p>
-							<input />
+				</MediaQuery>
+				{/* ---------------Tablet------------------------------------------------------------------- */}
+				<MediaQuery minWidth = {601} maxWidth = {800} >
+				<form onSubmit={this.handleSubmit} id="contactFormTablet" style = {this.state.formStyle }>
+						<div id="contactpageContainerTablet">
+							<img id= "contactBackgroundImageTablet" src = {BackgroundImageTablet} alt = "laptop" />
+							<Link to="/">
+								<Button circular id='contactHomeIconTablet' icon= "home" size='big' />
+							</Link>
+							<div id="contactFirstnameTablet">
+								<p className = "contactExpectedTablet">First Name:</p>
+								<input required name="firstName" value={this.state.emailInfo.firstName || ''} onChange={this.handleChange} placeholder="Your first name"/>
+							</div>
+							<div id="contactLastnameTablet">
+								<p className = "contactExpectedTablet">Last Name:</p>
+								<input required name="lastName" value={this.state.emailInfo.lastName || ''} onChange={this.handleChange} placeholder="Your last name" />
+							</div>
+							<div id="contactEmailTablet">
+								<p className = "contactExpectedTablet">Email:</p>
+								<input required name="email" value={this.state.emailInfo.email || ''} onChange={this.handleChange} placeholder="yourName@gmail.com" />
+							</div>
+							<div id="contactMessageTablet">
+								<p className = "contactExpectedTablet"> Message </p>
+							</div>
+							<textarea  required id="contactTextareaTablet" name="message" value={this.state.emailInfo.message || ''} onChange={this.handleChange} />
+							<Button id="contactSubmitButtonTablet" type="submit" value="Send" positive>Submit</Button>
 						</div>
-						<div id="messageContact">
-							<p className = "contactExpected"> Message </p>
+					</form>
+						<div id= "contactEmailSentContainerTablet">
+							{this.state.emailSent && <Emailsent />}
 						</div>
-						<textarea  required name="message" value={this.state.emailInfo.message || ''} onChange={this.handleChange} id="textareaContact" />
-						<Button id="submitButton" type="submit" value="Send" positive>Submit</Button>
-					</div>
-				</form>
-				<div id= "emailSentContainer">
-					{this.state.emailSent && <Emailsent />}
-				</div>
+				</MediaQuery>
+
+
+				{/* -------Mobile------------------------------------------------------------------------------ */}
+				
+				
+				<MediaQuery maxWidth = {600} >
+				<form onSubmit={this.handleSubmit} id="contactFormPhone" style = {this.state.formStyle }>
+						<div id="contactpageContainerPhone">
+							<img id= "contactBackgroundImagePhone" src = {BackgroundImagePhone} alt = "laptop" />
+							<Link to="/">
+								<Button circular id='contactHomeIconPhone' icon= "home" size='big' />
+							</Link>
+							<div id="contactFirstnamePhone">
+								<p className = "contactExpectedPhone">First Name:</p>
+								<input required name="firstName" value={this.state.emailInfo.firstName || ''} onChange={this.handleChange} placeholder="Your first name"/>
+							</div>
+							<div id="contactLastnamePhone">
+								<p className = "contactExpectedPhone">Last Name:</p>
+								<input required name="lastName" value={this.state.emailInfo.lastName || ''} onChange={this.handleChange} placeholder="Your last name" />
+							</div>
+							<div id="contactEmailPhone">
+								<p className = "contactExpectedPhone">Email:</p>
+								<input required name="email" value={this.state.emailInfo.email || ''} onChange={this.handleChange} placeholder="yourName@gmail.com" />
+							</div>
+							<div id="contactMessagePhone">
+								<p className = "contactExpectedPhone"> Message </p>
+							</div>
+							<textarea  required id="contactTextareaPhone" name="message" value={this.state.emailInfo.message || ''} onChange={this.handleChange} />
+							<Button id="contactSubmitButtonPhone" type="submit" value="Send" positive>Submit</Button>
+						</div>
+					</form>
+						<div id= "contactEmailSentContainerPhone">
+							{this.state.emailSent && <Emailsent />}
+						</div>
+				</MediaQuery>
 			</div>
 		);
+
 	}
-
-	componentWillUnmount() {
-
-    }
-	
 }
 
 export default Contact;
-
-
-//render(){
-	// 		return(
-	// 				<div>
-	// 					<MediaQuery query = "(min-width: 501px)">
-	// 						<div id = "contactContainer">
-	
-	// 							<form onSubmit={this.handleSubmit} id="contactForm" style = {this.state.formStyle }>
-	// 								<p className="formElements">
-	// 									<label> First Name: </label>
-	// 									<input required name="firstName" value={this.state.emailInfo.firstName || ''} onChange={this.handleChange} id="firstName" placeholder="Your first name" />
-	// 								</p>
-	// 								<p className="formElements">
-	// 									<label> Last Name: </label>
-	// 									<input required name="lastName" value={this.state.emailInfo.lastName || ''} onChange={this.handleChange} id="lastName" placeholder="Your last name" />
-	// 								</p>
-	// 								<p className="formElements">
-	// 									<label> Email: </label>
-	// 									<input required name="email" value={this.state.emailInfo.email || ''} onChange={this.handleChange} id="email" placeholder="yourName@gmail.com"/>
-	// 								</p>
-	// 								<p className="formElements">
-	// 									<label> Email Subject: </label>
-	// 									<input name="subject" value={this.state.emailInfo.subject || ''} onChange={this.handleChange} id="subject" placeholder="Subject" />
-	// 								</p>
-	
-	// 								<p className="formElements">
-	// 									<label> Message </label>
-	// 									<br />
-	// 									<textarea required name="message" value={this.state.emailInfo.message || ''} onChange={this.handleChange} > </textarea>
-	// 								</p>
-	
-	// 									<input id='submitButton' type="submit" value="Send" />  
-	// 							</form>
-	
-	// 							<div id= "emailSentContainer">
-	// 								{this.state.emailSent && <Emailsent />}
-	// 							</div>
-								
-	// 						</div>
-	// 					</MediaQuery>
-	// 					<MediaQuery query = "(max-width: 500px)">
-	// 						<div id = "contactContainerMobile">
-	// 							<form onSubmit={this.handleSubmit} id="contactFormMobile" style = {this.state.formStyle }>
-	// 								{/* <div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
-	
-	// 							{!this.state.emailSent && <form onSubmit={this.handleSubmit} id="contactForm" style={this.state.formStyle} >
-	// 								<div id = 'hamburgerButtonContact' onClick={this.props.contactForm}>
-	
-	// 									<div className="bars togglebar1"></div>
-	// 									<div className="bars togglebar3"></div>
-	// 								</div> */}
-	// 								<p className="formElementsMobile">
-	// 									<label> First Name: </label>
-	// 									<input required name="firstName" value={this.state.emailInfo.firstName || ''} onChange={this.handleChange} id="firstName" placeholder="Your first name" />
-	// 								</p>
-	// 								<p className="formElementsMobile">
-	// 									<label> Last Name: </label>
-	// 									<input required name="lastName" value={this.state.emailInfo.lastName || ''} onChange={this.handleChange} id="lastName" placeholder="Your last name" />
-	// 								</p>
-	// 								<p className="formElementsMobile">
-	// 									<label> Email: </label>
-	// 									<input required name="email" value={this.state.emailInfo.email || ''} onChange={this.handleChange} id="email" placeholder="yourName@gmail.com"/>
-	// 								</p>
-	// 								<p className="formElementsMobile">
-	// 									<label> Email Subject: </label>
-	// 									<input name="subject" value={this.state.emailInfo.subject || ''} onChange={this.handleChange} id="subject" placeholder="Subject" />
-	// 								</p>
-	
-	// 								<p className="formElementsMobile">
-	// 									<label> Message </label>
-	// 									<br />
-	// 									<textarea required name="message" value={this.state.emailInfo.message || ''} onChange={this.handleChange} > </textarea>
-	// 								</p>
-	
-	// 									<input id='submitButtonMobile' type="submit" value="Send" />  
-	// 							</form>
-	
-	// 							<div id= "emailSentContainer">
-	// 								{this.state.emailSent && <Emailsent />}
-	// 							</div>
-								
-	
-	// 						</div>
-	// 					</MediaQuery>
-	// 				</div>
-	// 			)
