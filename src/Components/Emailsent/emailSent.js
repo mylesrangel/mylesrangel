@@ -56,7 +56,7 @@ class Emailsent extends Component{
 						<Button circular id='emailSentHomeIconPhone' icon= "home" size='big' />
 					</Link>
 					<div id="emailSentReplyMessagePhone">
-						<h5>Message Sent!</h5>
+						<h6>Message Sent!</h6>
 						<p>Thank you for reaching out!</p>
 						<p>I will reply as soon as I can</p>
 					</div>
