@@ -10,7 +10,7 @@ import myResume from "../../Media/MylesRangel.pdf";
 
 import {Link} from "react-router-dom";
 
-import "./homepage.css"
+import "./homePage.css"
 
 class Homepage extends Component{	
 
