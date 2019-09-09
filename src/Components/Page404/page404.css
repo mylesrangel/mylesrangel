@@ -1,7 +1,8 @@
 
 
-
-
-#page404{
+#message404{
+    position: absolute;
+    top: 32%;
+    left: 43%;
     color: white;
 }

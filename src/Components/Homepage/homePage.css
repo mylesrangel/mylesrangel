@@ -1,44 +1,225 @@
-w
 
-#homepageContainer{
-	width: 100%;
-	height: 100%;
-	background-color: black;
-}
+@media only screen and (max-width: 2800px){
 
-
-@media only screen and (max-width: 500px){
 
 	#homepageContainer{
-		position: absolute;
-		top: 0;
-		left: 0;
-		color: white;
-		font-size: 28px;
-		overflow-x: none;
+		width: 100%;
+		min-height: 100%;
+	}
+
+	#homepageBackgroundImage{
 		width: 100%;
 		height: 100%;
-		background-color: black;
+		position: absolute;
+		background-position: center;
+		bottom: 0;
+		left: 0;
+		z-index: -100;
+	}
+	#homepageLogoImage{
+		position: absolute;
+		width: 8%;
+		height: 8%;
+		top: 1%;
+		left: 47%;
+	}
+	#homepageHomeIcon{
+		position: absolute;
+		top: 72%;
+		left: 48.9%;
+	}
+	#homepageTechIcons{
+		position: absolute;
+		top: 13%;
+		left: 26%;
+		max-width: 50%;
+
+	}
+	#homepageTechIcons button{
+		margin: .3em;
+	}
+	#homepageComputerScreenContainerTop{
+		position: absolute;
+		top: 31%;
+		left: 44.5%;
+		display: grid;
+		min-height: 14%;
+		min-width: 13%;
+		justify-items: center;
+		justify-content: center;
+	}
+	#homepageProjectSeperating{
+		position: absolute;
+		top: 45%;
+		left: 30%;
+		width: 42%;
+		color: white;
+		display: inline-flex;
+	}
+	#homepageLeftHorizontal{
+		width: 34%;
+	}
+	#homepageRightHorizontal{
+		width: 35%;
+	}
+	#homepageProjectLinks{
+		position: absolute;
+		top: 50%;
+		left: 44.5%;
+		display: grid;
+		min-height: 14%;
+		min-width: 13%;
+		justify-items: center;
+		justify-content: center;
+	}
+}
+
+ @media only screen and (min-width: 601px) and (max-width: 800px){
+
+	#homepageContainerTablet{
+		width: 100%;
+		height: 100%;
 	}
 
-	#statement{
-		margin-top: 6em;
-		vertical-align: middle;
-	}
-
-	#contactButton{
-
-		display: none;
-		font-size: 26px;
-
-	}
-
-	#homepageContainer img{
+	#homepageBackgroundImageTablet{
+		width: 100%;
+		height: 100%;
 		position: absolute;
 		bottom: 0;
 		left: 0;
+		z-index: -100;
+	}
+	#homepageLogoImageTablet{
+		position: absolute;
+		width: 10%;
+		height: 5%;
+		top: 1%;
+		left: 46%;
+	}
+	#homepageHomeIconTablet{
+		position: absolute;
+		top: 76%;
+		left: 46.4%;
+	}
+	#homepageTechIconsTablet{
+		position: absolute;
+		top: 6%;
+		left: 19%;
+		max-width: 63%;
+
+	}
+	#homepageTechIconsTablet button{
+		margin: .3em;
+	}
+	#homepageComputerScreenContainerTopTablet{
+		position: absolute;
+		top: 26%;
+		left: 42%;
+		display: grid;
+	}
+	#homepageComputerScreenContainerTopTablet a{
+		margin-top: 4%;
 	}
 
+	#homepageProjectSeperatingTablet{
+		position: absolute;
+		top: 45%;
+		left: 29%;
+		width: 42%;
+		color: white;
+		display: inline-flex;
+	}
+	#homepageLeftHorizontalTablet{
+		width: 27%;
+	}
+	#homepageRightHorizontalTablet{
+		width: 31%;
+	}
+	#homepageProjectLinksTablet{
+		position: absolute;
+		top: 50%;
+		left: 33%;
+		min-width: 33%;
+		justify-items: center;
+		justify-content: center;
+		min-height: 12%;
+		display: grid;
+	}
+}
+/* ----------------------------MOBILE 600px -------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 600px){
 
+	#homepageContainerMobile{
+		width: 100%;
+		height: 100%;
+	}
+
+	#homepageBackgroundImageMobile{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: -100;
+	}
+	#homepageLogoImageMobile{
+		position: absolute;
+		width: 10%;
+		height: 5%;
+		top: 1%;
+		left: 46%;
+	}
+	#homepageHomeIconMobile{
+		position: absolute;
+		top: 88.7%;
+		left: 43.1%;
+	}
+	#homepageTechIconsMobile{
+		position: absolute;
+		top: 6%;
+		left: 12%;
+		max-width: 75%;
+
+	}
+	#homepageTechIconsMobile button{
+		margin: .3em;
+	}
+	#homepageComputerScreenContainerTopMobile{
+		position: absolute;
+		top: 28%;
+		left: 33%;
+		display: grid;
+		min-width: 33%;
+		justify-items: center;
+		justify-content: center;
+	}
+	#homepageComputerScreenContainerTopMobile a{
+		margin-top: 20%;
+	}
+
+	#homepageProjectSeperatingMobile{
+		position: absolute;
+		top: 52%;
+		left: 24%;
+		width: 51%;
+		color: white;
+		display: inline-flex;
+	}
+	#homepageLeftHorizontalMobile{
+		width: 24%;
+	}
+	#homepageRightHorizontalMobile{
+		width: 25%;
+	}
+	#homepageProjectLinksMobile{
+		position: absolute;
+		top: 57%;
+		left: 32%;
+		min-width: 33%;
+		justify-items: center;
+		justify-content: center;
+		min-height: 12%;
+		display: grid;
+	}
 
 }

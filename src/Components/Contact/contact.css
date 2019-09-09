@@ -1,128 +1,312 @@
-@media only screen and (min-width: 501px){
-	#contactContainer{
-		width: 100%;
-		height: 100%
-	}
-	#contactForm{
-		padding: 3px;
-		margin-top: 1.6vh;
-		margin-left: 20%;
-		margin-right: 20%;
-		color: white;
-		border-color: darkgreen;
-		/* background-color: #36454F; */
-	}
-	#contactForm .formElelments{
-		margin: 1em;
-		height: 9vh;
-	}
-	.formElelments input{
-		height: 3vh !important;
-		font-size: .8em !important;
 
-	}
-	#contactForm label{
-		font-size:2.3vh;
+@media only screen and (max-width: 2800px){
 
-	}
-	#submitButton{
-		width: 18vw;
-		max-width: 10vw;
-		height: 3vh;
-		color: black !important;
-		border-radius: 15px;
-		margin-top: 9vh;
-	}
-	#submitbutton:hover{
-		width: 20vw;
-		background-color: darkslategrey;
-	}
-	#contactForm input{
-		color: white;
-		font-size: 1.8vh !important;
-	}
-	/* input form bottom border color */
-	#contactForm input:focus{
-		outline: none !important;
-		border-bottom: 1px solid darkgreen;
-	}
-	#contactForm textarea:focus{
-		outline: none !important;
-		border: 1px solid darkgreen;
-	}
-	#contactForm textarea{
-		color: white;
+	#contactpageContainer{
 		width: 100%;
-		height: 22vh;
-		font-size: 2.2vh;
-		resize: none;
+		height: 100%;
+	}
+	
+	#contactBackgroundImage{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -10;
+	}
+	#contactHomeIcon{
+		position: absolute;
+		top: 72%;
+		left: 48.9%;
+	}
+	/* First Name / Last Name / Email / Message */
+	p.contactExpected{
+		font-size: large;
+		margin-right: 22%;
+	}
+
+	#contactFirstname{
+		position: absolute;
+		display: -webkit-inline-box;
+		width: 100%;
+		max-width: 57%;
+		top: 31%;
+		left: 33%;
+		color: white;
+	}
+	
+	#contactFirstname input{
+		position: absolute;
+		padding-left: 1%;
+		height: 67%;
+		left: 23%;
+		max-width: 31%;
+		background-color: white;
+	}
+	#contactLastname{
+		position: absolute;
+		display: -webkit-inline-box;
+		width: 100%;
+		max-width: 57%;
+		top: 36%;
+		left: 33%;
+		color: white;
+	}
+	#contactLastname input{
+		position: absolute;
+		padding-left: 1%;
+		height: 67%;
+		left: 23%;
+		width: 31%;
+		background-color: white;
+	}
+	#contactEmail{
+		position: absolute;
+		display: -webkit-inline-box;
+		width: 100%;
+		max-width: 57%;
+		top: 41%;
+		left: 33%;
+		color: white;
+	}
+	#contactEmail input{
+		position: absolute;
+		padding-left: 1%;
+		height: 67%;
+		left: 23%;
+		width: 31%;
+		background-color: white;
+	}
+	#contactMessage{
+		position: absolute;
+		top: 46%;
+		left: 49%;
+		color: white;
+	}
+	#contactTextarea{
+		position: absolute;
+		padding-left: .3%;
+		top: 50%;
+		left: 35%;
+		width: 33%;
+		height: 15%;
+		background-color: white;
+	}
+	#contactSubmitButton{
+		position: absolute;
+		top: 66%;
+		left: 45.5%;
+		width: 11%;
+		height: 2%;
+		padding: .2%;
 	}
 
 }
-@media only screen and (max-width: 500px){
-	#contactContainerMobile{
-		width: 100% !important;
-		height: auto !important;
-	}
-
-
-	#contactFormMobile{
-
-		/* background-color: #36454F; */
-		padding: 3px;
-		margin-top: 18px;
-		color: white;
-		border-color: darkgreen !important;
-	}
-
-	.formElementsMobile input{
-		height: 3vh !important;
-		font-size: .8em !important;
-	}
-
-	#contactFormMobile .formElementsMobile{
-		margin: 1em;
-		height: 9vh;
-	}
-
-	#contactFormMobile label{
-		font-size:2.3vh;
-
-	}
-	#submitButtonMobile{
-		width: 18vw;
-		height: 3vh;
-		color: black !important;
-		border-radius: 15px;
-		margin-top: 18vh;
-	}
-	#submitbutton:hover{
-		width: 20vw;
-		background-color: darkslategrey;
-	}
-
-	/* placeholder font-size */
-	#contactFormMobile input{
-		color: white;
-		font-size: 1.8vh !important;
-	}
-
-
-	/* input form bottom border color */
-	#contactFormMobile input:focus{
-		outline: none !important;
-		border-bottom: 1px solid darkgreen;
-	}
-	#contactFormMobile textarea:focus{
-		outline: none !important;
-		border: 1px solid darkgreen;
-	}
-
-	#contactFormMobile textarea{
-		color: white;
+@media only screen and (min-width: 601px) and (max-width: 800px){
+	#contactpageContainerTablet{
 		width: 100%;
-		height: 22vh;
-		font-size: 2.7vh;
-		resize: none;
+		height: 100%;
+	}
+	
+	#contactBackgroundImageTablet{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -10;
+	}
+	#contactHomeIconTablet{
+		position: absolute;
+		top: 75.7%;
+		left: 45.9%;
+	}
+	/* First Name / Last Name / Email / Message */
+	p.contactExpectedTablet{
+		font-size: small;
+		margin-right: 22%;
+	}
+
+	#contactFirstnameTablet{
+		position: absolute;
+		display: -webkit-inline-box;
+		width: 100%;
+		max-width: 57%;
+		top: 31%;
+		left: 33%;
+		color: white;
+	}
+	
+	#contactFirstnameTablet input{
+		position: absolute;
+		padding-left: 1%;
+		font-size: small;
+		height: 67%;
+		left: 23%;
+		max-width: 31%;
+		background-color: white;
+	}
+	#contactLastnameTablet{
+		position: absolute;
+		display: -webkit-inline-box;
+		width: 100%;
+		max-width: 57%;
+		top: 36%;
+		left: 33%;
+		color: white;
+	}
+	#contactLastnameTablet input{
+		position: absolute;
+		padding-left: 1%;
+		font-size: small;
+		height: 67%;
+		left: 23%;
+		width: 31%;
+		background-color: white;
+	}
+	#contactEmailTablet{
+		position: absolute;
+		display: -webkit-inline-box;
+		width: 100%;
+		max-width: 57%;
+		top: 41%;
+		left: 33%;
+		color: white;
+	}
+	#contactEmailTablet input{
+		position: absolute;
+		padding-left: 1%;
+		font-size: small;
+		height: 67%;
+		left: 23%;
+		width: 31%;
+		background-color: white;
+	}
+	#contactMessageTablet{
+		position: absolute;
+		top: 46%;
+		left: 46%;
+		color: white;
+	}
+	#contactTextareaTablet{
+		position: absolute;
+		padding-left: .3%;
+		top: 50%;
+		left: 34%;
+		width: 33%;
+		height: 15%;
+		background-color: white;
+	}
+	#contactSubmitButtonTablet{
+		position: absolute;
+		top: 66%;
+		left: 45.5%;
+		width: 11%;
+		height: 2%;
+		padding: .2%;
+	}
+}
+@media only screen and (max-width: 600px){
+	#contactpageContainerPhone{
+		width: 100%;
+		height: 100%;
+	}
+	
+	#contactBackgroundImagePhone{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -10;
+	}
+	#contactHomeIconPhone{
+		position: absolute;
+		top: 88.8%;
+		left: 44.9%;
+	}
+	/* First Name / Last Name / Email / Message */
+	p.contactExpectedPhone{
+		font-size: small;
+		margin-right: 22%;
+	}
+
+	#contactFirstnamePhone{
+		position: absolute;
+		display: -webkit-inline-box;
+		width: 100%;
+		max-width: 87%;
+		top: 31%;
+		left: 23%;
+		color: white;
+	}
+	
+	#contactFirstnamePhone input{
+		position: absolute;
+		padding-left: 1%;
+		height: 67%;
+		font-size: small;
+		left: 23%;
+		max-width: 31%;
+		background-color: white;
+	}
+	#contactLastnamePhone{
+		position: absolute;
+		display: -webkit-inline-box;
+		width: 100%;
+		max-width: 87%;
+		top: 36%;
+		left: 23%;
+		color: white;
+	}
+	#contactLastnamePhone input{
+		position: absolute;
+		padding-left: 1%;
+		font-size: small;
+		height: 67%;
+		left: 23%;
+		width: 31%;
+		background-color: white;
+	}
+	#contactEmailPhone{
+		position: absolute;
+		display: -webkit-inline-box;
+		width: 100%;
+		max-width: 87%;
+		top: 41%;
+		left: 23%;
+		color: white;
+	}
+	#contactEmailPhone input{
+		position: absolute;
+		padding-left: 1%;
+		font-size: xx-small;
+		height: 67%;
+		left: 23%;
+		width: 31%;
+		background-color: white;
+	}
+	#contactMessagePhone{
+		position: absolute;
+		top: 46%;
+		left: 42%;
+		color: white;
+	}
+	#contactTextareaPhone{
+		position: absolute;
+		padding-left: .3%;
+		top: 50%;
+		left: 23%;
+		width: 54%;
+		height: 15%;
+		background-color: white;
+	}
+	#contactSubmitButtonPhone{
+		position: absolute;
+		top: 66%;
+		left: 36.5%;
+		width: 25%;
+		height: 2%;
+		padding: .2%;
 	}
 }

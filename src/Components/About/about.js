@@ -1,75 +1,86 @@
 import React, {Component} from "react";
-
+import {Link} from "react-router-dom";
 import MediaQuery from 'react-responsive';
 
-//Carousel import with it's required CSS
-import {Carousel} from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-//Materialize import
-import 'materialize-css/dist/css/materialize.min.css';
+import { Button } from 'semantic-ui-react'
 
 
+import Logo from '../../Media/logo.png';
+import BackgroundImage from '../../Media/laptop-image-full-1900.png';
+import BackgroundImageTablet from '../../Media/phone-image-full-edited.png';
+import BackgroundImagePhone from '../../Media/phone-image-full-edited-cropped.png';
 import "./about.css";
 
 class About extends Component{
-
-    render(){
-        return( 
+	render(){
+		return(
             <div>
-                <MediaQuery query = "(min-width: 501px)">
-                    <div className= "workExperienceMobile">
-                        <div id="aboutMe">
-                            <p>Hello, I'm Myles. I am full-stack web developer. </p>
-                            <p>I have been freelancing since 2017 and have worked with many technologies. I enjoy all aspects of web development and look forward to learning more! </p>
+                <MediaQuery minWidth = {801} maxWidth = {2800} >
+                    <div id="aboutpageContainer">
+                        <img id = "aboutLogoImage" src = {Logo} alt = "laptop" />
+                        <img id= "aboutBackgroundImage" src = {BackgroundImage} alt = "laptop" />
+                        <p id = "aboutMyStatement">Hello, I'm Myles, I am a Full Stack Developer! I have been developing full time since 2017. Feel free to have a look around. </p>
+                        <div id="aboutSocialMedia">
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/">
+                                <Button circular basic inverted id='githubAbout' icon = "github" size='small'>Github </Button>
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mylesrangel/">
+                                <Button circular basic color="blue" id='linkedinAbout' icon = "linkedin" size='small'> LinkedIn </Button>
+                            </a>
                         </div>
-                        <hr className="seperationLine"></hr>
-                        <div className="workExperience">
-                            <h5> Freelance Web Developer</h5>
-                            <h6> June-2018 - Present</h6>
-                            <p className = "workDescription">Meet with prospective clients to review current website and discuss future design specifications. </p>
-                            <p className = "workDescription">Created various mock ups using HTML, CSS and Javascript. Communicated with third-party developers on behalf of client to discuss UI/UX needs with back end development</p>
-                        </div>
-                        <hr className="seperationLine"></hr> 
-                        <div className="workExperience">
-                            <h5> Clock Specialty - Web Developer</h5>
-                            <h6> June-2017 - June-2018</h6>    
-                            <p className = "workDescription"> Designed and maintained custom website with a check-in/checkout system.</p>
-                            <p className = "workDescription">This system uses HTML, CSS, JavaScript, PHP and MySQL. The website provides a full stack experience created with agile development.</p>
-                        </div>
+                        <Link to="/">
+                            <Button circular id='aboutHomeIcon' icon= "home" size='big' />
+                        </Link>
                     </div>
                 </MediaQuery>
-                <MediaQuery query = "(max-width: 500px)">
-                    <Carousel showThumbs = {false} showStatus={false}>
-                        <div className="workExperienceMobile">
-                            <div className="card-image waves-effect waves-block waves-light">
-                                <div id="aboutMeMobile">
-                                    <p>Hello, I'm Myles. I am full-stack web developer. </p>
-                                    <p>I have been freelancing since 2017 and have worked with many technologies. I enjoy all aspects of web development and look forward to learning more! </p>
-                                    
-                                        <p>Swipe right to see more about my work experience!</p>
+                
+        {/* ----------------------------Tablet 501 < 799 ----------------------------------------------------------------- */}
 
-                                </div>
-                            </div>
+                <MediaQuery minWidth ={601} maxWidth = {800} >
+                    <div id="aboutpageContainerTablet">
+                        <img id = "aboutLogoImageTablet" src = {Logo} alt = "laptop" />
+                        <img id= "aboutBackgroundImageTablet" src = {BackgroundImageTablet} alt = "laptop" />
+                        <p id = "aboutMyStatementTablet">Hello, I'm Myles, I am a Full Stack Developer! I have been developing full time since 2017. Feel free to have a look around. </p>
+                        <div id="aboutSocialMediaTablet">
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/">
+                                <Button circular basic inverted id='githubAbout' icon = "github" size='small'>Github </Button>
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mylesrangel/">
+                                <Button circular basic color="blue" id='linkedinAbout' icon = "linkedin" size='small'> LinkedIn </Button>
+                            </a>
                         </div>
-                        <div className="workExperienceMobile">
-                            <h5> Freelance Web Developer</h5>
-                            <h6> June-2018 - Present</h6>
-                            <p className = "workDescription">Meet with prospective clients to review current website and discuss future design specifications. </p>
-                            <p className = "workDescription">Created various mock ups using HTML, CSS and Javascript. Communicated with third-party developers on behalf of client to discuss UI/UX needs with back end development</p>
+                        <Link to="/">
+                            <Button circular id='aboutHomeIconTablet' icon= "home" size='big' />
+                        </Link>
+                    </div>                
+                </MediaQuery>
 
+
+
+    {/* ---------------------Mobile 500px -------------------------------------------------------------*/}
+
+                <MediaQuery maxWidth = {600} >
+                <   div id="aboutpageContainerPhone">
+                        <img id = "aboutLogoImagePhone" src = {Logo} alt = "laptop" />
+                        <img id= "aboutBackgroundImagePhone" src = {BackgroundImagePhone} alt = "laptop" />
+                        <p id = "aboutMyStatementPhone">Hello, I'm Myles, I am a Full Stack Developer! I have been developing full time since 2017. Feel free to have a look around. </p>
+                        <div id="aboutSocialMediaMobile">
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/">
+                                <Button circular basic inverted id='githubAbout' icon = "github" size='small'>Github </Button>
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mylesrangel/">
+                                <Button circular basic color="blue" id='linkedinAbout' icon = "linkedin" size='small'> LinkedIn </Button>
+                            </a>
                         </div>
-                        <div className="workExperienceMobile">
-                            <h5> Clock Specialty - Web Developer</h5>
-                            <h6> June-2017 - June-2018</h6>    
-                            <p className = "workDescription"> Designed and maintained custom website with a check-in/checkout system.</p>
-                            <p className = "workDescription">This system uses HTML, CSS, JavaScript, PHP and MySQL. The website provides a full stack experience created with agile development.</p>
-                        </div>
-                    </Carousel>
+                        <Link to="/">
+                            <Button circular id='aboutHomeIconPhone' icon= "home" size='big' />
+                        </Link>
+                    </div>
                 </MediaQuery>
             </div>
-        );
-    }  
+		);
+	}
+
 }
 
 export default About;
