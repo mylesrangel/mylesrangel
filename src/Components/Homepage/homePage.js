@@ -119,7 +119,8 @@ hideclockSpecialtyTechStack = () => {
 								<div onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack} className = "computerScreenIcon" >
 									<Button circular basic color="teal" id='addressCard' icon = "file code"  size='small'>Clock Specialty</Button>
 								</div>
-							</a>					
+							</a>	
+											
 						</div>
 					</div>
 				</MediaQuery>
