@@ -3,15 +3,19 @@
 
 
 	#homepageContainer{
-		width: 100%;
-		min-height: 100%;
+		
+		height: 963px;
+		display: block;
+		background-image: url("../../Media/laptop-image-full-1900.png");
+		background-size: auto;
+		background-position: center;
+
 	}
 
 	#homepageBackgroundImage{
 		width: 100%;
 		height: 100%;
 		position: absolute;
-		background-position: center;
 		bottom: 0;
 		left: 0;
 		z-index: -100;
@@ -30,7 +34,7 @@
 	}
 	#homepageTechIcons{
 		position: absolute;
-		top: 13%;
+		top: 9%;
 		left: 26%;
 		max-width: 50%;
 
@@ -74,7 +78,8 @@
 	}
 }
 
- @media only screen and (min-width: 601px) and (max-width: 800px){
+
+@media only screen and (min-width: 601px) and (max-width: 1000px){
 
 	#homepageContainerTablet{
 		width: 100%;

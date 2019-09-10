@@ -10,7 +10,7 @@ import myResume from "../../Media/MylesRangel.pdf";
 
 import {Link} from "react-router-dom";
 
-import "./homepage.css"
+import "./homePage.css"
 
 class Homepage extends Component{	
 
@@ -29,7 +29,8 @@ class Homepage extends Component{
 		githubTech: true,
 		nodeTech: true,
 		trelloTech: true,
-		androidTech: true
+		androidTech: true,
+
 	}
 
 showMylesrangelTechStack = () => {
@@ -74,11 +75,10 @@ hideclockSpecialtyTechStack = () => {
 
 	render(){
 		return(
-
 			<div>
-				<MediaQuery minWidth = {800} maxWidth = {2800} >
-					<div id="homepageContainer">
-						<img id = "homepageBackgroundImage" src = {BackgroundImage} alt = "laptop" />
+				<MediaQuery minWidth = {1000} maxWidth = {2800} >
+					<div id="homepageContainer" >
+						{/* <img id = "homepageBackgroundImage" src = {BackgroundImage} alt = "laptop" /> */}
 						<img id = "homepageLogoImage" src = {Logo} alt = "logo" />
 						<Button circular id='homepageHomeIcon' icon= "home" size='big' />
 						<div id = "homepageTechIcons" >
@@ -126,7 +126,7 @@ hideclockSpecialtyTechStack = () => {
 
 				{/* -----------------Under 800px--------------------------------------- -------------------------------------------------------------------------------------------------------------------------------*/}
 
-				<MediaQuery minWidth ={601} maxWidth = {799} >
+				<MediaQuery minWidth ={601} maxWidth = {999} >
 					<div id="homepageContainerTablet">
 						<img id = "homepageBackgroundImageTablet" src = {BackgroundImageTablet} alt = "laptop" />
 						<img id = "homepageLogoImageTablet" src = {Logo} alt = "logo" />
