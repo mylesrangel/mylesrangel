@@ -15,10 +15,9 @@ class About extends Component{
 	render(){
 		return(
             <div>
-                <MediaQuery minWidth = {801} maxWidth = {2800} >
+                <MediaQuery minWidth = {1000} maxWidth = {2800} >
                     <div id="aboutpageContainer">
                         <img id = "aboutLogoImage" src = {Logo} alt = "laptop" />
-                        <img id= "aboutBackgroundImage" src = {BackgroundImage} alt = "laptop" />
                         <p id = "aboutMyStatement">Hello, I'm Myles, I am a Full Stack Developer! I have been developing full time since 2017. Feel free to have a look around. </p>
                         <div id="aboutSocialMedia">
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/">
@@ -36,7 +35,7 @@ class About extends Component{
                 
         {/* ----------------------------Tablet 501 < 799 ----------------------------------------------------------------- */}
 
-                <MediaQuery minWidth ={601} maxWidth = {800} >
+                <MediaQuery minWidth ={601} maxWidth = {999} >
                     <div id="aboutpageContainerTablet">
                         <img id = "aboutLogoImageTablet" src = {Logo} alt = "laptop" />
                         <img id= "aboutBackgroundImageTablet" src = {BackgroundImageTablet} alt = "laptop" />
