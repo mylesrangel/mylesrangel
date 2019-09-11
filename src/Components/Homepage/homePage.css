@@ -11,30 +11,21 @@
 		background-position: center;
 
 	}
-
-	#homepageBackgroundImage{
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		z-index: -100;
-	}
 	#homepageLogoImage{
 		position: absolute;
 		width: 8%;
-		height: 8%;
-		top: 1%;
+		height: 75px;
+		top: 5px;
 		left: 47%;
 	}
 	#homepageHomeIcon{
 		position: absolute;
-		top: 80%;
+		top: 770px;
 		left: 48.9%;
 	}
 	#homepageTechIcons{
 		position: absolute;
-		top: 9%;
+		top: 100px;
 		left: 26%;
 		max-width: 50%;
 
@@ -46,7 +37,7 @@
 		min-width: 50%;
 		text-align: center;
 		position: absolute;
-		top: 27%;
+		top: 260px;
 		left: 24%;
 		
 	}
@@ -55,7 +46,7 @@
 	}
 	#homepageProjectSeperating{
 		position: absolute;
-		top: 39%;
+		top: 340px;
 		left: 30%;
 		width: 42%;
 		color: white;
@@ -69,7 +60,7 @@
 	}
 	#homepageProjectLinks{
 		position: absolute;
-		top: 45%;
+		top: 400px;
 		left: 25.5%;
 		display: flex;
 		flex-flow: wrap;

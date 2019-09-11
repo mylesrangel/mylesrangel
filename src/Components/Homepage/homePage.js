@@ -78,7 +78,6 @@ hideclockSpecialtyTechStack = () => {
 			<div>
 				<MediaQuery minWidth = {1000} maxWidth = {2800} >
 					<div id="homepageContainer" >
-						{/* <img id = "homepageBackgroundImage" src = {BackgroundImage} alt = "laptop" /> */}
 						<img id = "homepageLogoImage" src = {Logo} alt = "logo" />
 						<Button circular id='homepageHomeIcon' icon= "home" size='big' />
 						<div id = "homepageTechIcons" >
