@@ -100,10 +100,9 @@ class Contact extends Component{
 	render(){
 		return(
 			<div>
-				<MediaQuery minWidth = {801} maxWidth = {2800} >
+				<MediaQuery minWidth = {1000} maxWidth = {2800} >
 					<form onSubmit={this.handleSubmit} id="contactForm" style = {this.state.formStyle }>
 						<div id="contactpageContainer">
-							<img id= "contactBackgroundImage" src = {BackgroundImage} alt = "laptop" />
 							<Link to="/">
 								<Button circular id='contactHomeIcon' icon= "home" size='big' />
 							</Link>
@@ -131,7 +130,7 @@ class Contact extends Component{
 						</div>
 				</MediaQuery>
 				{/* ---------------Tablet------------------------------------------------------------------- */}
-				<MediaQuery minWidth = {601} maxWidth = {800} >
+				<MediaQuery minWidth = {601} maxWidth = {999} >
 				<form onSubmit={this.handleSubmit} id="contactFormTablet" style = {this.state.formStyle }>
 						<div id="contactpageContainerTablet">
 							<img id= "contactBackgroundImageTablet" src = {BackgroundImageTablet} alt = "laptop" />
