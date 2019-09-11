@@ -7,6 +7,7 @@ import { Button } from 'semantic-ui-react'
 
 import {Link} from "react-router-dom";
 
+import Logo from '../../Media/logo.png';
 import BackgroundImage from '../../Media/laptop-image-full-1900.png';
 import BackgroundImageTablet from '../../Media/phone-image-full-edited.png';
 import BackgroundImagePhone from '../../Media/phone-image-full-edited-cropped.png';
@@ -103,6 +104,7 @@ class Contact extends Component{
 				<MediaQuery minWidth = {1000} maxWidth = {2800} >
 					<form onSubmit={this.handleSubmit} id="contactForm" style = {this.state.formStyle }>
 						<div id="contactpageContainer">
+						<img id = "contactLogoImage" src = {Logo} alt = "logo" />
 							<Link to="/">
 								<Button circular id='contactHomeIcon' icon= "home" size='big' />
 							</Link>

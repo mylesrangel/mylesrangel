@@ -9,6 +9,13 @@
 		background-position: center;
 
 	}
+	#contactLogoImage{
+		position: absolute;
+		width: 8%;
+		height: 75px;
+		top: 5px;
+		left: 47%;
+	}
 	
 	#contactHomeIcon{
 		position: absolute;
@@ -101,7 +108,7 @@
 	}
 
 }
-@media only screen and (min-width: 601px) and (max-width: 800px){
+@media only screen and (min-width: 601px) and (max-width: 1000px){
 	#contactpageContainerTablet{
 		width: 100%;
 		height: 100%;

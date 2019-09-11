@@ -6,6 +6,7 @@ import Header from "./Components/Header/header.js";
 import Homepage from "./Components/Homepage/homePage.js";
 import Page404 from "./Components/Page404/page404.js";
 import Contact from "./Components/Contact/contact.js";
+import Emailsent from"./Components/Emailsent/emailSent.js";
 import About from "./Components/About/about.js";
 import MyProjects from "./Components/MyProjects/myProjects.js";
 import Template from "./Components/Template/template.js";
