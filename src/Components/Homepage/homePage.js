@@ -3,7 +3,6 @@ import MediaQuery from 'react-responsive';
 import { Button } from 'semantic-ui-react'
 
 import Logo from '../../Media/logo.png';
-import BackgroundImageTablet from '../../Media/phone-image-full-edited.png';
 import BackgroundImagePhone from '../../Media/phone-image-full-edited-cropped.png';
 import myResume from "../../Media/MylesRangel.pdf";
 
@@ -75,7 +74,7 @@ hideclockSpecialtyTechStack = () => {
 	render(){
 		return(
 			<div>
-				<MediaQuery minWidth = {1000} maxWidth = {2800} >
+				<MediaQuery minWidth = {1000} >
 					<div id="homepageContainer" >
 						<img id = "homepageLogoImage" src = {Logo} alt = "logo" />
 						<Button circular id='homepageHomeIcon' icon= "home" size='big' />

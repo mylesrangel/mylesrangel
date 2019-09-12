@@ -38,7 +38,6 @@ class About extends Component{
                 <MediaQuery minWidth ={601} maxWidth = {999} >
                     <div id="aboutpageContainerTablet">
                         <img id = "aboutLogoImageTablet" src = {Logo} alt = "laptop" />
-                        <img id= "aboutBackgroundImageTablet" src = {BackgroundImageTablet} alt = "laptop" />
                         <p id = "aboutMyStatementTablet">Hello, I'm Myles, I am a Full Stack Developer! I have been developing full time since 2017. Feel free to have a look around. </p>
                         <div id="aboutSocialMediaTablet">
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/">
