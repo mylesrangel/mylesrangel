@@ -29,6 +29,39 @@ class Homepage extends Component{
 		trelloTech: true,
 		androidTech: true,
 
+		backgroundImageWindowStyles:{
+			width: 0,
+			height: 0
+		},
+		homepageLogoImageWindowStyles:{
+			width: 0,
+			height: 0
+		},
+		homepageTechIconsImageWindowStyles:{
+			width: 0,
+			height: 0,
+			top: 0
+		},
+		homepageHomeIconWindowStyles:{
+			top: 0,
+			left: 0
+		},
+		homepageComputerScreenTopWindowStyles:{
+			width: 0,
+			height: 0,
+			top: 0,
+			left: 0
+		},
+		homepageProjectSeperationWindowStyles:{
+			width: 0,
+			top: 0,
+			left: 0
+		},
+		homepageProjectLinksWindowStyles:{
+			minWidth: 0,
+			top: 0,
+			left: 0
+		}
 	}
 
 showMylesrangelTechStack = () => {
@@ -71,15 +104,70 @@ hideclockSpecialtyTechStack = () => {
 	});
 }
 
+updateWindowDimensions = () => {
+
+	this.setState({ backgroundImageWindowStyles:{
+		width: window.innerWidth, 
+		height: window.innerHeight
+		},
+	 });
+	 this.setState({ homepageLogoImageWindowStyles:{
+		width: window.innerWidth /8, 
+		height: window.innerHeight /10
+		},
+	 });
+	 this.setState({ homepageTechIconsImageWindowStyles:{
+		width: window.innerWidth /2,
+		height: window.innerHeight /10,
+		top: window.innerHeight /7,
+		left: window.innerWidth /4
+		},
+	 });
+	 this.setState({ homepageHomeIconWindowStyles:{
+		top: window.innerHeight /1.25,
+		left: window.innerWidth /2.05
+		},
+	 });
+	 this.setState({ homepageComputerScreenTopWindowStyles:{	
+		width: window.innerWidth /2,
+		top: window.innerHeight /2.75,
+		left: window.innerWidth /4.2
+		},
+	 });
+	 this.setState({ homepageProjectSeperationWindowStyles:{	
+		width: window.innerWidth /2,
+		top: window.innerHeight /2,
+		left: window.innerWidth /3.85
+		},
+	 });
+	 this.setState({ homepageProjectLinksWindowStyles:{	
+		width: window.innerWidth /2,
+		top: window.innerHeight /1.85,
+		left: window.innerWidth /3.3
+		},
+	 });
+
+  }
+
+componentDidMount() {
+	this.updateWindowDimensions();
+	window.addEventListener('resize', this.updateWindowDimensions);
+}
+
+componentWillUnmount() {
+	window.removeEventListener('resize', this.updateWindowDimensions);
+}
+
+
 	render(){
 		return(
 			<div>
 				<MediaQuery minWidth = {1000} >
-					<div id="homepageContainer" >
-						<img id = "homepageLogoImage" src = {Logo} alt = "logo" />
-						<Button circular id='homepageHomeIcon' icon= "home" size='big' />
-						<div id = "homepageTechIcons" >
-						{this.state.reactTech && <Button circular color = 'blue' id='react' icon = "react" size = "mini">React </Button> }
+					<div id="homepageContainer" style={this.state.backgroundImageWindowStyles}>
+						<img id = "homepageLogoImage" src = {Logo} style={this.state.homepageLogoImageWindowStyles} alt = "logo" />
+						<Button circular id='homepageHomeIcon' icon= "home" size='big' style = {this.state.homepageHomeIconWindowStyles} />
+						<div id = "homepageTechIcons" style = {this.state.homepageTechIconsImageWindowStyles}>
+							{this.state.reactTech && <Button circular color = 'blue' id='react' icon = "react" size = "mini">React </Button> }
 							{this.state.jsTech &&<Button circular color='green' id='js' icon = "js" size = "mini" > JavaScript </Button>}
 							{this.state.awsTech &&<Button circular color='orange' id='aws' icon = "aws" size = "mini">AWS </Button>}
 							{this.state.html5Tech &&<Button circular color='orange' id='html5' icon = "html5" size = "mini">HTML5 </Button>}
@@ -91,7 +179,7 @@ hideclockSpecialtyTechStack = () => {
 							{this.state.trelloTech &&<Button circular color='blue' id='trello' icon = "trello" size = "mini">Trello </Button>}
 							{this.state.androidTech &&<Button circular color='green' id='android' icon = "android" size = "mini">Android </Button>}
 						</div>
-						<div id = "homepageComputerScreenContainerTop">
+						<div id = "homepageComputerScreenContainerTop" style = {this.state.homepageComputerScreenTopWindowStyles}>
 							<Link to="/about" >
 								<Button circular basic color="red"id='addressCard' icon = "address card"  size='small' >About</Button>
 							</Link>
@@ -102,12 +190,12 @@ hideclockSpecialtyTechStack = () => {
 								<Button circular basic color= "green" id='idCard' icon = "envelope"  size='small' >Contact</Button>
 							</Link>					
 						</div>
-						<div id = "homepageProjectSeperating">
+						<div id = "homepageProjectSeperating" style = {this.state.homepageProjectSeperationWindowStyles}>
 							<hr id="homepageLeftHorizontal" />
 							Experience
 							<hr id="homepageRightHorizontal"/>
 						</div>
-						<div id = "homepageProjectLinks">
+						<div id = "homepageProjectLinks" style = {this.state.homepageProjectLinksWindowStyles}>
 							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/mylesrangel">
 								<div onMouseEnter = {this.showMylesrangelTechStack}  onMouseLeave = {this.hideMylesrangelTechStack} ref = 'mylesrangel' className = "computerScreenIcon" >
 									<Button circular basic color="green"id='addressCard' icon = "file code"  size='small' >mylesrangel.com</Button>								</div>
