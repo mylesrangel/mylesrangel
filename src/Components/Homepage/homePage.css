@@ -9,8 +9,6 @@
 @media only screen and (min-width: 1000px){
 
 	#homepageContainer{
-		/* height is not 1080px because I didnt want the bottom of the image */
-		
 		display: block;
 		position: absolute;
 		top: 0;

@@ -10,8 +10,6 @@ import "./node_modules/react-responsive-carousel/lib/styles/carousel.min.css";
 //Materialize import
 import './node_modules/materialize-css/dist/css/materialize.min.css';
 
-import Myles from "../../Media/Myles.jpg";
-import Mylesrangelcom500 from "../../Media/mylesrangel500.JPG";
 import ClockSpecialty from "../../Media/clockspecialty500.jpg";
 
 import "./myWork.css";

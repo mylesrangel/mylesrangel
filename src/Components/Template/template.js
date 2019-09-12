@@ -4,8 +4,6 @@ import { Icon , Button } from 'semantic-ui-react'
 
 import {Link} from "react-router-dom";
 
-import BackgroundImage from '../../Media/laptop-image-full-1900.png';
-
 import "./template.css"
 
 class Template extends Component{	
@@ -14,7 +12,7 @@ class Template extends Component{
 	render(){
 		return(
 			<div id="templatepageContainer">
-				<img id= "templateBackgroundImage" src = {BackgroundImage} alt = "laptop" />
+				{/* <img id= "templateBackgroundImage" alt = "laptop" /> */}
 				<Link to="/">
                     <Button circular id='templateHomeIcon' icon= "home" size='big' />
 				</Link>
