@@ -143,6 +143,9 @@ hideclockSpecialtyTechStack = () => {
 	});
 }
 
+
+// Dynamically adjust based on window height / width
+
 updateWindowDimensions = () => {
 
 	this.setState({ backgroundImageWindowStyles:{
@@ -155,10 +158,10 @@ updateWindowDimensions = () => {
 	 },
 	});
 	 this.setState({ homepageLogoImageWindowStyles:{
-		top: window.innerHeight / 60,
-		left: window.innerWidth / 2.2 ,
-		width: window.innerWidth /8, 
-		height: window.innerHeight /10
+		top: window.innerHeight / 80,
+		left: window.innerWidth / 2.13,
+		width: window.innerWidth /12, 
+		height: window.innerHeight /15
 		},
 	 });
 	 this.setState({ homepageTechIconsImageWindowStyles:{
