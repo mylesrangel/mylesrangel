@@ -97,9 +97,18 @@ class Homepage extends Component{
 		MobileHomepageHomeIconStyles:{
 			top: 0,
 			left: 0,
-		}
+		},
 
 		//--------------Phone Styles----------------------------------
+		phoneTechIconSizesStyles:{
+			top: 0,
+			left: 0
+		},
+
+		phoneHomepageHomeIconStyles:{
+			top: 0,
+			left: 0
+		}
 
 	}
 
@@ -240,15 +249,20 @@ updateWindowDimensions = () => {
 
 
 	this.setState({mobileHomepageHomeIconStyles:{
-			top: window.innerHeight / 1.31,
+			top: window.innerHeight / 1.32,
 			left: window.innerWidth / 2.15
 		},
 	});
 
 // ------------Phone size responsive---------------------------------------------------
 
-	this.setState({phoneTechIconSizesStyles: {
+	this.setState({phoneTechIconSizesStyles:{
 			fontSize: window.innerWidth / 38,
+		},
+	});
+	this.setState({phoneHomepageHomeIconStyles:{
+		top: window.innerHeight / 1.13,
+		left: window.innerWidth / 2.3
 		},
 	});
 
@@ -286,7 +300,7 @@ componentWillUnmount() {
 						</div>
 						<div id = "homepageComputerScreenContainerTop" style = {this.state.homepageComputerScreenTopWindowStyles}>
 							<Link to="/about" >
-								<Button circular basic color="red"id='addressCard' icon = "address card" >About</Button>
+								<Button circular basic color="red" id='addressCard' icon = "address card" >About</Button>
 							</Link>
 							<a href = {myResume} target="_blank" rel="noopener noreferrer">
 								<Button circular basic color="blue" id='file outline' icon = "file outline" >Resume(pdf)</Button>
@@ -363,7 +377,7 @@ componentWillUnmount() {
 				</MediaQuery>
 			
 		{/* ---------------------Small Tablet 700px -------------------------------------------------------------*/}
-		<MediaQuery minWidth = {600} maxWidth = {699} >
+				<MediaQuery minWidth = {600} maxWidth = {699} >
 					<div id="homepageContainerMobile" style={this.state.backgroundImageWindowStyles}>
 						<img id = "homepageLogoImageMobile" src = {Logo} alt = "logo" />
 						<Button circular id='homepageHomeIconMobile' icon= "home" style = {this.state.mobileHomepageHomeIconStyles}/>
@@ -412,7 +426,7 @@ componentWillUnmount() {
 				<MediaQuery maxWidth = {599} >
 					<div id="homepageContainerPhone" style={this.state.backgroundImageWindowStyles}>
 						<img id = "homepageLogoImagePhone" src = {Logo} alt = "logo" />
-						<Button circular id='homepageHomeIconPhone' icon= "home" />
+						<Button circular id='homepageHomeIconPhone' icon= "home" style = {this.state.phoneHomepageHomeIconStyles}/>
 						<div id = "homepageTechIconsPhone" >
 							{this.state.reactTech && <Button circular color = 'blue' id='react' icon = "react" style = {this.state.phoneTechIconSizesStyles}> React </Button> }
 							{this.state.jsTech &&<Button circular color='green' id='js' icon = "js" style = {this.state.phoneTechIconSizesStyles} > JavaScript </Button>}

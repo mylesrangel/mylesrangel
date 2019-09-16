@@ -143,7 +143,7 @@
 	}
 }
 
-/* ----------------------------MOBILE 690px -------------------------------------------------------------------------------------- */
+/* ----------------------------MOBILE 699px -------------------------------------------------------------------------------------- */
 
 @media only screen and (min-width: 600px) and (max-width: 699px){
 
@@ -226,9 +226,6 @@
 
 
 
-
-
-
 /* -------------Phone--------------------------- */
 @media only screen and (max-width: 599px){
 
@@ -256,8 +253,6 @@
 	}
 	#homepageHomeIconPhone{
 		position: absolute;
-		top: 88.7%;
-		left: 43.1%;
 	}
 	#homepageTechIconsPhone{
 		position: absolute;

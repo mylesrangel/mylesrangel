@@ -1,12 +1,18 @@
 
-@media only screen and (max-width: 2800px){
+@media only screen and (min-width: 1000px){
 
 	#contactpageContainer{
-		height: 963px;
 		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
 		background-image: url("../../Media/laptop-image-full-edited.jpg");
-		background-size: auto;
-		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		/* background-position: 50% 100%; */
+		text-align: center;
+		margin: auto;
+		padding: 0;
 
 	}
 	#contactLogoImage{
@@ -32,8 +38,8 @@
 		position: absolute;
 		display: -webkit-inline-box;
 		width: 100%;
-		max-width: 57%;
-		top: 270px;
+		max-width: 50%;
+		top: 35%;
 		left: 33%;
 		color: white;
 	}
@@ -50,8 +56,8 @@
 		position: absolute;
 		display: -webkit-inline-box;
 		width: 100%;
-		max-width: 57%;
-		top: 310px;
+		max-width: 50%;
+		top: 39%;
 		left: 33%;
 		color: white;
 	}
@@ -67,8 +73,8 @@
 		position: absolute;
 		display: -webkit-inline-box;
 		width: 100%;
-		max-width: 57%;
-		top: 350px;
+		max-width: 50%;
+		top: 43%;
 		left: 33%;
 		color: white;
 	}
@@ -82,14 +88,14 @@
 	}
 	#contactMessage{
 		position: absolute;
-		top: 400px;
+		top: 48%;
 		left: 49%;
 		color: white;
 	}
 	#contactTextarea{
 		position: absolute;
-		top: 450px;
-		left: 30.5%;
+		top: 53%;
+		left: 29.5%;
 		width: 43%;
 		max-width:45%;
 		height: 175px;
@@ -99,7 +105,7 @@
 	}
 	#contactSubmitButton{
 		position: absolute;
-		top: 650px;
+		top: 74%;
 		left: 45.5%;
 		width: 10%;
 		max-width: 25%;
@@ -108,10 +114,20 @@
 	}
 
 }
-@media only screen and (min-width: 601px) and (max-width: 1000px){
+@media only screen and (min-width: 701px) and (max-width: 999px){
 	#contactpageContainerTablet{
-		width: 100%;
-		height: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/tablet-image-full.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		/* background-position: 50% 50%; */
+		text-align: center;
+		margin: auto;
+		padding: 0;
 	}
 	
 	#contactBackgroundImageTablet{
@@ -199,7 +215,7 @@
 		padding-left: .3%;
 		top: 50%;
 		left: 34%;
-		width: 33%;
+		width: 33.5%;
 		height: 15%;
 		background-color: white;
 	}
@@ -212,10 +228,182 @@
 		padding: .2%;
 	}
 }
-@media only screen and (max-width: 600px){
-	#contactpageContainerPhone{
+
+
+@media only screen and (min-width: 600px) and (max-width: 699px){
+
+	#contactpageContainerMobile{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/phone-image-full-edited.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+
+	#contactpageLogoImageMobile{
+		position: absolute;
+		width: 10%;
+		height: 5%;
+		top: 1%;
+		left: 46%;
+	}
+	#contactHomeIconMobile{
+		position: absolute;
+		top: 88.7%;
+		left: 43.1%;
+	}
+
+	#contactFirstnameMobile{
+		position: absolute;
+		display: -webkit-inline-box;
 		width: 100%;
-		height: 100%;
+		max-width: 61%;
+		top: 31%;
+		left: 33%;
+		color: white;
+	}
+	
+	#contactFirstnameMobile input{
+		position: absolute;
+		padding-left: 1%;
+		height: 67%;
+		font-size: small;
+		left: 23%;
+		max-width: 31%;
+		background-color: white;
+	}
+	#contactLastnameMobile{
+		position: absolute;
+		display: -webkit-inline-box;
+		width: 100%;
+		max-width: 61%;
+		top: 36%;
+		left: 33%;
+		color: white;
+	}
+	#contactLastnameMobile input{
+		position: absolute;
+		padding-left: 1%;
+		font-size: small;
+		height: 67%;
+		left: 23%;
+		width: 31%;
+		background-color: white;
+	}
+	#contactEmailMobile{
+		position: absolute;
+		display: -webkit-inline-box;
+		width: 100%;
+		max-width: 61%;
+		top: 41%;
+		left: 33%;
+		color: white;
+	}
+	#contactEmailMobile input{
+		position: absolute;
+		padding-left: 1%;
+		font-size: xx-small;
+		height: 67%;
+		left: 23%;
+		width: 31%;
+		background-color: white;
+	}
+	#contactMessageMobile{
+		position: absolute;
+		top: 46%;
+		left: 45%;
+		color: white;
+	}
+	#contactTextareaMobile{
+		position: absolute;
+		padding-left: .3%;
+		top: 50%;
+		left: 34%;
+		width: 32%;
+		height: 15%;
+		background-color: white;
+	}
+	#contactSubmitButtonMobile{
+		position: absolute;
+		top: 66%;
+		left: 43.5%;
+		width: 13%;
+		height: 2%;
+		padding: .2%;
+	}
+	#contactpageTechIconsMobile{
+		position: absolute;
+		top: 6%;
+		left: 12%;
+		max-width: 75%;
+
+	}
+	#contactpageTechIconsMobile button{
+		margin: .3em;
+	}
+	#contactpageComputerScreenContainerTopMobile{
+		position: absolute;
+		top: 28%;
+		left: 33%;
+		display: grid;
+		min-width: 33%;
+		justify-items: center;
+		justify-content: center;
+	}
+	#contactpageComputerScreenContainerTopMobile a{
+		margin-top: 20%;
+	}
+
+	#contactpageProjectSeperatingMobile{
+		position: absolute;
+		top: 49%;
+		left: 33%;
+		width: 34%;
+		color: white;
+		display: inline-flex;
+	}
+	#contactpageLeftHorizontalMobile{
+		width: 24%;
+	}
+	#contactpageRightHorizontalMobile{
+		width: 25%;
+	}
+	#contactpageProjectLinksMobile{
+		position: absolute;
+		top: 57%;
+		left: 33%;
+		min-width: 33%;
+		justify-items: center;
+		justify-content: center;
+		min-height: 12%;
+		display: grid;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 599px){
+	#contactpageContainerPhone{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/phone-image-full-edited-cropped.png");
+		background-size: 120% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;
+		margin: auto;
+		padding: 0;
 	}
 	
 	#contactBackgroundImagePhone{
