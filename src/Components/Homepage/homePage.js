@@ -254,6 +254,8 @@ updateWindowDimensions = () => {
 		},
 	});
 
+
+
 // ------------Phone size responsive---------------------------------------------------
 
 	this.setState({phoneTechIconSizesStyles:{
@@ -376,7 +378,7 @@ componentWillUnmount() {
 					</div>
 				</MediaQuery>
 			
-		{/* ---------------------Small Tablet 700px -------------------------------------------------------------*/}
+		{/* ---------------------Mobile 700px -------------------------------------------------------------*/}
 				<MediaQuery minWidth = {600} maxWidth = {699} >
 					<div id="homepageContainerMobile" style={this.state.backgroundImageWindowStyles}>
 						<img id = "homepageLogoImageMobile" src = {Logo} alt = "logo" />

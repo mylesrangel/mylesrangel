@@ -100,7 +100,7 @@ class Contact extends Component{
 
 		MobileContactpageHomeIconStyles:{
 			top: 0,
-			left: 0,
+			left: 0
 		},
 
 		//--------------Phone Styles----------------------------------
@@ -131,8 +131,7 @@ class Contact extends Component{
 		 this.setState({ contactpageLogoImageWindowStyles:{
 			top: window.innerHeight / 80,
 			left: window.innerWidth / 2.13,
-			width: window.innerWidth /12, 
-			height: window.innerHeight /15
+
 			},
 		 });
 
@@ -170,10 +169,9 @@ class Contact extends Component{
 	
 	//---------Mobile size responsive --------------------------------------------------
 	
-	
 		this.setState({mobileContactpageHomeIconStyles:{
-				top: window.innerHeight / 1.32,
-				left: window.innerWidth / 2.15
+			top: window.innerHeight / 1.32,
+			left: window.innerWidth / 2.15
 			},
 		});
 	
@@ -301,9 +299,10 @@ class Contact extends Component{
 				{/* ---------------Tablet------------------------------------------------------------------- */}
 				<MediaQuery minWidth ={700} maxWidth = {999} >
 					<form onSubmit={this.handleSubmit} id="contactFormTablet" style = {this.state.formStyle }>
+					<img id = "contactLogoImageTablet" src = {Logo} style={this.state.homepageLogoImageWindowStyles} alt = "logo" />
 						<div id="contactpageContainerTablet" style={this.state.backgroundImageWindowStyles}>
 							<Link to="/">
-								<Button circular id='contactHomeIconTablet' icon= "home" style = {this.state.tabletContactpageHomeIconWindowStyles}/>
+								<Button circular id='contactHomeIconTablet' icon= "home" size = "large" style = {this.state.tabletContactpageHomeIconWindowStyles}/>
 							</Link>
 							<div id="contactFirstnameTablet">
 								<p className = "contactExpectedTablet">First Name:</p>
@@ -334,9 +333,10 @@ class Contact extends Component{
 				
 				<MediaQuery minWidth ={600} maxWidth = {699} >
 					<form onSubmit={this.handleSubmit} id="contactFormMobile" style = {this.state.formStyle }>
+					<img id = "contactLogoImageMobile" src = {Logo} alt = "logo" />
 						<div id="contactpageContainerMobile" style={this.state.backgroundImageWindowStyles}>
 							<Link to="/">
-								<Button circular id='contactHomeIconMobile' icon= "home" style = {this.state.mobileContactpageHomeIconStyles}/>
+								<Button circular id='contactHomeIconMobile' icon= "home" style = {this.state.mobileContactpageHomeIconStyles} />
 							</Link>
 							<div id="contactFirstnameMobile">
 								<p className = "contactExpectedMobile">First Name:</p>
@@ -370,6 +370,7 @@ class Contact extends Component{
 				<MediaQuery maxWidth = {599} >
 						<form onSubmit={this.handleSubmit} id="contactFormPhone" style = {this.state.formStyle }>
 							<div id="contactpageContainerPhone" style={this.state.backgroundImageWindowStyles}>
+							<img id = "contactLogoImagePhone" src = {Logo} alt = "logo" />
 								<Link to="/">
 									<Button circular id='contactHomeIconPhone' icon= "home" style = {this.state.phoneContactpageHomeIconStyles}/>
 								</Link>

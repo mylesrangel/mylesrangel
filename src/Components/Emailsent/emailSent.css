@@ -1,10 +1,16 @@
-@media only screen and (max-width: 2800px){
+@media only screen and (min-width: 1000px){
 	#emailSentContainer{
-		height: 963px;
 		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
 		background-image: url("../../Media/laptop-image-full-edited.jpg");
-		background-size: auto;
-		background-position: center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		/* background-position: 50% 100%; */
+		text-align: center;
+		margin: auto;
+		padding: 0;
 	}
 	#emailSentLogoImage{
 		position: absolute;
@@ -15,22 +21,29 @@
 	}
 	#emailSentHomeIcon{
 		position: absolute;
-		top: 770px;
-		left: 48.9%;
+
 	}
-	#emailSentReplyMessage{
+	#emailReplyMessage{
 		position: absolute;
-		top: 350px;
-		left: 31%;
 		width: 40%;
 		max-width: 50%;
 		color: white;
 	}
 }
-@media only screen and (min-width: 601px) and (max-width: 800px){
+@media only screen and (min-width: 700px) and (max-width: 999px){
 	#emailSentContainerTablet{
-		width: 100%;
-		height: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/tablet-image-full.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		/* background-position: 50% 50%; */
+		text-align: center;
+		margin: auto;
+		padding: 0;
 	}
 	
 	#emailSentBackgroundImageTablet{
@@ -43,21 +56,69 @@
 	}
 	#emailSentHomeIconTablet{
 		position: absolute;
-		top: 75.8%;
-		left: 46.4%;
+
 	}
 	#emailSentReplyMessageTablet{
 		position: absolute;
-		top: 32%;
-		left: 36%;
+		min-width: 45%;
+		justify-content: center;
 		color: white;
 	}
 	
 }
-@media only screen and (max-width: 600px){
+
+/* ----------------------------MOBILE 699px -------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 600px) and (max-width: 699px){
+
+	#emailSentContainerMobile{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/phone-image-full-edited.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+
+	#emailSentLogoImageMobile{
+		position: absolute;
+		width: 10%;
+		height: 5%;
+		top: 1%;
+		left: 46%;
+	}
+	#emailSentHomeIconMobile{
+		position: absolute;
+	}
+	#emailSentReplyMessageMobile{
+		position: absolute;
+		min-width: 45%;
+		color: white;
+	}
+
+}
+
+
+@media only screen and (max-width: 599px){
 	#emailSentContainerPhone{
-		width: 100%;
-		height: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/phone-image-full-edited-cropped.png");
+		background-size: 120% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;
+		margin: auto;
+		padding: 0;
 	}
 	
 	#emailSentBackgroundImagePhone{
