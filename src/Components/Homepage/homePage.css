@@ -2,8 +2,6 @@
 @media only screen and (min-width: 1000px){
 
 	#homepageContainer{
-		display: block;
-		top: 0;
 		left: 0;
 		right: 0;
 		background-image: url("../../Media/laptop-image-full-edited.jpg");
