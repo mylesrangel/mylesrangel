@@ -169,7 +169,7 @@ updateWindowDimensions = () => {
 	});
 	this.setState({tabletAboutpageHomeIconWindowStyles:{
 
-		top: window.innerHeight / 1.3,
+		top: window.innerHeight / 1.35,
 		left: window.innerWidth / 2.13
 
 		},
