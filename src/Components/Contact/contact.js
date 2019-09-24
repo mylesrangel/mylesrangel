@@ -68,6 +68,12 @@ class Contact extends Component{
 			top: 0,
 			left: 0
 		},
+		contactTextAreaStyle:{
+			height: 0
+		},
+		contactSubmitButtonStyle:{
+			height:  0
+		},
 
 		// -----------Tablet Responsiveness -------------------
 
@@ -94,6 +100,7 @@ class Contact extends Component{
 			top: 0,
 			left: 0
 		},
+
 
 		//------------------Mobile styles --------------------------------
 
@@ -140,6 +147,14 @@ class Contact extends Component{
 			left: window.innerWidth /2.05
 			},
 		 });
+		 this.setState({contactTextAreaStyle: {
+			height: window.innerHeight / 5.33
+		   },
+		});
+		this.setState({contactSubmitButtonStyle: {
+			height: window.innerHeight / 15
+		   },
+		});
 
 
 	
@@ -158,7 +173,7 @@ class Contact extends Component{
 
 		this.setState({tabletContactpageHomeIconWindowStyles:{
 	
-			top: window.innerHeight / 1.3,
+			top: window.innerHeight / 1.35,
 			left: window.innerWidth / 2.13
 	
 			},
@@ -288,8 +303,8 @@ class Contact extends Component{
 							<div id="contactMessage">
 								<p className = "contactExpected"> Message </p>
 							</div>
-							<textarea  required id="contactTextarea" name="message" value={this.state.emailInfo.message || ''} onChange={this.handleChange} />
-							<Button id="contactSubmitButton" type="submit" value="Send" positive>Submit</Button>
+							<textarea required id="contactTextarea" name="message" style={this.state.contactTextAreaStyle} value={this.state.emailInfo.message || ''} onChange={this.handleChange} />
+							<Button id="contactSubmitButton" type="submit" value="Send" style = {this.setState.contactSubmitButtonStyle} positive>Submit</Button>
 						</div>
 					</form>
 					<div id= "contactEmailSentContainer">

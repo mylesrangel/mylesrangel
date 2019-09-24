@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import MediaQuery from 'react-responsive';
+
 import { Button } from 'semantic-ui-react'
 
 import Logo from '../../Media/logo.png';
@@ -205,7 +206,6 @@ updateWindowDimensions = () => {
 		},
 	 });
 
-
  //-----------------------Tablet Responsive ----------------------
 
 
@@ -218,15 +218,13 @@ updateWindowDimensions = () => {
 		},
 	 });
 	this.setState({tabletHomepageComputerScreenTopWindowStyles:{
-		
 		top: window.innerHeight /3.7,
 		left: window.innerWidth /3.4
-	
 		},
 	});
 	this.setState({tabletHomepageHomeIconWindowStyles:{
 
-		top: window.innerHeight / 1.3,
+		top: window.innerHeight / 1.35,
 		left: window.innerWidth / 2.13
 
 		},
@@ -302,13 +300,13 @@ componentWillUnmount() {
 						</div>
 						<div id = "homepageComputerScreenContainerTop" style = {this.state.homepageComputerScreenTopWindowStyles}>
 							<Link to="/about" >
-								<Button circular basic color="red" id='addressCard' icon = "address card" >About</Button>
+								<Button circular basic color="red" id='addressCard' icon = "address card" size="large"> About </Button>
 							</Link>
 							<a href = {myResume} target="_blank" rel="noopener noreferrer">
-								<Button circular basic color="blue" id='file outline' icon = "file outline" >Resume(pdf)</Button>
+								<Button circular basic color="blue" id='file outline' icon = "file outline" size="large">Resume(pdf)</Button>
 							</a>
 							<Link to="/contact" >
-								<Button circular basic color= "green" id='idCard' icon = "envelope">Contact</Button>
+								<Button circular basic color= "green" id='idCard' icon = "envelope" size="large">Contact</Button>
 							</Link>					
 						</div>
 						<div id = "homepageProjectSeperating" style = {this.state.homepageProjectSeperationWindowStyles}>
@@ -319,12 +317,12 @@ componentWillUnmount() {
 						<div id = "homepageProjectLinks" style = {this.state.homepageProjectLinksWindowStyles}>
 							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/mylesrangel">
 								<div onMouseEnter = {this.showMylesrangelTechStack}  onMouseLeave = {this.hideMylesrangelTechStack} ref = 'mylesrangel' className = "computerScreenIcon" >
-									<Button circular basic color="green"id='addressCard' icon = "file code"  size='mini' >mylesrangel.com</Button>								
+									<Button circular basic color="green"id='addressCard' icon = "file code"  size='small' >mylesrangel.com</Button>								
 								</div>
 							</a>
 							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/ClockSpecialty">
 								<div onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack} className = "computerScreenIcon" >
-									<Button circular basic color="teal" id='addressCard' icon = "file code"  size='mini'>Clock Specialty</Button>
+									<Button circular basic color="teal" id='addressCard' icon = "file code"  size='small'>Clock Specialty</Button>
 								</div>
 							</a>	
 											

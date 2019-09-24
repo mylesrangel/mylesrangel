@@ -39,6 +39,7 @@
 		display: -webkit-inline-box;
 		width: 100%;
 		max-width: 50%;
+		height: 5%;
 		top: 35%;
 		left: 33%;
 		color: white;
@@ -57,6 +58,7 @@
 		display: -webkit-inline-box;
 		width: 100%;
 		max-width: 50%;
+		height: 5%;
 		top: 39%;
 		left: 33%;
 		color: white;
@@ -74,6 +76,7 @@
 		display: -webkit-inline-box;
 		width: 100%;
 		max-width: 50%;
+		height: 5%;
 		top: 43%;
 		left: 33%;
 		color: white;
@@ -89,7 +92,7 @@
 	#contactMessage{
 		position: absolute;
 		top: 48%;
-		left: 49%;
+		left: 48%;
 		color: white;
 	}
 	#contactTextarea{
@@ -109,7 +112,7 @@
 		left: 45.5%;
 		width: 10%;
 		max-width: 25%;
-		height: 30px;
+		min-height: 15px;
 		padding: .2%;
 	}
 
