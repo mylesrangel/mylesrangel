@@ -12,6 +12,11 @@
     "react-scripts": "^2.1.8",
     "semantic-ui-react": "^0.88.0"
   },
+  "proxy": {
+    "/*":{
+      "target": "https:mylesrangel.com"
+    }
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
