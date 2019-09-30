@@ -1,0 +1,96 @@
+
+@media only screen and (min-width: 1000px){
+
+	#clockSpecialtyContainer{
+		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/laptop-image-full-edited.jpg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		/* background-position: 50% 100%; */
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+	#clockSpecialtyLogoImage{
+		position: absolute;
+	}
+	#clockSpecialtyHomeIcon{
+		position: absolute;
+	}
+	#clockSpecialtyVideoContainer{
+		position: absolute;
+
+	}
+
+}
+
+
+@media only screen and (min-width: 700px) and (max-width: 999px){
+
+	#clockSpecialtyContainerTablet{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/tablet-image-full.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		/* background-position: 50% 50%; */
+		text-align: center;
+		margin: auto;
+		padding: 0;
+
+	}
+}
+
+/* ----------------------------MOBILE 690px -------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 600px) and (max-width: 699px){
+
+	#clockSpecialtyContainerMobile{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/phone-image-full-edited.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+
+}
+
+
+
+
+
+
+/* -------------Phone--------------------------- */
+@media only screen and (max-width: 599px){
+
+	#clockSpecialtyContainerPhone{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/phone-image-full-edited-cropped.png");
+		background-size: 120% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+
+	
+
+}
