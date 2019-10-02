@@ -17,12 +17,23 @@
 	#clockSpecialtyLogoImage{
 		position: absolute;
 	}
+	#clockSpecialtyTechStack{
+		position: absolute;
+		max-width: 50%;
+	}
 	#clockSpecialtyHomeIcon{
 		position: absolute;
 	}
 	#clockSpecialtyVideoContainer{
 		position: absolute;
-
+	}
+	#clockSpecialtyGithubButton{
+		position: absolute;
+		z-index: 100;
+	}
+	#clockSpecialtyLiveDemoButton{
+		position: absolute;
+		z-index: 100;
 	}
 
 }
@@ -43,7 +54,25 @@
 		text-align: center;
 		margin: auto;
 		padding: 0;
-
+	}
+	#clockSpecialtyTechIconsTablet{
+		position: absolute;
+		top: 90px;
+		left: 5%;
+		min-width: 89%;
+	}
+	#clockSpecialtyVideoContainerTablet{
+		position: absolute;
+	}
+	#clockSpecialtyHomeIconTablet{
+		position: absolute;
+	}
+	#clockSpecialtyLogoImageTablet{
+		position: absolute;
+		width: 14%;
+		height: 75px;
+		top: 5px;
+		left: 45%;
 	}
 }
 

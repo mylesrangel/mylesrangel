@@ -3,6 +3,8 @@ import {Link} from "react-router-dom"
 import MediaQuery from 'react-responsive'
 import { Button } from 'semantic-ui-react'
 
+import Logo from '../../Media/logo.png';
+
 import ReactPlayer from 'react-player'
 
 import "./clockSpecialty.css"
@@ -11,27 +13,15 @@ class ClockSpecialty extends Component{
 
 	state = {
 
-		mylesrangelHover: false,
-		
-		// Tech buttons on left of screen
-		reactTech: true,
-		jsTech: true,
-		awsTech: true,
-		html5Tech: true,
-		css3Tech: true,
-		phpTech: true,
-		npmTech: true,
-		githubTech: true,
-		nodeTech: true,
-		trelloTech: true,
-		androidTech: true,
-
 		backgroundImageWindowStyles:{
 			width: 0,
 			height: 0
 		},
-		clockSpecialtyButtonSizes:{
-			fontSize: 0
+		clockSpecialtyTechIconsImageWindowStyles:{
+			width: 0,
+			height: 0,
+			top: 0,
+			left: 0,			
 		},
 		clockSpecialtyLogoImageWindowStyles:{
 			width: 0,
@@ -46,6 +36,14 @@ class ClockSpecialty extends Component{
 			height: 0,
 			top: 0,
 			left:0
+		},
+		clockSpecialtyGithubButton:{
+			top: 0,
+			left: 0
+		},
+		clockSpecialtyLiveDemoButton:{
+			top: 0,
+			left: 0
 		},
 
 		// -----------Tablet Responsiveness -------------------
@@ -102,6 +100,13 @@ updateWindowDimensions = () => {
 		height: window.innerHeight /15
 		},
 	 });
+	 this.setState({ clockSpecialtyTechIconsImageWindowStyles:{
+		width: window.innerWidth /2,
+		height: window.innerHeight /11,
+		top: window.innerHeight /6,
+		left: window.innerWidth /4,
+		},
+	 });
 
 	 this.setState({ clockSpecialtyHomeIconWindowStyles:{
 		top: window.innerHeight /1.25,
@@ -110,49 +115,45 @@ updateWindowDimensions = () => {
 	 });
 	 this.setState({ clockSpecialtyVideoContainer: {
 		width: window.innerWidth / 2.2,
-		height: window.innerHeight / 2,
-		top: window.innerHeight / 3.4,
+		height: window.innerHeight / 2.2,
+		top: window.innerHeight / 3,
 		left: window.innerWidth /3.6
 	   },
 	});
-
+	this.setState({ clockSpecialtyGithubButton: {
+		top: window.innerHeight / 1.246,
+		left: window.innerWidth / 2.5,
+	   },
+	});
+	this.setState({clockSpecialtyLiveDemoButton: {
+		top: window.innerHeight / 1.246,
+		left: window.innerWidth / 1.8
+	   },
+	});
 
  //-----------------------Tablet Responsive ----------------------
 
-	this.setState({ tabletHomepageTechIconsImageWindowStyles:{
+	this.setState({ tabletClockSpecialtyTechIconsImageWindowStyles:{
 		width: window.innerWidth /2,
 		height: window.innerHeight /10,
-		top: window.innerHeight /13.5,
+		top: window.innerHeight /12,
 		left: window.innerWidth /18
 		},
 	 });
-	this.setState({tabletHomepageComputerScreenTopWindowStyles:{
-		
-		top: window.innerHeight /3.7,
-		left: window.innerWidth /3.4
-	
-		},
-	});
-	this.setState({tabletHomepageHomeIconWindowStyles:{
-
-		top: window.innerHeight / 1.3,
+	 
+	this.setState({tabletClockSpecialtyHomeIconWindowStyles:{
+		top: window.innerHeight / 1.35,
 		left: window.innerWidth / 2.13
 
 		},
 	});
-	this.setState({tabletHomepageProjectSeperationWindowStyles:{
-		top: window.innerHeight / 2.6,
-		left: window.innerWidth / 3.4
-		},	
+	this.setState({tabletClockSpecialtyVideoContainer:{
+		width: window.innerWidth / 2.2,
+		height: window.innerHeight / 1.8,
+		top: window.innerHeight / 1.5,
+		left: window.innerWidth /3.6
+	   },
 	});
-	this.setState({tabletHomepageProjectLinksWindowStyles:{
-		top: window.innerHeight / 2.4,
-		left: window.innerWidth /3.3
-		},
-
-	});
-
-
 
 //---------Mobile size responsive --------------------------------------------------
 
@@ -187,14 +188,28 @@ componentWillUnmount() {
 			<div>
 				<MediaQuery minWidth = {1000}>
 					<div id="clockSpecialtyContainer" style={this.state.backgroundImageWindowStyles}>
-					<Link to="/">
-						<Button circular id='clockSpecialtyHomeIcon' icon= "home" style = {this.state.clockSpecialtyHomeIconWindowStyles} />
-					</Link>
-					<video id="clockSpecialtyVideoContainer" autoPlay controls loop muted style= {this.state.clockSpecialtyVideoContainer} >
-						<source src="/Videos/ClockSpecialtyDemo.mp4" type="video/mp4" />
-					</video>
+						<img id = "homepageLogoImage" src = {Logo} style={this.state.clockSpecialtyLogoImageWindowStyles} alt = "logo" />
+						<div id="clockSpecialtyTechStack" style={this.state.clockSpecialtyTechIconsImageWindowStyles}>
+							<h5>Technologies used: </h5>
+							<Button circular color='orange' id='html5' icon = "html5" size = "mini">HTML5 </Button>
+							<Button circular color='blue' id='css3' icon = "css3" size = "mini">CSS3 </Button>
+							<Button circular color='green' id='js' icon = "js" size = "mini" > JavaScript </Button>
+							<Button circular color='purple' id='php' icon = "php" size = "mini">PHP </Button>
+							<Button circular color='black' id='github' icon = "github" size = "mini">Git </Button>
+						</div>
+						<Link to="/">
+							<Button circular id='clockSpecialtyHomeIcon' icon= "home" style = {this.state.clockSpecialtyHomeIconWindowStyles} />
+						</Link>
+						<video id="clockSpecialtyVideoContainer" autoPlay controls loop muted style= {this.state.clockSpecialtyVideoContainer} >
+							<source src="/Videos/ClockSpecialtyDemo.mp4" type="video/mp4" />
+						</video>
 
-
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/ClockSpecialty">
+							<Button circular inverted basic color="white" icon = "file code"  size='small' id="clockSpecialtyGithubButton" style = {this.state.clockSpecialtyGithubButton}>Github</Button>								
+						</a>
+						<a target="_blank" rel="noopener noreferrer" href="https://clockspecialty.now.sh">
+							<Button circular basic color="green" icon = "file code"  size='small' id="clockSpecialtyLiveDemoButton" style = {this.state.clockSpecialtyLiveDemoButton}>Live Demo</Button>								
+						</a>
 
 					</div>
 				</MediaQuery>
@@ -202,13 +217,27 @@ componentWillUnmount() {
 				{/* -----------------Under 900px--------------------------------------- -------------------------------------------------------------------------------------------------------------------------------*/}
 
 				<MediaQuery minWidth ={700} maxWidth = {999} >
-					<div id="homepageContainerTablet" style={this.state.backgroundImageWindowStyles}>
-						
+					<div id="clockSpecialtyContainerTablet" style={this.state.backgroundImageWindowStyles}>
+						<img id = "clockSpecialtyLogoImageTablet" src = {Logo} alt = "logo"  />
+						<div id="clockSpecialtyTechIconsTablet" style={this.state.tabletClockSpecialtyTechIconsImageWindowStyles}>
+							<h5>Technologies used: </h5>
+							<Button circular color='orange' id='html5' icon = "html5" size = "mini">HTML5 </Button>
+							<Button circular color='blue' id='css3' icon = "css3" size = "mini">CSS3 </Button>
+							<Button circular color='green' id='js' icon = "js" size = "mini" > JavaScript </Button>
+							<Button circular color='purple' id='php' icon = "php" size = "mini">PHP </Button>
+							<Button circular color='black' id='github' icon = "github" size = "mini">Git </Button>
+						</div>
+						<Link to="/">
+							<Button circular id='clockSpecialtyHomeIconTablet' icon= "home" size='large' style = {this.state.tabletClockSpecialtyHomeIconWindowStyles}/>
+						</Link>
+						<video id="clockSpecialtyVideoContainer" autoPlay controls loop muted style= {this.state.tabletClockSpecialtyVideoContainer} >
+							<source src="/Videos/ClockSpecialtyDemoMobile.mp4" type="video/mp4" />
+						</video>
 					</div>
 				</MediaQuery>
 			
-		{/* ---------------------Small Tablet 700px -------------------------------------------------------------*/}
-		<MediaQuery minWidth = {600} maxWidth = {699} >
+				{/* ---------------------Small Tablet 700px -------------------------------------------------------------*/}
+				<MediaQuery minWidth = {600} maxWidth = {699} >
 					<div id="homepageContainerMobile" style={this.state.backgroundImageWindowStyles}>
 					
 					</div>

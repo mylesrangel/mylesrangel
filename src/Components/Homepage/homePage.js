@@ -367,11 +367,11 @@ componentWillUnmount() {
 						</div>
 						<div id = "homepageProjectLinksTablet" style = {this.state.tabletHomepageProjectLinksWindowStyles}>
 							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/mylesrangel">
-									<Button onMouseEnter = {this.showMylesrangelTechStack}  onMouseLeave = {this.hideMylesrangelTechStack} circular basic color="green"id='addressCard' icon = "file code" size="mini"> mylesrangel.com </Button>
+								<Button onMouseEnter = {this.showMylesrangelTechStack}  onMouseLeave = {this.hideMylesrangelTechStack} circular basic color="green"id='addressCard' icon = "file code" size="mini"> mylesrangel.com </Button>
 							</a>
-							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/ClockSpecialty">
-									<Button onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack}circular basic color="teal" id='addressCard' icon = "file code" size="mini">Clock Specialty </Button>
-							</a>					
+							<Link to="/clockSpecialty">
+								<Button onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack}circular basic color="teal" id='addressCard' icon = "file code" size="mini">Clock Specialty </Button>
+							</Link>					
 						</div>
 					</div>
 				</MediaQuery>
