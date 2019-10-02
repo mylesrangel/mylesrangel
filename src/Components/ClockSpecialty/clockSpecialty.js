@@ -148,10 +148,20 @@ updateWindowDimensions = () => {
 		},
 	});
 	this.setState({tabletClockSpecialtyVideoContainer:{
-		width: window.innerWidth / 2.2,
-		height: window.innerHeight / 1.8,
-		top: window.innerHeight / 1.5,
-		left: window.innerWidth /3.6
+		width: window.innerWidth / 2.5,
+		height: window.innerHeight / 2.1,
+		top: window.innerHeight / 4.3,
+		left: window.innerWidth /3.3
+	   },
+	});
+	this.setState({tabletClockSpecialtyGithubButton: {
+		top: window.innerHeight / 1.34,
+		left: window.innerWidth / 3,
+	   },
+	});
+	this.setState({tabletClockSpecialtyLiveDemoButton: {
+		top: window.innerHeight / 1.34,
+		left: window.innerWidth / 1.8
 	   },
 	});
 
@@ -230,9 +240,16 @@ componentWillUnmount() {
 						<Link to="/">
 							<Button circular id='clockSpecialtyHomeIconTablet' icon= "home" size='large' style = {this.state.tabletClockSpecialtyHomeIconWindowStyles}/>
 						</Link>
-						<video id="clockSpecialtyVideoContainer" autoPlay controls loop muted style= {this.state.tabletClockSpecialtyVideoContainer} >
+						<video id="clockSpecialtyVideoContainerTablet" autoPlay controls loop muted style= {this.state.tabletClockSpecialtyVideoContainer} >
 							<source src="/Videos/ClockSpecialtyDemoMobile.mp4" type="video/mp4" />
 						</video>
+
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/ClockSpecialty">
+							<Button circular inverted basic color="white" icon = "file code"  size='small' id="clockSpecialtyGithubButtonTablet" style = {this.state.tabletClockSpecialtyGithubButton}>Github</Button>								
+						</a>
+						<a target="_blank" rel="noopener noreferrer" href="https://clockspecialty.now.sh">
+							<Button circular basic color="green" icon = "file code"  size='small' id="clockSpecialtyLiveDemoButtonTablet" style = {this.state.tabletClockSpecialtyLiveDemoButton}>Live Demo</Button>								
+						</a>
 					</div>
 				</MediaQuery>
 			

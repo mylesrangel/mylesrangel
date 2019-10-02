@@ -74,6 +74,14 @@
 		top: 5px;
 		left: 45%;
 	}
+	#clockSpecialtyGithubButtonTablet{
+		position: absolute;
+		
+	}
+	#clockSpecialtyLiveDemoButtonTablet{
+		position: absolute;
+		z-index: 100;
+	}
 }
 
 /* ----------------------------MOBILE 690px -------------------------------------------------------------------------------------- */
