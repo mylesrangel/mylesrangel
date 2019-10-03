@@ -6,8 +6,6 @@ import { Button } from 'semantic-ui-react'
 
 
 import Logo from '../../Media/logo.png';
-import BackgroundImageTablet from '../../Media/phone-image-full-edited.png';
-import BackgroundImagePhone from '../../Media/phone-image-full-edited-cropped.png';
 import "./about.css";
 
 class About extends Component{

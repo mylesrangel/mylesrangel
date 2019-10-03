@@ -25,12 +25,7 @@ class Page404 extends Component{
 				</div>
 			</div>
 		);
-	}
-
-	componentWillUnmount() {
-
-    }
-        
+	}   
 }
 
 
