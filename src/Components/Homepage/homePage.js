@@ -414,9 +414,9 @@ componentWillUnmount() {
 							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/mylesrangel">
 									<Button onMouseEnter = {this.showMylesrangelTechStack}  onMouseLeave = {this.hideMylesrangelTechStack} circular basic color="green"id='addressCard' icon = "file code" size = 'small' > mylesrangel.com </Button>
 							</a>
-							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/ClockSpecialty">
+							<Link to="/clockSpecialty">
 									<Button onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack}circular basic color="teal" id='addressCard' icon = "file code" size = 'small'> Clock Specialty </Button>
-							</a>					
+							</Link>					
 						</div>
 					</div>
 				</MediaQuery>
@@ -460,9 +460,9 @@ componentWillUnmount() {
 							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/mylesrangel">
 									<Button onMouseEnter = {this.showMylesrangelTechStack}  onMouseLeave = {this.hideMylesrangelTechStack} circular basic color="green"id='addressCard' icon = "file code" style = {this.state.phoneTechIconSizesStyles} > mylesrangel.com </Button>
 							</a>
-							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/ClockSpecialty">
+							<Link to="/clockSpecialty">
 									<Button onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack}circular basic color="teal" id='addressCard' icon = "file code" style = {this.state.phoneTechIconSizesStyles}> Clock Specialty </Button>
-							</a>					
+							</Link>					
 						</div>
 					</div>
 				</MediaQuery>

@@ -102,6 +102,33 @@
 		margin: auto;
 		padding: 0;
 	}
+	#clockSpecialtyLogoImageMobile{
+		position: absolute;
+		width: 14%;
+		height: 75px;
+		top: 5px;
+		left: 45%;
+	}
+	#clockSpecialtyTechIconsMobile{
+		position: absolute;
+		top: 90px;
+		left: 5%;
+		min-width: 89%;
+	}
+	#clockSpecialtyHomeIconMobile{
+		position: absolute;
+	}
+	#clockSpecialtyVideoContainerMobile{
+		position: absolute;
+	}
+	#clockSpecialtyGithubButtonMobile{
+		position: absolute;
+		
+	}
+	#clockSpecialtyLiveDemoButtonMobile{
+		position: absolute;
+		z-index: 100;
+	}
 
 }
 
@@ -127,7 +154,33 @@
 		margin: auto;
 		padding: 0;
 	}
-
+	#clockSpecialtyLogoImagePhone{
+		position: absolute;
+		width: 14%;
+		height: 75px;
+		top: 5px;
+		left: 45%;
+	}
+	#clockSpecialtyTechIconsPhone{
+		position: absolute;
+		top: 90px;
+		left: 5%;
+		min-width: 89%;
+	}
+	#clockSpecialtyHomeIconPhone{
+		position: absolute;
+	}
+	#clockSpecialtyVideoContainerPhone{
+		position: absolute;
+	}
+	#clockSpecialtyGithubButtonPhone{
+		position: absolute;
+		
+	}
+	#clockSpecialtyLiveDemoButtonPhone{
+		position: absolute;
+		z-index: 100;
+	}
 	
 
 }

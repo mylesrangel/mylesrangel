@@ -167,18 +167,69 @@ updateWindowDimensions = () => {
 
 //---------Mobile size responsive --------------------------------------------------
 
+	this.setState({ mobileClockSpecialtyTechIconsImageWindowStyles:{
+		width: window.innerWidth /2,
+		height: window.innerHeight /10,
+		top: window.innerHeight /12,
+		left: window.innerWidth /18
+		},
+	 });
 
-	this.setState({mobileHomepageHomeIconStyles:{
-			top: window.innerHeight / 1.31,
-			left: window.innerWidth / 2.15
+	 this.setState({mobileClockSpecialtyHomeIconWindowStyles:{
+		top: window.innerHeight / 1.32,
+		left: window.innerWidth / 2.15
+
 		},
 	});
+	this.setState({mobileClockSpecialtyVideoContainer:{
+		width: window.innerWidth / 2.5,
+		height: window.innerHeight / 2,
+		top: window.innerHeight / 4.3,
+		left: window.innerWidth /3.3
+	   },
+	});
+	this.setState({mobileClockSpecialtyGithubButton: {
+		top: window.innerHeight / 1.316,
+		left: window.innerWidth / 3,
+	   },
+	});
+	this.setState({mobileClockSpecialtyLiveDemoButton: {
+		top: window.innerHeight / 1.316,
+		left: window.innerWidth / 1.8
+	   },
+	});
+	
 
 // ------------Phone size responsive---------------------------------------------------
 
-	this.setState({phoneTechIconSizesStyles: {
-			fontSize: window.innerWidth / 38,
+	this.setState({ phoneClockSpecialtyTechIconsImageWindowStyles:{
+		width: window.innerWidth /2,
+		height: window.innerHeight /10,
+		top: window.innerHeight /12,
+		left: window.innerWidth /18
 		},
+	});
+	this.setState({phoneClockSpecialtyHomeIconWindowStyles:{
+		top: window.innerHeight / 1.13,
+		left: window.innerWidth / 2.3
+		},
+	});
+	this.setState({phoneClockSpecialtyVideoContainer:{
+		width: window.innerWidth / 1.4,
+		height: window.innerHeight / 1.7,
+		top: window.innerHeight / 3.7,
+		left: window.innerWidth / 7
+	   },
+	});
+	this.setState({phoneClockSpecialtyGithubButton: {
+		top: window.innerHeight / 1.127,
+		left: window.innerWidth / 4,
+	   },
+	});
+	this.setState({phoneClockSpecialtyLiveDemoButton: {
+		top: window.innerHeight / 1.127,
+		left: window.innerWidth / 1.8
+	   },
 	});
 
   }
@@ -256,6 +307,28 @@ componentWillUnmount() {
 				{/* ---------------------Small Tablet 700px -------------------------------------------------------------*/}
 				<MediaQuery minWidth = {600} maxWidth = {699} >
 					<div id="homepageContainerMobile" style={this.state.backgroundImageWindowStyles}>
+						<img id = "clockSpecialtyLogoImageMobile" src = {Logo} alt = "logo"  />
+						<div id="clockSpecialtyTechIconsMobile" style={this.state.mobileClockSpecialtyTechIconsImageWindowStyles}>
+							<h5>Technologies used: </h5>
+							<Button circular color='orange' id='html5' icon = "html5" size = "mini">HTML5 </Button>
+							<Button circular color='blue' id='css3' icon = "css3" size = "mini">CSS3 </Button>
+							<Button circular color='green' id='js' icon = "js" size = "mini" > JavaScript </Button>
+							<Button circular color='purple' id='php' icon = "php" size = "mini">PHP </Button>
+							<Button circular color='black' id='github' icon = "github" size = "mini">Git </Button>
+						</div>
+						<Link to="/">
+							<Button circular id='clockSpecialtyHomeIconMobile' icon= "home" style = {this.state.mobileClockSpecialtyHomeIconWindowStyles}/>
+						</Link>
+						<video id="clockSpecialtyVideoContainerMobile" autoPlay controls loop muted style= {this.state.mobileClockSpecialtyVideoContainer} >
+							<source src="/Videos/ClockSpecialtyDemoMobile.mp4" type="video/mp4" />
+						</video>
+
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/ClockSpecialty">
+							<Button circular inverted basic color="white" icon = "file code"  size='mini' id="clockSpecialtyGithubButtonMobile" style = {this.state.mobileClockSpecialtyGithubButton}>Github</Button>								
+						</a>
+						<a target="_blank" rel="noopener noreferrer" href="https://clockspecialty.now.sh">
+							<Button circular basic color="green" icon = "file code"  size='mini' id="clockSpecialtyLiveDemoButtonMobile" style = {this.state.mobileClockSpecialtyLiveDemoButton}>Live Demo</Button>								
+						</a>
 					
 					</div>
 				</MediaQuery>
@@ -264,7 +337,31 @@ componentWillUnmount() {
 
 				<MediaQuery maxWidth = {599} >
 					<div id="homepageContainerPhone" style={this.state.backgroundImageWindowStyles}>
-						
+						<img id = "clockSpecialtyLogoImagePhone" src = {Logo} alt = "logo"  />
+						<div id="clockSpecialtyTechIconsPhone" style={this.state.phoneClockSpecialtyTechIconsImageWindowStyles}>
+							<h5>Technologies used: </h5>
+							<Button circular color='orange' id='html5' icon = "html5" size = "mini">HTML5 </Button>
+							<Button circular color='blue' id='css3' icon = "css3" size = "mini">CSS3 </Button>
+							<Button circular color='green' id='js' icon = "js" size = "mini" > JavaScript </Button>
+							<Button circular color='purple' id='php' icon = "php" size = "mini">PHP </Button>
+							<Button circular color='black' id='github' icon = "github" size = "mini">Git </Button>
+						</div>
+
+						<Link to="/">
+							<Button circular id='clockSpecialtyHomeIconPhone' icon= "home"  style = {this.state.phoneClockSpecialtyHomeIconWindowStyles}/>
+						</Link>
+
+						<video id="clockSpecialtyVideoContainerPhone" autoPlay controls loop muted style= {this.state.phoneClockSpecialtyVideoContainer} >
+							<source src="/Videos/ClockSpecialtyDemoMobile.mp4" type="video/mp4" />
+						</video>
+
+						<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/ClockSpecialty">
+							<Button circular inverted basic color="white" icon = "file code"  size='tiny' id="clockSpecialtyGithubButtonPhone" style = {this.state.phoneClockSpecialtyGithubButton}>Github</Button>								
+						</a>
+						<a target="_blank" rel="noopener noreferrer" href="https://clockspecialty.now.sh">
+							<Button circular basic color="green" icon = "file code"  size='tiny' id="clockSpecialtyLiveDemoButtonPhone" style = {this.state.phoneClockSpecialtyLiveDemoButton}>Live Demo</Button>								
+						</a>
+
 					</div>
 				</MediaQuery>
 				
