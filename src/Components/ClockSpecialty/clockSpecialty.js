@@ -5,8 +5,6 @@ import { Button } from 'semantic-ui-react'
 
 import Logo from '../../Media/logo.png';
 
-import ReactPlayer from 'react-player'
-
 import "./clockSpecialty.css"
 
 class ClockSpecialty extends Component{	
@@ -249,7 +247,7 @@ componentWillUnmount() {
 			<div>
 				<MediaQuery minWidth = {1000}>
 					<div id="clockSpecialtyContainer" style={this.state.backgroundImageWindowStyles}>
-						<img id = "homepageLogoImage" src = {Logo} style={this.state.clockSpecialtyLogoImageWindowStyles} alt = "logo" />
+						<img id = "clockSpecialtyLogoImage" src = {Logo} style={this.state.clockSpecialtyLogoImageWindowStyles} alt = "logo" />
 						<div id="clockSpecialtyTechStack" style={this.state.clockSpecialtyTechIconsImageWindowStyles}>
 							<h5>Technologies used: </h5>
 							<Button circular color='orange' id='html5' icon = "html5" size = "mini">HTML5 </Button>
