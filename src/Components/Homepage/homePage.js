@@ -173,7 +173,7 @@ showbattleTankTechStack = () => {
 	});
 	
 }
-hideclockSpecialtyTechStack = () => {
+hidebattleTankTechStack = () => {
 	this.setState({
 		unrealEngineTech: false,
 		cplusplusTech: false,
@@ -188,6 +188,38 @@ hideclockSpecialtyTechStack = () => {
 		nodeTech: true,
 		trelloTech: true,
 		androidTech: true,
+	});
+}
+showflappyBirdTechStack = () => {
+	this.setState({
+		reactTech: false,
+		jsTech: false,
+		awsTech: false,
+		html5Tech: false,
+		css3Tech: false,
+		phpTech: false,
+		npmTech: false,
+		githubTech: true,
+		nodeTech: false,
+		trelloTech: false,
+		androidTech: true,
+
+	});
+	
+}
+hideflappyBirdTechStack = () => {
+	this.setState({
+		reactTech: true,
+		jsTech: true,
+		awsTech: true,
+		html5Tech: true,
+		css3Tech: true,
+		phpTech: true,
+		npmTech: true,
+		githubTech: false,
+		nodeTech: true,
+		trelloTech: true,
+		androidTech: false,
 	});
 }
 
@@ -370,6 +402,11 @@ componentWillUnmount() {
 									<Button circular basic color="red" id='addressCard' icon = "file code"  size='small'>Battle Tank</Button>
 								</div>
 							</Link>
+							<Link to="/flappybird">
+								<div onMouseEnter = {this.showflappyBirdTechStack}  onMouseLeave = {this.hideflappyBirdTechStack} className = "computerScreenIcon" >
+									<Button circular basic color="green" id='addressCard' icon = "file code"  size='small'>Flappy Bird</Button>
+								</div>
+							</Link>
 											
 						</div>
 					</div>
@@ -422,6 +459,11 @@ componentWillUnmount() {
 									<Button circular basic color="red" id='addressCard' icon = "file code"  size='small'>Battle Tank</Button>
 								</div>
 							</Link>
+							<Link to="/flappybird">
+								<div onMouseEnter = {this.showflappyBirdTechStack}  onMouseLeave = {this.hideflappyBirdTechStack} className = "computerScreenIcon" >
+									<Button circular basic color="green" id='addressCard' icon = "file code"  size='small'>Flappy Bird</Button>
+								</div>
+							</Link>
 						</div>
 					</div>
 				</MediaQuery>
@@ -472,6 +514,11 @@ componentWillUnmount() {
 									<Button circular basic color="red" id='addressCard' icon = "file code"  size='small'>Battle Tank</Button>
 								</div>
 							</Link>		
+							<Link to="/flappybird">
+								<div onMouseEnter = {this.showflappyBirdTechStack}  onMouseLeave = {this.hideflappyBirdTechStack} className = "computerScreenIcon" >
+									<Button circular basic color="green" id='addressCard' icon = "file code"  size='small'>Flappy Bird</Button>
+								</div>
+							</Link>
 						</div>
 					</div>
 				</MediaQuery>
@@ -523,6 +570,11 @@ componentWillUnmount() {
 									<Button circular basic color="red" id='addressCard' icon = "file code"  size='small'>Battle Tank</Button>
 								</div>
 							</Link>		
+							<Link to="/flappybird">
+								<div onMouseEnter = {this.showflappyBirdTechStack}  onMouseLeave = {this.hideflappyBirdTechStack} className = "computerScreenIcon" >
+									<Button circular basic color="green" id='addressCard' icon = "file code"  size='small'>Flappy Bird</Button>
+								</div>
+							</Link>
 						</div>
 					</div>
 				</MediaQuery>

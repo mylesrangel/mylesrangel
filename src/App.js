@@ -6,6 +6,7 @@ import Header from "./Components/Header/header.js";
 import Homepage from "./Components/Homepage/homePage.js";
 import ClockSpecialty from "./Components/ClockSpecialty/clockSpecialty.js";
 import BattleTank from "./Components/BattleTank/battleTank.js";
+import FlappyBird from "./Components/FlappyBird/flappyBird.js";
 import Page404 from "./Components/Page404/page404.js";
 import Contact from "./Components/Contact/contact.js";
 import Emailsent from"./Components/Emailsent/emailSent.js";
@@ -32,6 +33,7 @@ class App extends Component {
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/clockspecialty" component={ClockSpecialty} />
               <Route exact path="/battletank" component={BattleTank} />
+              <Route exact path="/flappybird" component={FlappyBird} />
               <Route path='/*' exact={true} component={Page404} />
             </Switch>
           </div>  
