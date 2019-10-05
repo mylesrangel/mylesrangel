@@ -28,6 +28,8 @@ class Homepage extends Component{
 		nodeTech: true,
 		trelloTech: true,
 		androidTech: true,
+		unrealEngineTech: false,
+		cplusplusTech: false,
 
 		backgroundImageWindowStyles:{
 			width: 0,
@@ -150,6 +152,74 @@ hideclockSpecialtyTechStack = () => {
 		androidTech: true,
 		trelloTech: true,
 		awsTech: true
+	});
+}
+showbattleTankTechStack = () => {
+	this.setState({
+		unrealEngineTech: true,
+		cplusplusTech: true,
+		reactTech: false,
+		jsTech: false,
+		awsTech: false,
+		html5Tech: false,
+		css3Tech: false,
+		phpTech: false,
+		npmTech: false,
+		githubTech: false,
+		nodeTech: false,
+		trelloTech: false,
+		androidTech: false,
+
+	});
+	
+}
+hidebattleTankTechStack = () => {
+	this.setState({
+		unrealEngineTech: false,
+		cplusplusTech: false,
+		reactTech: true,
+		jsTech: true,
+		awsTech: true,
+		html5Tech: true,
+		css3Tech: true,
+		phpTech: true,
+		npmTech: true,
+		githubTech: true,
+		nodeTech: true,
+		trelloTech: true,
+		androidTech: true,
+	});
+}
+showflappyBirdTechStack = () => {
+	this.setState({
+		reactTech: false,
+		jsTech: false,
+		awsTech: false,
+		html5Tech: false,
+		css3Tech: false,
+		phpTech: false,
+		npmTech: false,
+		githubTech: true,
+		nodeTech: false,
+		trelloTech: false,
+		androidTech: true,
+
+	});
+	
+}
+hideflappyBirdTechStack = () => {
+	this.setState({
+		reactTech: true,
+		jsTech: true,
+		awsTech: true,
+		html5Tech: true,
+		css3Tech: true,
+		phpTech: true,
+		npmTech: true,
+		githubTech: false,
+		nodeTech: true,
+		trelloTech: true,
+		androidTech: false,
 	});
 }
 
@@ -297,6 +367,8 @@ componentWillUnmount() {
 							{this.state.nodeTech &&<Button circular color='green' id='node' icon = "node" size = "mini">NodeJS </Button>}
 							{this.state.trelloTech &&<Button circular color='blue' id='trello' icon = "trello" size = "mini">Trello </Button>}
 							{this.state.androidTech &&<Button circular color='green' id='android' icon = "android" size = "mini">Android </Button>}
+							{this.state.unrealEngineTech &&<Button circular color='blue' id='ue4' icon = "android" size = "mini">Unreal Engine </Button>}
+							{this.state.cplusplusTech &&<Button circular color='orange' id='c++' icon = "android" size = "mini">C++ </Button>}
 						</div>
 						<div id = "homepageComputerScreenContainerTop" style = {this.state.homepageComputerScreenTopWindowStyles}>
 							<Link to="/about" >
@@ -323,6 +395,16 @@ componentWillUnmount() {
 							<Link to="/clockSpecialty">
 								<div onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack} className = "computerScreenIcon" >
 									<Button circular basic color="teal" id='addressCard' icon = "file code"  size='small'>Clock Specialty</Button>
+								</div>
+							</Link>
+							<Link to="/battletank">
+								<div onMouseEnter = {this.showbattleTankTechStack}  onMouseLeave = {this.hidebattleTankTechStack} className = "computerScreenIcon" >
+									<Button circular basic color="red" id='addressCard' icon = "file code"  size='small'>Battle Tank</Button>
+								</div>
+							</Link>
+							<Link to="/flappybird">
+								<div onMouseEnter = {this.showflappyBirdTechStack}  onMouseLeave = {this.hideflappyBirdTechStack} className = "computerScreenIcon" >
+									<Button circular basic color="green" id='addressCard' icon = "file code"  size='small'>Flappy Bird</Button>
 								</div>
 							</Link>
 											
@@ -372,6 +454,16 @@ componentWillUnmount() {
 							<Link to="/clockSpecialty">
 								<Button onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack}circular basic color="teal" id='addressCard' icon = "file code" size="mini">Clock Specialty </Button>
 							</Link>					
+							<Link to="/battletank">
+								<div onMouseEnter = {this.showbattleTankTechStack}  onMouseLeave = {this.hidebattleTankTechStack} className = "computerScreenIcon" >
+									<Button circular basic color="red" id='addressCard' icon = "file code"  size='small'>Battle Tank</Button>
+								</div>
+							</Link>
+							<Link to="/flappybird">
+								<div onMouseEnter = {this.showflappyBirdTechStack}  onMouseLeave = {this.hideflappyBirdTechStack} className = "computerScreenIcon" >
+									<Button circular basic color="green" id='addressCard' icon = "file code"  size='small'>Flappy Bird</Button>
+								</div>
+							</Link>
 						</div>
 					</div>
 				</MediaQuery>
@@ -416,7 +508,17 @@ componentWillUnmount() {
 							</a>
 							<Link to="/clockSpecialty">
 									<Button onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack}circular basic color="teal" id='addressCard' icon = "file code" size = 'small'> Clock Specialty </Button>
-							</Link>					
+							</Link>			
+							<Link to="/battletank">
+								<div onMouseEnter = {this.showbattleTankTechStack}  onMouseLeave = {this.hidebattleTankTechStack} className = "computerScreenIcon" >
+									<Button circular basic color="red" id='addressCard' icon = "file code"  size='small'>Battle Tank</Button>
+								</div>
+							</Link>		
+							<Link to="/flappybird">
+								<div onMouseEnter = {this.showflappyBirdTechStack}  onMouseLeave = {this.hideflappyBirdTechStack} className = "computerScreenIcon" >
+									<Button circular basic color="green" id='addressCard' icon = "file code"  size='small'>Flappy Bird</Button>
+								</div>
+							</Link>
 						</div>
 					</div>
 				</MediaQuery>
@@ -462,7 +564,17 @@ componentWillUnmount() {
 							</a>
 							<Link to="/clockSpecialty">
 									<Button onMouseEnter = {this.showclockSpecialtyTechStack}  onMouseLeave = {this.hideclockSpecialtyTechStack}circular basic color="teal" id='addressCard' icon = "file code" style = {this.state.phoneTechIconSizesStyles}> Clock Specialty </Button>
-							</Link>					
+							</Link>			
+							<Link to="/battletank">
+								<div onMouseEnter = {this.showbattleTankTechStack}  onMouseLeave = {this.hidebattleTankTechStack} className = "computerScreenIcon" >
+									<Button circular basic color="red" id='addressCard' icon = "file code"  size='small'>Battle Tank</Button>
+								</div>
+							</Link>		
+							<Link to="/flappybird">
+								<div onMouseEnter = {this.showflappyBirdTechStack}  onMouseLeave = {this.hideflappyBirdTechStack} className = "computerScreenIcon" >
+									<Button circular basic color="green" id='addressCard' icon = "file code"  size='small'>Flappy Bird</Button>
+								</div>
+							</Link>
 						</div>
 					</div>
 				</MediaQuery>

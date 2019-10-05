@@ -1,0 +1,185 @@
+
+@media only screen and (min-width: 1000px){
+
+	#battleTankContainer{
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/laptop-image-full-edited.jpg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		/* background-position: 50% 100%; */
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+	#battleTankLogoImage{
+		position: absolute;
+	}
+	#battleTankTechStack{
+		position: absolute;
+		max-width: 50%;
+	}
+	#battleTankHomeIcon{
+		position: absolute;
+	}
+	#battleTankVideoContainer{
+		position: absolute;
+	}
+	#battleTankGithubButton{
+		position: absolute;
+		z-index: 100;
+	}
+	#battleTankLiveDemoButton{
+		position: absolute;
+		z-index: 100;
+	}
+
+}
+
+
+@media only screen and (min-width: 700px) and (max-width: 999px){
+
+	#battleTankContainerTablet{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/tablet-image-full.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		/* background-position: 50% 50%; */
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+	#battleTankTechIconsTablet{
+		position: absolute;
+		top: 90px;
+		left: 5%;
+		min-width: 89%;
+	}
+	#battleTankVideoContainerTablet{
+		position: absolute;
+	}
+	#battleTankHomeIconTablet{
+		position: absolute;
+	}
+	#battleTankLogoImageTablet{
+		position: absolute;
+		width: 14%;
+		height: 75px;
+		top: 5px;
+		left: 45%;
+	}
+	#battleTankGithubButtonTablet{
+		position: absolute;
+		
+	}
+	#battleTankLiveDemoButtonTablet{
+		position: absolute;
+		z-index: 100;
+	}
+}
+
+/* ----------------------------MOBILE 690px -------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 600px) and (max-width: 699px){
+
+	#battleTankContainerMobile{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/phone-image-full-edited.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+	#battleTankLogoImageMobile{
+		position: absolute;
+		width: 14%;
+		height: 75px;
+		top: 5px;
+		left: 45%;
+	}
+	#battleTankTechIconsMobile{
+		position: absolute;
+		top: 90px;
+		left: 5%;
+		min-width: 89%;
+	}
+	#battleTankHomeIconMobile{
+		position: absolute;
+	}
+	#battleTankVideoContainerMobile{
+		position: absolute;
+	}
+	#battleTankGithubButtonMobile{
+		position: absolute;
+		
+	}
+	#battleTankLiveDemoButtonMobile{
+		position: absolute;
+		z-index: 100;
+	}
+
+}
+
+
+
+
+
+
+/* -------------Phone--------------------------- */
+@media only screen and (max-width: 599px){
+
+	#battleTankContainerPhone{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/phone-image-full-edited-cropped.png");
+		background-size: 120% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+	#battleTankLogoImagePhone{
+		position: absolute;
+		width: 14%;
+		height: 75px;
+		top: 5px;
+		left: 45%;
+	}
+	#battleTankTechIconsPhone{
+		position: absolute;
+		top: 90px;
+		left: 5%;
+		min-width: 89%;
+	}
+	#battleTankHomeIconPhone{
+		position: absolute;
+	}
+	#battleTankVideoContainerPhone{
+		position: absolute;
+	}
+	#battleTankGithubButtonPhone{
+		position: absolute;
+		
+	}
+	#battleTankLiveDemoButtonPhone{
+		position: absolute;
+		z-index: 100;
+	}
+	
+
+}
