@@ -30,6 +30,7 @@ class Homepage extends Component{
 		androidTech: true,
 		unrealEngineTech: false,
 		cplusplusTech: false,
+		javaTech: false,
 
 		backgroundImageWindowStyles:{
 			width: 0,
@@ -203,6 +204,7 @@ showflappyBirdTechStack = () => {
 		nodeTech: false,
 		trelloTech: false,
 		androidTech: true,
+		javaTech: true,
 
 	});
 	
@@ -220,6 +222,7 @@ hideflappyBirdTechStack = () => {
 		nodeTech: true,
 		trelloTech: true,
 		androidTech: false,
+		javaTech: false,
 	});
 }
 
@@ -367,8 +370,9 @@ componentWillUnmount() {
 							{this.state.nodeTech &&<Button circular color='green' id='node' icon = "node" size = "mini">NodeJS </Button>}
 							{this.state.trelloTech &&<Button circular color='blue' id='trello' icon = "trello" size = "mini">Trello </Button>}
 							{this.state.androidTech &&<Button circular color='green' id='android' icon = "android" size = "mini">Android </Button>}
-							{this.state.unrealEngineTech &&<Button circular color='blue' id='ue4' icon = "android" size = "mini">Unreal Engine </Button>}
-							{this.state.cplusplusTech &&<Button circular color='orange' id='c++' icon = "android" size = "mini">C++ </Button>}
+							{this.state.unrealEngineTech &&<Button circular color='blue' id='ue4'  size = "mini">Unreal Engine </Button>}
+							{this.state.cplusplusTech &&<Button circular color='orange' id='c++'  size = "mini">C++ </Button>}
+							{this.state.javaTech &&<Button circular color='red' id='java' size = "mini">Java </Button>}
 						</div>
 						<div id = "homepageComputerScreenContainerTop" style = {this.state.homepageComputerScreenTopWindowStyles}>
 							<Link to="/about" >
@@ -430,6 +434,8 @@ componentWillUnmount() {
 							{this.state.nodeTech &&<Button circular color='green' id='node' icon = "node" size = "mini">NodeJS </Button>}
 							{this.state.trelloTech &&<Button circular color='blue' id='trello' icon = "trello" size = "mini">Trello </Button>}
 							{this.state.androidTech &&<Button circular color='green' id='android' icon = "android" size = "mini">Android </Button>}
+							{this.state.javaTech &&<Button circular color='red' id='java' size = "mini">Java </Button>}
+
 						</div>
 						<div id = "homepageComputerScreenContainerTopTablet" style = {this.state.tabletHomepageComputerScreenTopWindowStyles}>
 							<Link to="/about" >
@@ -485,6 +491,8 @@ componentWillUnmount() {
 							{this.state.nodeTech &&<Button circular color='green' id='node' icon = "node" size = "mini">NodeJS </Button>}
 							{this.state.trelloTech &&<Button circular color='blue' id='trello' icon = "trello" size = "mini">Trello </Button>}
 							{this.state.androidTech &&<Button circular color='green' id='android' icon = "android" size = "mini">Android </Button>}
+							{this.state.javaTech &&<Button circular color='red' id='java' size = "mini">Java </Button>}
+
 						</div>
 						<div id = "homepageComputerScreenContainerTopMobile">
 							<Link to="/about" >
@@ -541,6 +549,8 @@ componentWillUnmount() {
 							{this.state.nodeTech &&<Button circular color='green' id='node' icon = "node" style = {this.state.phoneTechIconSizesStyles}>NodeJS </Button>}
 							{this.state.trelloTech &&<Button circular color='blue' id='trello' icon = "trello" style = {this.state.phoneTechIconSizesStyles}>Trello </Button>}
 							{this.state.androidTech &&<Button circular color='green' id='android' icon = "android" style = {this.state.phoneTechIconSizesStyles}>Android </Button>}
+							{this.state.javaTech &&<Button circular color='red' id='java' size = "mini">Java </Button>}
+
 						</div>
 						<div id = "homepageComputerScreenContainerTopPhone">
 							<Link to="/about" >
@@ -567,12 +577,12 @@ componentWillUnmount() {
 							</Link>			
 							<Link to="/battletank">
 								<div onMouseEnter = {this.showbattleTankTechStack}  onMouseLeave = {this.hidebattleTankTechStack} className = "computerScreenIcon" >
-									<Button circular basic color="red" id='addressCard' icon = "file code"  size='small'>Battle Tank</Button>
+									<Button circular basic color="red" id='addressCard' icon = "file code"  size='small' style = {this.state.phoneTechIconSizesStyles} >Battle Tank</Button>
 								</div>
 							</Link>		
 							<Link to="/flappybird">
 								<div onMouseEnter = {this.showflappyBirdTechStack}  onMouseLeave = {this.hideflappyBirdTechStack} className = "computerScreenIcon" >
-									<Button circular basic color="green" id='addressCard' icon = "file code"  size='small'>Flappy Bird</Button>
+									<Button circular basic color="green" id='addressCard' icon = "file code"  size='small' style = {this.state.phoneTechIconSizesStyles} >Flappy Bird</Button>
 								</div>
 							</Link>
 						</div>
