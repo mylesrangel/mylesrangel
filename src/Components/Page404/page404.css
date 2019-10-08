@@ -1,6 +1,8 @@
 
 
-	#homepageContainer{
+    #page404Container{
+		display: block;
+		top: 0;
 		left: 0;
 		right: 0;
 		background-image: url("../../Media/laptop-image-full-edited.jpg");
@@ -10,12 +12,16 @@
 		text-align: center;
 		margin: auto;
 		padding: 0;
-
 	}
+	
 
-#message404{
-    position: absolute;
-    top: 32%;
-    left: 43%;
-    color: white;
-}
+	#page404Message{
+		position: absolute;
+		color: white;
+		max-width: 40%;
+	}
+	#page404HomeIcon{
+		position: absolute;
+		top: 770px;
+		left: 48.9%;
+    }
