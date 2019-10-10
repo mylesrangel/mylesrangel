@@ -1,5 +1,5 @@
 
-
+@media only screen and (min-width: 1000px){
     #page404Container{
 		display: block;
 		top: 0;
@@ -24,10 +24,11 @@
 		position: absolute;
 		top: 770px;
 		left: 48.9%;
-    }
+	}
+}
 
 	/* -----------------Tablet--------------------------------------- */
-	@media only screen and (min-width: 700px) and (max-width: 1000px){
+@media only screen and (min-width: 700px) and (max-width: 1000px){
 
 	#page404ContainerTablet{
 		display: block;
@@ -46,10 +47,64 @@
 	#page404MessageTablet{
 		position: absolute;
 		color: white;
-		max-width: 13%;
+		max-width: 23%;
 	}
 	#page404HomeIconTablet{
 		position: absolute;
-
 	}
+}
+
+
+/* ------------------MOBILE--------------------------------------------------------- */
+@media only screen and (min-width: 600px) and (max-width: 699px){
+
+	#aboutpageContainerMobile{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/phone-image-full-edited.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+	#page404MessageMobile{
+		position: absolute;
+		color: white;
+		max-width: 23%;
+	}
+}
+
+@media only screen and (max-width: 599px){
+	#page404ContainerPhone{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/phone-image-full-edited-cropped.png");
+		background-size: 120% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+	#page404MessagePhone{
+		position: absolute;
+		color: white;
+		max-width: 35%;
+	}
+	#page404HomeIconPhone{
+		position: absolute;
+	}
+	#page404LogoImagePhone{
+        margin-top: 1%;
+        width: 13%;
+    }
+
 }

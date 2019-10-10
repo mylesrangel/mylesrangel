@@ -126,32 +126,38 @@ updateWindowDimensions = () => {
 	},
  });
  this.setState({ tabletPage404MessageWindowStyles:{
-	top: window.innerHeight / 2.4,
-	left: window.innerWidth / 2.28
+	top: window.innerHeight / 2.5,
+	left: window.innerWidth / 2.6
    },
 });
-
-
 
 
 
 //---------Mobile size responsive --------------------------------------------------
 
 
-	this.setState({mobilepage404HomeIconStyles:{
-			top: window.innerHeight / 1.32,
-			left: window.innerWidth / 2.15
+	this.setState({mobilePage404HomeIconStyles:{
+		top: window.innerHeight / 1.32,
+		left: window.innerWidth / 2.15
 		},
     });
-    
+	this.setState({ mobilePage404MessageWindowStyles:{
+		top: window.innerHeight / 2.7,
+		left: window.innerWidth / 2.55
+	   },
+	});
 
 
 //--------------Phone Size-------------------------------------
-    this.setState({phonepage404eHomeIconStyles:{
+    this.setState({phonePage404HomeIconStyles:{
 		top: window.innerHeight / 1.13,
 		left: window.innerWidth / 2.3,
-		fontSize: window.innerWidth / 38
 		},
+	});
+	this.setState({ phonePage404MessageWindowStyles:{
+		top: window.innerHeight / 2.9,
+		left: window.innerWidth / 3.2
+	   },
 	});
 }
 
@@ -204,10 +210,12 @@ componentWillUnmount() {
                 <MediaQuery minWidth = {600} maxWidth = {699} >
                     <div id="aboutpageContainerMobile" style={this.state.backgroundImageWindowStyles}>
                         <img id = "aboutLogoImageMobile" src = {Logo} alt = "laptop" />
-                        <p id = "aboutMyStatementMobile">Hello, I'm Myles, I am a Full Stack Developer! I have been developing full time since 2017. Feel free to have a look around. </p>
-                        
+						<div id = "page404MessageMobile" style={this.state.mobilePage404MessageWindowStyles}>
+							<h3> Oh no! </h3>
+							<p>You ventured to an area that doesn't exist</p>
+						</div>                        
                         <Link to="/">
-                            <Button circular id='aboutHomeIconMobile' icon= "home" style = {this.state.mobileAboutpageHomeIconStyles}/>
+                            <Button circular id='aboutHomeIconMobile' icon= "home" style = {this.state.mobilePage404HomeIconStyles}/>
                         </Link>
                     </div>
                 </MediaQuery>
@@ -215,12 +223,14 @@ componentWillUnmount() {
     {/* ---------------------Phone 600px -------------------------------------------------------------*/}
 
                 <MediaQuery maxWidth = {599} >
-                    <div id="aboutpageContainerPhone" style={this.state.backgroundImageWindowStyles}>
-                        <img id = "aboutLogoImagePhone" src = {Logo} alt = "laptop" />
-                        <p id = "aboutMyStatementPhone">Hello, I'm Myles, I am a Full Stack Developer! I have been developing full time since 2017. Feel free to have a look around. </p>
-                        
+                    <div id="page404ContainerPhone" style={this.state.backgroundImageWindowStyles}>
+                        <img id = "page404LogoImagePhone" src = {Logo} alt = "laptop" />
+						<div id = "page404MessagePhone" style={this.state.phonePage404MessageWindowStyles}>
+							<h3> Oh no! </h3>
+							<p>You ventured to an area that doesn't exist</p>
+						</div>                            
                         <Link to="/">
-                            <Button circular id='aboutHomeIconPhone' icon= "home"  style = {this.state.phoneAboutpageHomeIconStyles} />
+                            <Button circular id='page404HomeIconPhone' icon= "home"  style = {this.state.phonePage404HomeIconStyles} />
                         </Link>
                     </div>
                 </MediaQuery>
