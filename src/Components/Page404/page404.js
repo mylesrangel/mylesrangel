@@ -112,14 +112,24 @@ updateWindowDimensions = () => {
  //-----------------------Tablet Responsive ----------------------
 
 
+ this.setState({ tabletPage404LogoImageWindowStyles:{
+	top: window.innerHeight / 80,
+	left: window.innerWidth / 2.13,
+	width: window.innerWidth /12, 
+	height: window.innerHeight /15
+	},
+ });
 
-	this.setState({tabletpage404HomeIconWindowStyles:{
-
+ this.setState({ tabletPage404HomeIconWindowStyles:{
 		top: window.innerHeight / 1.35,
 		left: window.innerWidth / 2.13
-
-		},
-	});
+	},
+ });
+ this.setState({ tabletPage404MessageWindowStyles:{
+	top: window.innerHeight / 2.4,
+	left: window.innerWidth / 2.28
+   },
+});
 
 
 
@@ -160,7 +170,7 @@ componentWillUnmount() {
 		return(
             <div>
                 <MediaQuery minWidth = {1000}>
-                    <div id="aboutpageContainer" style={this.state.backgroundImageWindowStyles}>
+                    <div id="page404Container" style={this.state.backgroundImageWindowStyles}>
                         <img id = "page404LogoImage" src = {Logo} alt = "laptop" style={this.state.page404LogoImageWindowStyles}/>
                         <div id = "page404Message" style={this.state.page404MessageWindowStyles}>
 							<h3> Oh no! </h3>
@@ -176,11 +186,13 @@ componentWillUnmount() {
 
                 <MediaQuery minWidth = {700} maxWidth = {999} >  
                     <div id="page404ContainerTablet" style={this.state.backgroundImageWindowStyles}>
-                        <img id = "page404LogoImageTablet" src = {Logo} alt = "laptop" />
-                        <p id = "aboutMyStatementTablet">Hello, I'm Myles, I am a Full Stack Developer! I have been developing full time since 2017. Feel free to have a look around. </p>
-                        
+                        <img id = "page404LogoImageTablet" src = {Logo} alt = "laptop" style={this.state.tabletPage404LogoImageWindowStyles}/>
+                        <div id = "page404MessageTablet" style={this.state.tabletPage404MessageWindowStyles}>
+							<h3> Oh no! </h3>
+							<p>You ventured to an area that doesn't exist</p>
+						</div>
                         <Link to="/">
-                            <Button circular id='aboutHomeIconTablet' icon= "home" size='large' style = {this.state.tabletAboutpageHomeIconWindowStyles}/>
+                            <Button circular id='page404HomeIconTablet' icon= "home" size='large' style = {this.state.tabletPage404HomeIconWindowStyles}/>
                         </Link>
                     </div>                
                 </MediaQuery>

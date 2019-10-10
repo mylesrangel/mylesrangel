@@ -18,10 +18,38 @@
 	#page404Message{
 		position: absolute;
 		color: white;
-		max-width: 40%;
+		max-width: 13%;
 	}
 	#page404HomeIcon{
 		position: absolute;
 		top: 770px;
 		left: 48.9%;
     }
+
+	/* -----------------Tablet--------------------------------------- */
+	@media only screen and (min-width: 700px) and (max-width: 1000px){
+
+	#page404ContainerTablet{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/tablet-image-full.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		/* background-position: 50% 50%; */
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+	#page404MessageTablet{
+		position: absolute;
+		color: white;
+		max-width: 13%;
+	}
+	#page404HomeIconTablet{
+		position: absolute;
+
+	}
+}
