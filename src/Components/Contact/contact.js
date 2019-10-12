@@ -290,7 +290,7 @@ class Contact extends Component{
 							</Link>
 							<div id="contactFirstname">
 								<p className = "contactExpected">First Name:</p>
-								<input required name="firstName" value={this.state.emailInfo.firstName || ''} onChange={this.handleChange} placeholder="Your first name"/>
+								<input required name="firstName" value={this.state.emailInfo.firstName || ''} onChange={this.handleChange} placeholder="Your first name" autoFocus/>
 							</div>
 							<div id="contactLastname">
 								<p className = "contactExpected">Last Name:</p>
