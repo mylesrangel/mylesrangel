@@ -226,6 +226,41 @@ hideflappyBirdTechStack = () => {
 	});
 }
 
+showinstagramCloneTechStack = () => {
+	this.setState({
+		reactTech: false,
+		jsTech: false,
+		awsTech: false,
+		html5Tech: false,
+		css3Tech: false,
+		phpTech: false,
+		npmTech: false,
+		githubTech: true,
+		nodeTech: false,
+		trelloTech: false,
+		androidTech: true,
+		javaTech: true,
+
+	});
+	
+}
+hideinstagramCloneTechStack = () => {
+	this.setState({
+		reactTech: true,
+		jsTech: true,
+		awsTech: true,
+		html5Tech: true,
+		css3Tech: true,
+		phpTech: true,
+		npmTech: true,
+		githubTech: false,
+		nodeTech: true,
+		trelloTech: true,
+		androidTech: false,
+		javaTech: false,
+	});
+}
+
 
 // Dynamically adjust based on window height / width
 
@@ -411,7 +446,9 @@ componentWillUnmount() {
 									<Button circular basic color="green" id='addressCard' icon = "file code"  size='small'>Flappy Bird</Button>
 								</div>
 							</Link>
-											
+							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/InstagramClone">
+									<Button onMouseEnter = {this.showinstagramCloneTechStack}  onMouseLeave = {this.hideinstagramCloneTechStack} circular basic color="blue" id='addressCard' icon = "file code" size='small' > Instagram Clone </Button>
+							</a>			
 						</div>
 					</div>
 				</MediaQuery>
@@ -470,6 +507,9 @@ componentWillUnmount() {
 									<Button circular basic color="green" id='addressCard' icon = "file code"  size='small'>Flappy Bird</Button>
 								</div>
 							</Link>
+							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/InstagramClone">
+									<Button onMouseEnter = {this.showinstagramCloneTechStack}  onMouseLeave = {this.hideinstagramCloneTechStack} circular basic color="blue" id='addressCard' icon = "file code"  size='small' > Instagram Clone </Button>
+							</a>
 						</div>
 					</div>
 				</MediaQuery>
@@ -527,6 +567,9 @@ componentWillUnmount() {
 									<Button circular basic color="green" id='addressCard' icon = "file code"  size='small'>Flappy Bird</Button>
 								</div>
 							</Link>
+							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/InstagramClone">
+									<Button onMouseEnter = {this.showinstagramCloneTechStack}  onMouseLeave = {this.hideinstagramCloneTechStack} circular basic color="blue" id='addressCard' icon = "file code" size='small' > Instagram Clone </Button>
+							</a>
 						</div>
 					</div>
 				</MediaQuery>
@@ -585,10 +628,12 @@ componentWillUnmount() {
 									<Button circular basic color="green" id='addressCard' icon = "file code"  size='small' style = {this.state.phoneTechIconSizesStyles} >Flappy Bird</Button>
 								</div>
 							</Link>
+							<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/InstagramClone">
+									<Button onMouseEnter = {this.showinstagramCloneTechStack}  onMouseLeave = {this.hideinstagramCloneTechStack} circular basic color="blue" id='addressCard' icon = "file code" size='small'style = {this.state.phoneTechIconSizesStyles} > Instagram Clone </Button>
+							</a>
 						</div>
 					</div>
 				</MediaQuery>
-				
 			</div>
 		);
 	}
