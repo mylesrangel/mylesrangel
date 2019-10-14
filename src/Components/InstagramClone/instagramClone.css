@@ -1,0 +1,185 @@
+
+@media only screen and (min-width: 1000px){
+
+	#instagramCloneContainer{
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/laptop-image-full-edited.jpg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		/* background-position: 50% 100%; */
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+	#instagramCloneLogoImage{
+		position: absolute;
+	}
+	#instagramCloneTechStack{
+		position: absolute;
+		max-width: 50%;
+	}
+	#instagramCloneHomeIcon{
+		position: absolute;
+	}
+	#instagramCloneVideoContainer{
+		position: absolute;
+	}
+	#instagramCloneGithubButton{
+		position: absolute;
+		z-index: 100;
+	}
+	#instagramCloneLiveDemoButton{
+		position: absolute;
+		z-index: 100;
+	}
+
+}
+
+
+@media only screen and (min-width: 700px) and (max-width: 999px){
+
+	#instagramCloneContainerTablet{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/tablet-image-full.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		/* background-position: 50% 50%; */
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+	#instagramCloneTechIconsTablet{
+		position: absolute;
+		top: 90px;
+		left: 5%;
+		min-width: 89%;
+	}
+	#instagramCloneVideoContainerTablet{
+		position: absolute;
+	}
+	#instagramCloneHomeIconTablet{
+		position: absolute;
+	}
+	#instagramCloneLogoImageTablet{
+		position: absolute;
+		width: 14%;
+		height: 75px;
+		top: 5px;
+		left: 45%;
+	}
+	#instagramCloneGithubButtonTablet{
+		position: absolute;
+		
+	}
+	#instagramCloneLiveDemoButtonTablet{
+		position: absolute;
+		z-index: 100;
+	}
+}
+
+/* ----------------------------MOBILE 690px -------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 600px) and (max-width: 699px){
+
+	#instagramCloneContainerMobile{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/phone-image-full-edited.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+	#instagramCloneLogoImageMobile{
+		position: absolute;
+		width: 14%;
+		height: 75px;
+		top: 5px;
+		left: 45%;
+	}
+	#instagramCloneTechIconsMobile{
+		position: absolute;
+		top: 90px;
+		left: 5%;
+		min-width: 89%;
+	}
+	#instagramCloneHomeIconMobile{
+		position: absolute;
+	}
+	#instagramCloneVideoContainerMobile{
+		position: absolute;
+	}
+	#instagramCloneGithubButtonMobile{
+		position: absolute;
+		
+	}
+	#instagramCloneLiveDemoButtonMobile{
+		position: absolute;
+		z-index: 100;
+	}
+
+}
+
+
+
+
+
+
+/* -------------Phone--------------------------- */
+@media only screen and (max-width: 599px){
+
+	#instagramCloneContainerPhone{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-image: url("../../Media/phone-image-full-edited-cropped.png");
+		background-size: 120% 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+	#instagramCloneLogoImagePhone{
+		position: absolute;
+		width: 14%;
+		height: 75px;
+		top: 5px;
+		left: 45%;
+	}
+	#instagramCloneTechIconsPhone{
+		position: absolute;
+		top: 90px;
+		left: 5%;
+		min-width: 89%;
+	}
+	#instagramCloneHomeIconPhone{
+		position: absolute;
+	}
+	#instagramCloneVideoContainerPhone{
+		position: absolute;
+	}
+	#instagramCloneGithubButtonPhone{
+		position: absolute;
+		
+	}
+	#instagramCloneLiveDemoButtonPhone{
+		position: absolute;
+		z-index: 100;
+	}
+	
+
+}
