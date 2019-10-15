@@ -341,7 +341,6 @@ componentWillUnmount() {
 						<a target="_blank" rel="noopener noreferrer" href="https://github.com/mylesrangel/FlappyBirdClone">
 							<Button circular inverted basic color="white" icon = "file code"  size='tiny' id="flappyBirdGithubButtonPhone" style = {this.state.phoneFlappyBirdGithubButton}>Github</Button>								
 						</a>
-
 					</div>
 				</MediaQuery>
 				

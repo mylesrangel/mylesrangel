@@ -284,10 +284,8 @@ componentWillUnmount() {
 						<img id = "homepageLogoImage" src = {Logo} style={this.state.instagramCloneLogoImageWindowStyles} alt = "logo" />
 						<div id="instagramCloneTechStack" style={this.state.instagramCloneTechIconsImageWindowStyles}>
 							<h5>Technologies used: </h5>
-							<Button circular color='orange' id='html5' icon = "html5" size = "mini">HTML5 </Button>
-							<Button circular color='blue' id='css3' icon = "css3" size = "mini">CSS3 </Button>
-							<Button circular color='green' id='js' icon = "js" size = "mini" > JavaScript </Button>
-							<Button circular color='purple' id='php' icon = "php" size = "mini">PHP </Button>
+							<Button circular color='green' id='android' icon = "android" size = "mini">Android </Button>
+							<Button circular color='red' id='java' size = "mini">Java </Button>
 							<Button circular color='black' id='github' icon = "github" size = "mini">Git </Button>
 						</div>
 						<Link to="/">
@@ -311,10 +309,8 @@ componentWillUnmount() {
 						<img id = "instagramCloneLogoImageTablet" src = {Logo} alt = "logo"  />
 						<div id="instagramCloneTechIconsTablet" style={this.state.tabletInstagramCloneTechIconsImageWindowStyles}>
 							<h5>Technologies used: </h5>
-							<Button circular color='orange' id='html5' icon = "html5" size = "mini">HTML5 </Button>
-							<Button circular color='blue' id='css3' icon = "css3" size = "mini">CSS3 </Button>
-							<Button circular color='green' id='js' icon = "js" size = "mini" > JavaScript </Button>
-							<Button circular color='purple' id='php' icon = "php" size = "mini">PHP </Button>
+							<Button circular color='green' id='android' icon = "android" size = "mini">Android </Button>
+							<Button circular color='red' id='java' size = "mini">Java </Button>
 							<Button circular color='black' id='github' icon = "github" size = "mini">Git </Button>
 						</div>
 						<Link to="/">
@@ -337,10 +333,8 @@ componentWillUnmount() {
 						<img id = "instagramCloneLogoImageMobile" src = {Logo} alt = "logo"  />
 						<div id="instagramCloneTechIconsMobile" style={this.state.mobileInstagramCloneTechIconsImageWindowStyles}>
 							<h5>Technologies used: </h5>
-							<Button circular color='orange' id='html5' icon = "html5" size = "mini">HTML5 </Button>
-							<Button circular color='blue' id='css3' icon = "css3" size = "mini">CSS3 </Button>
-							<Button circular color='green' id='js' icon = "js" size = "mini" > JavaScript </Button>
-							<Button circular color='purple' id='php' icon = "php" size = "mini">PHP </Button>
+							<Button circular color='green' id='android' icon = "android" size = "mini">Android </Button>
+							<Button circular color='red' id='java' size = "mini">Java </Button>
 							<Button circular color='black' id='github' icon = "github" size = "mini">Git </Button>
 						</div>
 						<Link to="/">
@@ -364,10 +358,8 @@ componentWillUnmount() {
 						<img id = "instagramCloneLogoImagePhone" src = {Logo} alt = "logo"  />
 						<div id="instagramCloneTechIconsPhone" style={this.state.phoneInstagramCloneTechIconsImageWindowStyles}>
 							<h5>Technologies used: </h5>
-							<Button circular color='orange' id='html5' icon = "html5" size = "mini">HTML5 </Button>
-							<Button circular color='blue' id='css3' icon = "css3" size = "mini">CSS3 </Button>
-							<Button circular color='green' id='js' icon = "js" size = "mini" > JavaScript </Button>
-							<Button circular color='purple' id='php' icon = "php" size = "mini">PHP </Button>
+							<Button circular color='green' id='android' icon = "android" size = "mini">Android </Button>
+							<Button circular color='red' id='java' size = "mini">Java </Button>
 							<Button circular color='black' id='github' icon = "github" size = "mini">Git </Button>
 						</div>
 
