@@ -251,11 +251,8 @@ componentWillUnmount() {
 						<img id = "homepageLogoImage" src = {Logo} style={this.state.battleTankLogoImageWindowStyles} alt = "logo" />
 						<div id="battleTankTechStack" style={this.state.battleTankTechIconsImageWindowStyles}>
 							<h5>Technologies used: </h5>
-							<Button circular color='orange' id='html5' icon = "html5" size = "mini">HTML5 </Button>
-							<Button circular color='blue' id='css3' icon = "css3" size = "mini">CSS3 </Button>
-							<Button circular color='green' id='js' icon = "js" size = "mini" > JavaScript </Button>
-							<Button circular color='purple' id='php' icon = "php" size = "mini">PHP </Button>
-							<Button circular color='black' id='github' icon = "github" size = "mini">Git </Button>
+							<Button circular color='blue' id='ue4'  size = "mini">Unreal Engine </Button>
+							<Button circular color='orange' id='c++'  size = "mini">C++ </Button>
 						</div>
 						<Link to="/">
 							<Button circular id='battleTankHomeIcon' icon= "home" style = {this.state.battleTankHomeIconWindowStyles} />
@@ -278,11 +275,8 @@ componentWillUnmount() {
 						<img id = "battleTankLogoImageTablet" src = {Logo} alt = "logo"  />
 						<div id="battleTankTechIconsTablet" style={this.state.tabletBattleTankTechIconsImageWindowStyles}>
 							<h5>Technologies used: </h5>
-							<Button circular color='orange' id='html5' icon = "html5" size = "mini">HTML5 </Button>
-							<Button circular color='blue' id='css3' icon = "css3" size = "mini">CSS3 </Button>
-							<Button circular color='green' id='js' icon = "js" size = "mini" > JavaScript </Button>
-							<Button circular color='purple' id='php' icon = "php" size = "mini">PHP </Button>
-							<Button circular color='black' id='github' icon = "github" size = "mini">Git </Button>
+							<Button circular color='blue' id='ue4'  size = "mini">Unreal Engine </Button>
+							<Button circular color='orange' id='c++'  size = "mini">C++ </Button>
 						</div>
 						<Link to="/">
 							<Button circular id='battleTankHomeIconTablet' icon= "home" size='large' style = {this.state.tabletBattleTankHomeIconWindowStyles}/>
@@ -304,11 +298,8 @@ componentWillUnmount() {
 						<img id = "battleTankLogoImageMobile" src = {Logo} alt = "logo"  />
 						<div id="battleTankTechIconsMobile" style={this.state.mobileBattleTankTechIconsImageWindowStyles}>
 							<h5>Technologies used: </h5>
-							<Button circular color='orange' id='html5' icon = "html5" size = "mini">HTML5 </Button>
-							<Button circular color='blue' id='css3' icon = "css3" size = "mini">CSS3 </Button>
-							<Button circular color='green' id='js' icon = "js" size = "mini" > JavaScript </Button>
-							<Button circular color='purple' id='php' icon = "php" size = "mini">PHP </Button>
-							<Button circular color='black' id='github' icon = "github" size = "mini">Git </Button>
+							<Button circular color='blue' id='ue4'  size = "mini">Unreal Engine </Button>
+							<Button circular color='orange' id='c++'  size = "mini">C++ </Button>
 						</div>
 						<Link to="/">
 							<Button circular id='battleTankHomeIconMobile' icon= "home" style = {this.state.mobileBattleTankHomeIconWindowStyles}/>
@@ -331,11 +322,8 @@ componentWillUnmount() {
 						<img id = "battleTankLogoImagePhone" src = {Logo} alt = "logo"  />
 						<div id="battleTankTechIconsPhone" style={this.state.phoneBattleTankTechIconsImageWindowStyles}>
 							<h5>Technologies used: </h5>
-							<Button circular color='orange' id='html5' icon = "html5" size = "mini">HTML5 </Button>
-							<Button circular color='blue' id='css3' icon = "css3" size = "mini">CSS3 </Button>
-							<Button circular color='green' id='js' icon = "js" size = "mini" > JavaScript </Button>
-							<Button circular color='purple' id='php' icon = "php" size = "mini">PHP </Button>
-							<Button circular color='black' id='github' icon = "github" size = "mini">Git </Button>
+							<Button circular color='blue' id='ue4' size = "mini">Unreal Engine </Button>
+							<Button circular color='orange' id='c++' size = "mini">C++ </Button>
 						</div>
 
 						<Link to="/">
